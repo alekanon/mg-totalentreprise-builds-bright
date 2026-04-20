@@ -9,38 +9,154 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as YdelserRouteImport } from './routes/ydelser'
+import { Route as ReferencerRouteImport } from './routes/referencer'
+import { Route as OmOsRouteImport } from './routes/om-os'
+import { Route as KvalitetssikringRouteImport } from './routes/kvalitetssikring'
+import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as YdelserSlugRouteImport } from './routes/ydelser.$slug'
 
+const YdelserRoute = YdelserRouteImport.update({
+  id: '/ydelser',
+  path: '/ydelser',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReferencerRoute = ReferencerRouteImport.update({
+  id: '/referencer',
+  path: '/referencer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OmOsRoute = OmOsRouteImport.update({
+  id: '/om-os',
+  path: '/om-os',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KvalitetssikringRoute = KvalitetssikringRouteImport.update({
+  id: '/kvalitetssikring',
+  path: '/kvalitetssikring',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KontaktRoute = KontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const YdelserSlugRoute = YdelserSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => YdelserRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/kvalitetssikring': typeof KvalitetssikringRoute
+  '/om-os': typeof OmOsRoute
+  '/referencer': typeof ReferencerRoute
+  '/ydelser': typeof YdelserRouteWithChildren
+  '/ydelser/$slug': typeof YdelserSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/kvalitetssikring': typeof KvalitetssikringRoute
+  '/om-os': typeof OmOsRoute
+  '/referencer': typeof ReferencerRoute
+  '/ydelser': typeof YdelserRouteWithChildren
+  '/ydelser/$slug': typeof YdelserSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/kvalitetssikring': typeof KvalitetssikringRoute
+  '/om-os': typeof OmOsRoute
+  '/referencer': typeof ReferencerRoute
+  '/ydelser': typeof YdelserRouteWithChildren
+  '/ydelser/$slug': typeof YdelserSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/kontakt'
+    | '/kvalitetssikring'
+    | '/om-os'
+    | '/referencer'
+    | '/ydelser'
+    | '/ydelser/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/kontakt'
+    | '/kvalitetssikring'
+    | '/om-os'
+    | '/referencer'
+    | '/ydelser'
+    | '/ydelser/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/kontakt'
+    | '/kvalitetssikring'
+    | '/om-os'
+    | '/referencer'
+    | '/ydelser'
+    | '/ydelser/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  KontaktRoute: typeof KontaktRoute
+  KvalitetssikringRoute: typeof KvalitetssikringRoute
+  OmOsRoute: typeof OmOsRoute
+  ReferencerRoute: typeof ReferencerRoute
+  YdelserRoute: typeof YdelserRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/ydelser': {
+      id: '/ydelser'
+      path: '/ydelser'
+      fullPath: '/ydelser'
+      preLoaderRoute: typeof YdelserRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/referencer': {
+      id: '/referencer'
+      path: '/referencer'
+      fullPath: '/referencer'
+      preLoaderRoute: typeof ReferencerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/om-os': {
+      id: '/om-os'
+      path: '/om-os'
+      fullPath: '/om-os'
+      preLoaderRoute: typeof OmOsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kvalitetssikring': {
+      id: '/kvalitetssikring'
+      path: '/kvalitetssikring'
+      fullPath: '/kvalitetssikring'
+      preLoaderRoute: typeof KvalitetssikringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kontakt': {
+      id: '/kontakt'
+      path: '/kontakt'
+      fullPath: '/kontakt'
+      preLoaderRoute: typeof KontaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,21 +164,35 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ydelser/$slug': {
+      id: '/ydelser/$slug'
+      path: '/$slug'
+      fullPath: '/ydelser/$slug'
+      preLoaderRoute: typeof YdelserSlugRouteImport
+      parentRoute: typeof YdelserRoute
+    }
   }
 }
 
+interface YdelserRouteChildren {
+  YdelserSlugRoute: typeof YdelserSlugRoute
+}
+
+const YdelserRouteChildren: YdelserRouteChildren = {
+  YdelserSlugRoute: YdelserSlugRoute,
+}
+
+const YdelserRouteWithChildren =
+  YdelserRoute._addFileChildren(YdelserRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  KontaktRoute: KontaktRoute,
+  KvalitetssikringRoute: KvalitetssikringRoute,
+  OmOsRoute: OmOsRoute,
+  ReferencerRoute: ReferencerRoute,
+  YdelserRoute: YdelserRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}
