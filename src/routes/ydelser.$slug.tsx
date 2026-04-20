@@ -33,7 +33,8 @@ export const Route = createFileRoute("/ydelser/$slug")({
 });
 
 function YdelseDetail() {
-  const { ydelse } = Route.useLoaderData();
+  const data = Route.useLoaderData() as { ydelse: (typeof ydelser)[number] };
+  const { ydelse } = data;
   const idx = ydelser.findIndex((y) => y.slug === ydelse.slug);
   const next = ydelser[(idx + 1) % ydelser.length];
 
