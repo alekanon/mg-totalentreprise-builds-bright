@@ -3,6 +3,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 import appCss from "../styles.css?url";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { CoverageMap } from "@/components/CoverageMap";
 
 function NotFoundComponent() {
   return (
@@ -81,6 +82,7 @@ function RootComponent() {
       <main className="flex-1">
         <Outlet />
       </main>
+      <CoverageMap />
       <Footer />
     </div>
   );
