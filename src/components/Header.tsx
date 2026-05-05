@@ -1,7 +1,8 @@
-import { Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { Link, useRouterState } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/mg-logo.png";
+import logoWhite from "@/assets/mg-logo-white.png";
 
 const nav = [
   { to: "/", label: "Forside" },
@@ -14,12 +15,35 @@ const nav = [
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isHome = pathname === "/";
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Transparent overlay only on the home page (which has the full hero behind it).
+  const overlay = isHome && !scrolled && !open;
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,box-shadow] duration-300 ease-out ${
+        overlay
+          ? "bg-transparent border-b border-transparent"
+          : "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border"
+      }`}
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
-          <img src={logo} alt="MG Totalentreprise" className="h-8 w-auto sm:h-10" />
+          <img
+            src={overlay ? logoWhite : logo}
+            alt="MG Totalentreprise"
+            className="h-8 w-auto sm:h-10 transition-opacity duration-300"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -29,7 +53,9 @@ export function Header() {
               to={item.to}
               activeOptions={{ exact: item.to === "/" }}
               activeProps={{ className: "text-accent" }}
-              className="text-sm font-medium uppercase tracking-wide text-foreground transition-colors hover:text-accent"
+              className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-accent ${
+                overlay ? "text-white" : "text-foreground"
+              }`}
             >
               {item.label}
             </Link>
@@ -44,7 +70,7 @@ export function Header() {
         </Link>
 
         <button
-          className="lg:hidden"
+          className={`lg:hidden ${overlay ? "text-white" : "text-foreground"}`}
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -62,7 +88,7 @@ export function Header() {
                 onClick={() => setOpen(false)}
                 activeOptions={{ exact: item.to === "/" }}
                 activeProps={{ className: "text-accent" }}
-                className="border-b border-border py-3 text-sm font-medium uppercase tracking-wide last:border-0"
+                className="border-b border-border py-3 text-sm font-medium uppercase tracking-wide last:border-0 text-foreground"
               >
                 {item.label}
               </Link>
