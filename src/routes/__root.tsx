@@ -1,4 +1,4 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute, HeadContent, Scripts, useRouterState } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
 import { Header } from "@/components/Header";
@@ -76,10 +76,12 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isHome = pathname === "/";
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      <main className="flex-1">
+      <main className={`flex-1 ${isHome ? "" : "pt-[72px] sm:pt-[80px]"}`}>
         <Outlet />
       </main>
       <CoverageMap />
