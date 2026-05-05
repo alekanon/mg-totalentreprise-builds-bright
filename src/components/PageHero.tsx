@@ -9,7 +9,7 @@ interface PageHeroProps {
 
 export function PageHero({ eyebrow, title, description, image = pageHero }: PageHeroProps) {
   return (
-    <section className="relative h-[42vh] min-h-[320px] w-full overflow-hidden bg-surface-dark">
+    <section className="relative h-[36vh] min-h-[260px] w-full overflow-hidden bg-surface-dark">
       <img
         src={image}
         alt=""
@@ -29,9 +29,9 @@ export function PageHero({ eyebrow, title, description, image = pageHero }: Page
               </span>
             </div>
           )}
-          <h1 className="text-4xl font-bold text-background sm:text-5xl lg:text-6xl">{title}</h1>
+          <h1 className="text-2xl font-bold text-background sm:text-3xl lg:text-4xl">{title}</h1>
           {description && (
-            <p className="mt-4 max-w-2xl text-base text-background/80 lg:text-lg">{description}</p>
+            <p className="mt-3 max-w-2xl text-sm text-background/80 lg:text-base">{description}</p>
           )}
         </div>
       </div>

@@ -45,7 +45,7 @@ export function HeroCarousel() {
   }, [emblaApi]);
 
   return (
-    <section className="relative h-[88vh] min-h-[560px] w-full overflow-hidden bg-surface-dark">
+    <section className="relative h-screen w-full overflow-hidden bg-surface-dark -mt-px">
       <div ref={emblaRef} className="h-full overflow-hidden">
         <div className="flex h-full">
           {slides.map((slide, i) => (
