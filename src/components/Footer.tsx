@@ -10,7 +10,7 @@ export function Footer() {
             <img src={logo} alt="MG Totalentreprise" className="h-10 w-auto brightness-0 invert" />
             <p className="mt-6 max-w-md text-sm leading-relaxed text-background/70">
               Ca. 30 egne håndværkere inden for tømrer, flisemurer og maler. Vi udfører fag­entrepriser
-              og udlejer mandskab til byggeprojekter i hele hovedstadsområdet.
+              på byggeprojekter i hele hovedstadsområdet.
             </p>
           </div>
 

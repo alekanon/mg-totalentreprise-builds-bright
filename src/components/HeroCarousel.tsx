@@ -12,7 +12,7 @@ const slides = [
     image: hero1,
     eyebrow: "Facadeentreprise",
     title: "Holdbare facader\ni nordisk kvalitet",
-    description: "Systempuds, eternit, træ og aluminium – udført af erfarne fagfolk.",
+    description: "Eternit, træ og aluminium – udført af erfarne fagfolk.",
   },
   {
     image: hero2,
@@ -24,7 +24,7 @@ const slides = [
     image: hero3,
     eyebrow: "Totalentreprise",
     title: "Fra første streg\ntil færdigt projekt",
-    description: "Ca. 30 egne håndværkere klar til fagentrepriser og mandskabsudlejning.",
+    description: "Ca. 30 egne håndværkere klar til fagentrepriser i hele hovedstadsområdet.",
   },
 ];
 

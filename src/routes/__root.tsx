@@ -36,7 +36,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "MG Totalentreprise ApS – ca. 30 egne håndværkere inden for tømrer, maler og facadearbejde. Fagentrepriser og mandskabsudlejning i hovedstadsområdet.",
+          "MG Totalentreprise ApS – ca. 30 egne håndværkere inden for tømrer, maler og facadearbejde. Fagentrepriser i hovedstadsområdet.",
       },
       { name: "author", content: "MG Totalentreprise" },
       { property: "og:title", content: "MG Totalentreprise" },

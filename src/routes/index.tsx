@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Ca. 30 egne håndværkere inden for tømrer, flisemurer og maler. Fagentrepriser og mandskabsudlejning i hele hovedstadsområdet.",
+          "Ca. 30 egne håndværkere inden for tømrer, flisemurer og maler. Fagentrepriser i hele hovedstadsområdet.",
       },
       { property: "og:title", content: "MG Totalentreprise" },
       {
@@ -42,7 +42,7 @@ const usp = [
   {
     icon: HardHat,
     title: "Bredt fagområde",
-    text: "Tømrer, maler, facadepuds, betonfinish og indvendig aptering – alt under ét tag.",
+    text: "Tømrer, maler og facader i eternit, træ og aluminium – alt under ét tag.",
   },
   {
     icon: ShieldCheck,
@@ -52,7 +52,7 @@ const usp = [
   {
     icon: Hammer,
     title: "Fag- & underentrepriser",
-    text: "Vi byder på fagentrepriser og udlejer erfarent mandskab efter behov.",
+    text: "Vi byder på fagentrepriser inden for tømrer, maler og facadearbejde.",
   },
 ];
 
@@ -91,8 +91,8 @@ function Index() {
               </h2>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground lg:text-lg">
                 MG Totalentreprise ApS råder over ca. 30 egne håndværkere inden for tømrer,
-                flisemurer og maler. Vi løser fagentrepriser i hele hovedstadsområdet og
-                udlejer mandskab til både små og store byggeprojekter.
+                flisemurer og maler. Vi løser fagentrepriser i hele hovedstadsområdet
+                til både små og store byggeprojekter.
               </p>
               <Link
                 to="/om-os"
@@ -142,7 +142,7 @@ function Index() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {ydelser.slice(0, 6).map((y) => (
+            {ydelser.map((y) => (
               <Link
                 key={y.slug}
                 to="/ydelser/$slug"

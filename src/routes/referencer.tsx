@@ -12,19 +12,19 @@ export const Route = createFileRoute("/referencer")({
       {
         name: "description",
         content:
-          "Se et udvalg af vores byggesager: Novo Nordisk, Himmelbyen, Hildis Have, Nyt Hospital Nordsjælland, Skolen på Strandboulevarden m.fl.",
+          "Se et udvalg af vores byggesager: Novo Nordisk, Himmelbyen, Hildis Have, Skolen på Strandboulevarden, Spektrum Hotel m.fl.",
       },
       { property: "og:title", content: "Referencer – MG Totalentreprise" },
       {
         property: "og:description",
-        content: "Udvalgte tømrer-, maler- og betonfinish-projekter.",
+        content: "Udvalgte tømrer- og malerprojekter.",
       },
     ],
   }),
   component: Referencer,
 });
 
-const filters = ["Alle", "Tømrer", "Maler", "Betonfinish"] as const;
+const filters = ["Alle", "Tømrer", "Maler"] as const;
 
 function Referencer() {
   const [filter, setFilter] = useState<(typeof filters)[number]>("Alle");

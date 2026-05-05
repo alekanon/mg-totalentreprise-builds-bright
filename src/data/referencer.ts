@@ -10,10 +10,9 @@ import hildisHave from "@/assets/projects/hildis-have.jpg";
 import oerbygaard from "@/assets/projects/oerbygaard.jpg";
 import groenneFatning from "@/assets/projects/groenne-fatning.jpg";
 import arenakvarteret from "@/assets/projects/arenakvarteret.jpg";
-import nytHospital from "@/assets/projects/nyt-hospital-nordsjaelland.jpg";
 import interiorDetail from "@/assets/projects/interior-detail.jpg";
 
-export type Trade = "Tømrer" | "Maler" | "Betonfinish";
+export type Trade = "Tømrer" | "Maler";
 
 export type Reference = {
   title: string;
@@ -162,16 +161,5 @@ export const referencer: Reference[] = [
     category: "Maler",
     cover: arenakvarteret,
     gallery: [arenakvarteret, interiorDetail],
-  },
-  {
-    title: "Nyt Hospital Nordsjælland",
-    client: "GAP Entreprise ApS / MT Højgaard",
-    scope: "10 mand på betonfinish-arbejder i underentreprise.",
-    description:
-      "10 mand på betonfinish-arbejder ved elementmontage som underentreprise til GAP Entreprise ApS for MT Højgaard på Nyt Hospital Nordsjælland.",
-    trades: ["Betonfinish"],
-    category: "Betonfinish",
-    cover: nytHospital,
-    gallery: [nytHospital, interiorDetail],
   },
 ];
