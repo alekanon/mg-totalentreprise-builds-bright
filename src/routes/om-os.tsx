@@ -53,12 +53,12 @@ function OmOs() {
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
               <p>
                 Vi har gennem mange år opbygget et stærkt team af erfarne håndværkere, der løser
-                opgaver inden for tømrer-, maler-, facade- og betonfinish-arbejde. Vores
+                opgaver inden for tømrer-, maler- og facadearbejde. Vores
                 medarbejdere er fastansatte, og vi sørger så vidt muligt for, at det er de samme
                 hold, der følger en sag fra start til slut.
               </p>
               <p>
-                Vi udfører både fag­entrepriser og udlejer mandskab. Uanset opgavens størrelse er
+                Vi udfører fag­entrepriser i hele hovedstadsområdet. Uanset opgavens størrelse er
                 der altid kun én fast kontaktperson, så kommunikationen er enkel og direkte.
               </p>
               <p>

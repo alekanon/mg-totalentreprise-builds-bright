@@ -74,15 +74,15 @@ function KS() {
                 <div className="mb-4 flex items-center gap-3">
                   <span className="h-px w-10 bg-accent" />
                   <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    Mandskabsudlejning
+                    Skal vi kvalitetssikre din næste sag?
                   </span>
                 </div>
                 <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
-                  320 kr./time inkl. kassevogn og kørsel
+                  Tæt opfølgning fra opstart til aflevering
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                  Ved udlejning af mandskab afregnes 320 kr./time ved min. 3 mand pr. byggeplads
-                  – inkl. kassevogn og kørsel indtil 30 km fra København.
+                  Vi sætter faste hold på sagen og dokumenterer arbejdet løbende, så I altid
+                  har overblik over fremdrift og kvalitet.
                 </p>
               </div>
               <div>
@@ -90,7 +90,7 @@ function KS() {
                   to="/kontakt"
                   className="inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-colors hover:bg-accent/90"
                 >
-                  Forespørg på mandskab
+                  Kontakt os
                 </Link>
               </div>
             </div>

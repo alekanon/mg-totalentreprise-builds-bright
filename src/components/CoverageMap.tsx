@@ -55,7 +55,7 @@ export function CoverageMap() {
               Vi arbejder i hele Sjælland
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground lg:text-lg">
-              Med base i hovedstadsområdet løser vi fag­entrepriser og udlejer mandskab over hele
+              Med base i hovedstadsområdet løser vi fag­entrepriser over hele
               Sjælland – fra Helsingør i nord til Vordingborg i syd.
             </p>
 

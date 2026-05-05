@@ -12,7 +12,7 @@ export const Route = createFileRoute("/kontakt")({
       {
         name: "description",
         content:
-          "Kontakt MG Totalentreprise ApS for fag­entrepriser, mandskabsudlejning eller en uforpligtende snak om jeres byggeprojekt.",
+          "Kontakt MG Totalentreprise ApS for fag­entrepriser eller en uforpligtende snak om jeres byggeprojekt.",
       },
       { property: "og:title", content: "Kontakt – MG Totalentreprise" },
       {
@@ -52,8 +52,8 @@ function Kontakt() {
             <div className="lg:col-span-5">
               <h2 className="text-2xl font-bold text-foreground">Kontaktinformation</h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Vi sidder klar til at svare på dine spørgsmål – uanset om det er en fag­entreprise,
-                mandskabsudlejning eller noget helt tredje.
+                Vi sidder klar til at svare på dine spørgsmål – uanset om det er en fag­entreprise
+                eller noget helt andet.
               </p>
 
               <div className="mt-8 space-y-5">
@@ -96,15 +96,6 @@ function Kontakt() {
                 </div>
               </div>
 
-              <div className="mt-10 rounded-sm border border-border bg-surface p-6">
-                <div className="text-xs font-semibold uppercase tracking-wider text-accent">
-                  Mandskabsudlejning
-                </div>
-                <p className="mt-2 text-sm text-foreground">
-                  320 kr./time ved min. 3 mand pr. byggeplads – inkl. kassevogn og kørsel op til 30 km
-                  fra København.
-                </p>
-              </div>
             </div>
 
             <div className="lg:col-span-7">
