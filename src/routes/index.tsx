@@ -1,11 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, HardHat, Users, ShieldCheck, Hammer } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { AboutTeaser } from "@/components/AboutTeaser";
 import { PartnersStrip } from "@/components/PartnersStrip";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { Testimonial } from "@/components/Testimonial";
 import { ydelser } from "@/data/ydelser";
+import craftsman from "@/assets/craftsman-working.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,28 +34,6 @@ const stats = [
   { value: "100%", label: "Daglig projektledelse" },
 ];
 
-const usp = [
-  {
-    icon: Users,
-    title: "Faste hold",
-    text: "Vi sørger så vidt muligt for de samme medarbejdere fra start til slut – kontinuitet og kvalitet.",
-  },
-  {
-    icon: HardHat,
-    title: "Bredt fagområde",
-    text: "Tømrer, maler og facader i eternit, træ og aluminium – alt under ét tag.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Kvalitetssikring",
-    text: "Daglig tilsyn og KS i Dalux, Ajour, Byggeweb eller vores eget system.",
-  },
-  {
-    icon: Hammer,
-    title: "Fag- & underentrepriser",
-    text: "Vi byder på fagentrepriser inden for tømrer, maler og facadearbejde.",
-  },
-];
 
 function Index() {
   return (
@@ -102,17 +81,15 @@ function Index() {
               </Link>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
-              {usp.map((u) => (
-                <div
-                  key={u.title}
-                  className="rounded-sm border border-border bg-background p-6 transition-shadow hover:shadow-[var(--shadow-card)]"
-                >
-                  <u.icon className="h-7 w-7 text-accent" />
-                  <h3 className="mt-4 text-base font-bold text-foreground">{u.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{u.text}</p>
-                </div>
-              ))}
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-surface">
+              <img
+                src={craftsman}
+                alt="Håndværker fra MG Totalentreprise i arbejde"
+                loading="lazy"
+                width={1280}
+                height={1280}
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </div>
