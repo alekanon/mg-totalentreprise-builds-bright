@@ -3,28 +3,31 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
+import heroNovo from "@/assets/hero-novo-nordisk.jpg";
+import heroSpektrum from "@/assets/hero-spektrum.jpg";
+import heroStrand from "@/assets/hero-strandboulevarden.jpg";
 
 const slides = [
   {
-    image: hero1,
-    eyebrow: "Facadeentreprise",
-    title: "Holdbare facader\ni nordisk kvalitet",
-    description: "Eternit, træ og aluminium – udført af erfarne fagfolk.",
+    image: heroNovo,
+    eyebrow: "Novo Nordisk Fabrik – Køge",
+    title: "Maler- og tømrerarbejde\npå fabriksbyggeri",
+    description:
+      "Komplet maler- og tømrerentreprise på et af Novo Nordisks fabriksbyggerier under høje krav til renhed og dokumentation.",
   },
   {
-    image: hero2,
-    eyebrow: "Tømrerarbejde",
-    title: "Indvendig aptering\nudført med præcision",
-    description: "Gipsvægge, lofter, døre, vinduer og trægulve i store boligprojekter.",
+    image: heroSpektrum,
+    eyebrow: "Spektrum Hotel",
+    title: "Malerentreprise\npå nyt hotelbyggeri",
+    description:
+      "Komplet malerentreprise på Spektrum Hotel — værelser, korridorer og fællesarealer, leveret med fast hold.",
   },
   {
-    image: hero3,
-    eyebrow: "Totalentreprise",
-    title: "Fra første streg\ntil færdigt projekt",
-    description: "Ca. 30 egne håndværkere klar til fagentrepriser i hele hovedstadsområdet.",
+    image: heroStrand,
+    eyebrow: "Skolen på Strandboulevarden",
+    title: "Tømrer-, snedker-\nog malerarbejde",
+    description:
+      "Tømrer- og snedkerarbejde samt komplet malerentreprise på både renoverings- og nybygningsdelen i København.",
   },
 ];
 
