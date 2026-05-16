@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
+import teamImg from "@/assets/om-os-team.jpg";
 
 export const Route = createFileRoute("/om-os")({
   head: () => ({
