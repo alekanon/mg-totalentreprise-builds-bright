@@ -60,7 +60,7 @@ export function HeroCarousel() {
                 width={1920}
                 height={1080}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/35" />
               <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-end px-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
                 <div className="max-w-3xl">
                   <div className="mb-4 flex items-center gap-3">
