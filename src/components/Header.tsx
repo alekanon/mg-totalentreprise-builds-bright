@@ -2,7 +2,6 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/mg-logo.png";
-import logoWhite from "@/assets/mg-logo-white.png";
 
 const nav = [
   { to: "/", label: "Forside" },
@@ -40,9 +39,9 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
           <img
-            src={overlay ? logoWhite : logo}
+            src={logo}
             alt="MG Totalentreprise"
-            className="h-8 w-auto sm:h-10 transition-opacity duration-300"
+            className={`h-8 w-auto sm:h-10 transition-[filter] duration-300 ${overlay ? "brightness-0 invert" : ""}`}
           />
         </Link>
 
