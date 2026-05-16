@@ -81,13 +81,13 @@ function Index() {
               </Link>
             </div>
 
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-surface">
+            <div className="relative aspect-[16/11] w-full overflow-hidden rounded-sm bg-surface">
               <img
                 src={craftsman}
                 alt="Håndværker fra MG Totalentreprise i arbejde"
                 loading="lazy"
-                width={1280}
-                height={1280}
+                width={1600}
+                height={1100}
                 className="h-full w-full object-cover"
               />
             </div>

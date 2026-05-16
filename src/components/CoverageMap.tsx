@@ -1,4 +1,4 @@
-import denmarkMap from "@/assets/denmark-map.png";
+import sjaellandMap from "@/assets/sjaelland-map.png";
 
 const cityGroups = [
   {
@@ -28,17 +28,17 @@ export function CoverageMap() {
           <div className="relative flex justify-center">
             <div className="relative w-full max-w-md">
               <img
-                src={denmarkMap}
-                alt="Kort over Danmark med markering på Sjælland"
+                src={sjaellandMap}
+                alt="Kort over Sjælland, Danmark"
                 width={1024}
-                height={1280}
+                height={1024}
                 loading="lazy"
                 className="h-auto w-full opacity-80"
               />
-              {/* Pulsing glow overlay on Sjælland */}
-              <div className="pointer-events-none absolute left-[62%] top-[48%] h-24 w-24 -translate-x-1/2 -translate-y-1/2">
+              {/* Pulsing glow overlay on København */}
+              <div className="pointer-events-none absolute left-[72%] top-[42%] h-20 w-20 -translate-x-1/2 -translate-y-1/2">
                 <span className="absolute inset-0 animate-ping rounded-full bg-accent/40" />
-                <span className="absolute inset-6 rounded-full bg-accent shadow-[0_0_30px_8px_oklch(0.55_0.22_27_/_0.6)]" />
+                <span className="absolute inset-5 rounded-full bg-accent shadow-[0_0_30px_8px_oklch(0.55_0.22_27_/_0.6)]" />
               </div>
             </div>
           </div>
