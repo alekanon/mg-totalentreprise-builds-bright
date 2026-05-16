@@ -26,7 +26,7 @@ export function CoverageMap() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Map */}
           <div className="relative flex justify-center">
-            <div className="relative w-full max-w-md">
+            <div className="relative w-full max-w-2xl">
               <img
                 src={denmarkMap}
                 alt="Kort over Danmark med Sjælland markeret"
