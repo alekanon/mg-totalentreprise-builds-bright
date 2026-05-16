@@ -32,20 +32,59 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MG Totalentreprise – Tømrer, maler og facadearbejde" },
+      { title: "MG Totalentreprise – Tømrer, maler og facadearbejde i hovedstaden" },
       {
         name: "description",
         content:
-          "MG Totalentreprise ApS – ca. 30 egne håndværkere inden for tømrer, maler og facadearbejde. Fagentrepriser i hovedstadsområdet.",
+          "MG Totalentreprise ApS – ca. 30 egne håndværkere inden for tømrer, maler og facadearbejde. Fagentrepriser i hele Sjælland og hovedstadsområdet.",
       },
       { name: "author", content: "MG Totalentreprise" },
-      { property: "og:title", content: "MG Totalentreprise" },
+      { name: "robots", content: "index, follow" },
+      { name: "theme-color", content: "#0a0a0a" },
+      { name: "geo.region", content: "DK" },
+      { name: "geo.placename", content: "Storkøbenhavn" },
+      { property: "og:title", content: "MG Totalentreprise – Tømrer, maler og facadearbejde" },
       {
         property: "og:description",
-        content: "Tømrer, maler og facadeentreprise i hovedstadsområdet.",
+        content: "Tømrer, maler og facadeentreprise i hovedstadsområdet og hele Sjælland.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "da_DK" },
+      { property: "og:site_name", content: "MG Totalentreprise" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "GeneralContractor",
+          name: "MG Totalentreprise ApS",
+          description:
+            "Fagentreprenør med ca. 30 egne håndværkere inden for tømrer, maler og facadearbejde.",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Sjælland" },
+            { "@type": "City", name: "København" },
+          ],
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Storkøbenhavn",
+            addressCountry: "DK",
+          },
+          knowsAbout: ["Tømrerarbejde", "Malerarbejde", "Facadearbejde", "Snedkerarbejde"],
+        }),
+      },
+    ],
+  }),
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
