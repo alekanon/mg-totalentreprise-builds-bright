@@ -45,7 +45,7 @@ export function ProcessSteps() {
               key={s.title}
               className="relative rounded-sm border border-border bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
             >
-              <div className="absolute right-6 top-6 text-5xl font-bold text-accent">
+              <div className="absolute right-6 top-6 text-5xl font-bold text-muted-foreground/40">
                 0{i + 1}
               </div>
               <s.icon className="h-8 w-8 text-accent" />
