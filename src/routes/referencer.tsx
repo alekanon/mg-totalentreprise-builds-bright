@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Building2, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Building2, ChevronLeft, ChevronRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { referencer, type Reference } from "@/data/referencer";
@@ -128,10 +128,10 @@ function Referencer() {
       </section>
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
-        <DialogContent className="max-w-4xl gap-0 overflow-hidden p-0 sm:rounded-sm">
+        <DialogContent className="max-w-2xl gap-0 overflow-hidden p-0 sm:rounded-sm">
           {active && (
             <>
-              <div className="relative aspect-[16/10] w-full bg-muted">
+              <div className="relative aspect-[16/9] w-full bg-muted">
                 <img
                   src={active.gallery[slide]}
                   alt={`${active.title} – billede ${slide + 1}`}
@@ -167,16 +167,9 @@ function Referencer() {
                     </div>
                   </>
                 )}
-                <button
-                  onClick={() => setActive(null)}
-                  aria-label="Luk"
-                  className="absolute right-4 top-4 rounded-full bg-background/90 p-2 text-foreground shadow-md transition-colors hover:bg-accent hover:text-accent-foreground"
-                >
-                  <X className="h-4 w-4" />
-                </button>
               </div>
 
-              <div className="p-6 sm:p-8">
+              <div className="p-5 sm:p-6">
                 <div className="flex flex-wrap gap-1.5">
                   {active.trades.map((t) => (
                     <span
