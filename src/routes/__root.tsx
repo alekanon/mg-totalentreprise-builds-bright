@@ -32,7 +32,7 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MG Totalentreprise – Tømrer, maler og facadearbejde i hovedstaden" },
+      { title: "website" },
       {
         name: "description",
         content:
@@ -43,7 +43,7 @@ export const Route = createRootRoute({
       { name: "theme-color", content: "#0a0a0a" },
       { name: "geo.region", content: "DK" },
       { name: "geo.placename", content: "Storkøbenhavn" },
-      { property: "og:title", content: "MG Totalentreprise – Tømrer, maler og facadearbejde" },
+      { property: "og:title", content: "website" },
       {
         property: "og:description",
         content: "Tømrer, maler og facadeentreprise i hovedstadsområdet og hele Sjælland.",
@@ -52,6 +52,12 @@ export const Route = createRootRoute({
       { property: "og:locale", content: "da_DK" },
       { property: "og:site_name", content: "MG Totalentreprise" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "website" },
+      { name: "description", content: "MG Totalentreprise offers premium Scandinavian construction services, specializing in carpentry, tiling, and painting." },
+      { property: "og:description", content: "MG Totalentreprise offers premium Scandinavian construction services, specializing in carpentry, tiling, and painting." },
+      { name: "twitter:description", content: "MG Totalentreprise offers premium Scandinavian construction services, specializing in carpentry, tiling, and painting." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e0dc5802-bbb6-4973-9fab-96f9f6e12889/id-preview-fa06e8d9--17b157c3-3935-4bde-b8ac-596da0d1b8ef.lovable.app-1778952163259.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e0dc5802-bbb6-4973-9fab-96f9f6e12889/id-preview-fa06e8d9--17b157c3-3935-4bde-b8ac-596da0d1b8ef.lovable.app-1778952163259.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
