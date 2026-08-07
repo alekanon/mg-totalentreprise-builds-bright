@@ -253,7 +253,7 @@ export const ydelser: Ydelse[] = [
     short: "Isolering af vægge, lofter, kældre og teknik – korrekt udført og tæt.",
     description: [
       "Vi udfører isoleringsarbejde i nybyggeri og renovering: vægge, lofter, etageadskillelser, kældre samt isolering af rør og tekniske installationer.",
-      "Korrekt isolering handlerom mere end at fylde hulrum ud. Vi sikrer tæthed, dampspærre og detaljer omkring gennemføringer, så konstruktionen holder – både energimæssigt og fugtteknisk.",
+      "Korrekt isolering handler om mere end at fylde hulrum ud. Vi sikrer tæthed, dampspærre og detaljer omkring gennemføringer, så konstruktionen holder – både energimæssigt og fugtteknisk.",
     ],
     highlights: [
       "Vægge, lofter & etagedæk",
