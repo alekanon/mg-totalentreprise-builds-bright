@@ -19,7 +19,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-background/70">
               <li><Link to="/om-os" className="hover:text-background">Om os</Link></li>
               <li><Link to="/ydelser" className="hover:text-background">Ydelser</Link></li>
-              <li><Link to="/referencer" className="hover:text-background">Referencer</Link></li>
+              <li><Link to="/projekter" className="hover:text-background">Projekter</Link></li>
               <li><Link to="/kvalitetssikring" className="hover:text-background">Kvalitetssikring</Link></li>
               <li><Link to="/kontakt" className="hover:text-background">Kontakt</Link></li>
             </ul>
@@ -30,6 +30,10 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-background/70">
               <li>MG Totalentreprise ApS</li>
               <li>Storkøbenhavn</li>
+              <li>
+                <a href="tel:70702477" className="hover:text-background">Tlf. 70 70 24 77</a>
+              </li>
+              <li>CVR: 33041365</li>
               <li><Link to="/kontakt" className="hover:text-background">Kontakt os →</Link></li>
             </ul>
           </div>

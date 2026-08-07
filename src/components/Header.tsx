@@ -1,13 +1,13 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import logo from "@/assets/mg-logo.png";
 
 const nav = [
   { to: "/", label: "Forside" },
   { to: "/om-os", label: "Om os" },
   { to: "/ydelser", label: "Ydelser" },
-  { to: "/referencer", label: "Referencer" },
+  { to: "/projekter", label: "Projekter" },
   { to: "/kvalitetssikring", label: "Kvalitetssikring" },
   { to: "/kontakt", label: "Kontakt" },
 ] as const;
@@ -61,6 +61,15 @@ export function Header() {
           ))}
         </nav>
 
+        <a
+          href="tel:70702477"
+          className={`hidden items-center gap-2 text-sm font-semibold tracking-wide transition-colors hover:text-accent lg:inline-flex ${
+            overlay ? "text-white" : "text-foreground"
+          }`}
+        >
+          <Phone className="h-4 w-4" /> 70 70 24 77
+        </a>
+
         <Link
           to="/kontakt"
           className="hidden rounded-sm bg-accent px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-colors hover:bg-accent/90 lg:inline-flex"
@@ -92,6 +101,12 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <a
+              href="tel:70702477"
+              className="flex items-center gap-2 border-b border-border py-3 text-sm font-semibold uppercase tracking-wide text-foreground"
+            >
+              <Phone className="h-4 w-4 text-accent" /> 70 70 24 77
+            </a>
             <Link
               to="/kontakt"
               onClick={() => setOpen(false)}
