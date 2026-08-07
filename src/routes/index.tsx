@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, HardHat, Building2, UserCheck, ClipboardCheck } from "lucide-react";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { AboutTeaser } from "@/components/AboutTeaser";
 import { PartnersStrip } from "@/components/PartnersStrip";
@@ -28,10 +28,10 @@ export const Route = createFileRoute("/")({
 });
 
 const stats = [
-  { value: "~30", label: "Egne håndværkere" },
-  { value: "200+", label: "Renoverede lejligheder" },
-  { value: "1", label: "Fast kontaktperson pr. sag" },
-  { value: "100%", label: "Daglig projektledelse" },
+  { value: "Ca. 30", label: "Egne håndværkere", icon: HardHat },
+  { value: "200+", label: "Renoverede lejligheder", icon: Building2 },
+  { value: "1", label: "Fast kontaktperson pr. sag", icon: UserCheck },
+  { value: "100%", label: "Daglig projektledelse", icon: ClipboardCheck },
 ];
 
 
@@ -42,15 +42,23 @@ function Index() {
 
       {/* Stats */}
       <section className="border-b border-border bg-background">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
-          {stats.map((s) => (
-            <div key={s.label} className="text-center lg:text-left">
-              <div className="text-4xl font-bold text-foreground lg:text-5xl">{s.value}</div>
-              <div className="mt-1 text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                {s.label}
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div className="mx-auto grid max-w-5xl grid-cols-2 gap-y-10 lg:grid-cols-4">
+            {stats.map((s, i) => (
+              <div
+                key={s.label}
+                className={`flex flex-col items-center px-4 text-center ${
+                  i % 2 === 1 ? "border-l border-border" : ""
+                } ${i > 0 ? "lg:border-l lg:border-border" : "lg:border-l-0"}`}
+              >
+                <s.icon className="h-6 w-6 text-accent" />
+                <div className="mt-3 text-4xl font-bold text-foreground lg:text-5xl">{s.value}</div>
+                <div className="mt-1 text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                  {s.label}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
@@ -119,25 +127,54 @@ function Index() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {ydelser.map((y) => (
-              <Link
-                key={y.slug}
-                to="/ydelser/$slug"
-                params={{ slug: y.slug }}
-                className="group flex flex-col justify-between rounded-sm border border-border bg-background p-8 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-[var(--shadow-elegant)]"
-              >
-                <div>
-                  <div className="text-xs font-bold uppercase tracking-widest text-accent">
-                    0{ydelser.indexOf(y) + 1}
+            {ydelser.map((y, i) => {
+              const featured = i === 0;
+              return (
+                <Link
+                  key={y.slug}
+                  to="/ydelser/$slug"
+                  params={{ slug: y.slug }}
+                  className={`group flex flex-col justify-between rounded-sm border p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)] ${
+                    featured
+                      ? "border-accent bg-accent md:row-span-1"
+                      : "border-border bg-background hover:border-accent"
+                  }`}
+                >
+                  <div>
+                    <div
+                      className={`text-xs font-bold uppercase tracking-widest ${
+                        featured ? "text-accent-foreground/80" : "text-accent"
+                      }`}
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3
+                      className={`mt-3 text-xl font-bold ${
+                        featured ? "text-accent-foreground" : "text-foreground"
+                      }`}
+                    >
+                      {y.title}
+                    </h3>
+                    <p
+                      className={`mt-3 text-sm leading-relaxed ${
+                        featured ? "text-accent-foreground/85" : "text-muted-foreground"
+                      }`}
+                    >
+                      {y.short}
+                    </p>
                   </div>
-                  <h3 className="mt-3 text-xl font-bold text-foreground">{y.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{y.short}</p>
-                </div>
-                <div className="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-foreground transition-colors group-hover:text-accent">
-                  Læs mere <ArrowRight className="h-4 w-4" />
-                </div>
-              </Link>
-            ))}
+                  <div
+                    className={`mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide transition-colors ${
+                      featured
+                        ? "text-accent-foreground"
+                        : "text-foreground group-hover:text-accent"
+                    }`}
+                  >
+                    Læs mere <ArrowRight className="h-4 w-4" />
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
