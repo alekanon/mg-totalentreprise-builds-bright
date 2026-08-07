@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { FileText, Mail, MapPin, Phone, Send } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
@@ -79,7 +79,9 @@ function Kontakt() {
                     <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                       Telefon
                     </div>
-                    <div className="mt-1 text-sm text-foreground">Kontakt os direkte</div>
+                    <div className="mt-1 text-sm text-foreground">
+                      <a href="tel:70702477" className="hover:text-accent">70 70 24 77</a>
+                    </div>
                   </div>
                 </div>
 
@@ -92,6 +94,18 @@ function Kontakt() {
                       Email
                     </div>
                     <div className="mt-1 text-sm text-foreground">Brug formularen →</div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 flex-none items-center justify-center bg-accent text-accent-foreground">
+                    <FileText className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                      CVR
+                    </div>
+                    <div className="mt-1 text-sm text-foreground">33041365</div>
                   </div>
                 </div>
               </div>

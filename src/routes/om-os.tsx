@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import teamImg from "@/assets/om-os-team.jpg";
+import direktorImg from "@/assets/anders-johnsen.jpg";
 
 export const Route = createFileRoute("/om-os")({
   head: () => ({
@@ -80,6 +81,29 @@ function OmOs() {
                   med stolthed i faget hver dag.
                 </p>
               </div>
+
+              <div className="mt-10 flex flex-col gap-6 rounded-sm border border-border bg-surface p-6 sm:flex-row sm:items-center sm:p-8">
+                <img
+                  src={direktorImg}
+                  alt="Anders Johnsen, direktør i MG Totalentreprise ApS"
+                  loading="lazy"
+                  width={800}
+                  height={800}
+                  className="h-28 w-28 flex-none rounded-full object-cover"
+                />
+                <div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+                    Direktør
+                  </div>
+                  <h3 className="mt-1 text-xl font-bold text-foreground">Anders Johnsen</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    Anders Johnsen er direktør i MG Totalentreprise ApS og står i spidsen for både
+                    den daglige drift og virksomhedens byggesager. Med mange år i byggebranchen
+                    lægger han vægt på ordentligt håndværk, klare aftaler og tæt dialog med
+                    kunderne – og du møder ham typisk allerede i tilbudsfasen.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="lg:col-span-5">
@@ -118,9 +142,9 @@ function OmOs() {
       </section>
 
       <section className="bg-surface-dark py-20 text-background lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:grid-cols-3 sm:px-6 lg:px-8">
+        <div className="mx-auto grid max-w-5xl gap-12 px-4 text-center sm:grid-cols-3 sm:px-6 lg:px-8">
           <div>
-            <div className="text-5xl font-bold text-accent">~30</div>
+            <div className="text-5xl font-bold text-accent">Ca. 30</div>
             <div className="mt-2 text-sm uppercase tracking-wider text-background/70">
               Egne håndværkere
             </div>

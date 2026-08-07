@@ -11,6 +11,7 @@ import oerbygaard from "@/assets/projects/oerbygaard.jpg";
 import groenneFatning from "@/assets/projects/groenne-fatning.jpg";
 import arenakvarteret from "@/assets/projects/arenakvarteret.jpg";
 import interiorDetail from "@/assets/projects/interior-detail.jpg";
+import hq27 from "@/assets/projects/novo-nordisk-hq27.jpg";
 
 export type Trade = "Tømrer" | "Maler";
 
@@ -28,15 +29,26 @@ export type Reference = {
 
 export const referencer: Reference[] = [
   {
-    title: "Novo Nordisk Fabrik",
+    title: "Køge North Silica Facility",
     client: "Phil & Søn",
     scope: "Maler- og tømrerarbejde på fabriksbyggeri.",
     description:
-      "Komplet maler- og tømrerentreprise på et af Novo Nordisks fabriksbyggerier. Opgaven omfatter både indvendige overflader, montage og finish-arbejder under høje krav til renhed og dokumentation.",
+      "Komplet maler- og tømrerentreprise på Novo Nordisks anlæg i Køge Nord. Opgaven omfatter både indvendige overflader, montage og finish-arbejder under høje krav til renhed og dokumentation.",
     trades: ["Maler", "Tømrer"],
     category: "Maler",
     cover: novoNordisk,
     gallery: [novoNordisk, interiorDetail],
+  },
+  {
+    title: "Novo Nordisk HQ27",
+    client: "LM Byg",
+    scope: "Isolering af hele kælderen, montering af rør og beton finish.",
+    description:
+      "Isolering af hele kælderen, montering af rør og beton finish på Novo Nordisk HQ27. Udført med fast hold under høje krav til dokumentation og koordinering med øvrige fag.",
+    trades: ["Tømrer"],
+    category: "Tømrer",
+    cover: hq27,
+    gallery: [hq27, interiorDetail],
   },
   {
     title: "Spektrum Hotel",

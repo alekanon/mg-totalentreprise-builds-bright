@@ -6,6 +6,8 @@ const partners = [
   "RG2 Development",
   "NPV",
   "Ole Jepsen",
+  "LM Byg",
+  "Pihl",
 ];
 
 export function PartnersStrip() {
@@ -16,16 +18,16 @@ export function PartnersStrip() {
           <div className="mb-3 flex items-center justify-center gap-3">
             <span className="h-px w-8 bg-accent" />
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-              Samarbejdspartnere
+              Samarbejdspartner
             </span>
             <span className="h-px w-8 bg-accent" />
           </div>
-          <h2 className="text-2xl font-bold text-foreground sm:text-3xl lg:text-4xl">
-            Vi arbejder for Danmarks førende entreprenører
-          </h2>
+          <p className="mx-auto max-w-2xl text-base text-muted-foreground lg:text-lg">
+            Vi har udført arbejde for nogle af Danmarks førende entreprenører.
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-border bg-border sm:grid-cols-3 lg:grid-cols-7">
+        <div className="grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-border bg-border sm:grid-cols-3 lg:grid-cols-5">
           {partners.map((p) => (
             <div
               key={p}
