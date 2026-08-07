@@ -5,7 +5,7 @@ import { PageHero } from "@/components/PageHero";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { referencer, type Reference } from "@/data/referencer";
 
-export const Route = createFileRoute("/referencer")({
+export const Route = createFileRoute("/projekter")({
   head: () => ({
     meta: [
       { title: "Referencer – MG Totalentreprise" },

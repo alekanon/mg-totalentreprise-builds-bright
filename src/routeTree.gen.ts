@@ -10,7 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as YdelserRouteImport } from './routes/ydelser'
-import { Route as ReferencerRouteImport } from './routes/referencer'
+import { Route as ProjekterRouteImport } from './routes/projekter'
 import { Route as OmOsRouteImport } from './routes/om-os'
 import { Route as KvalitetssikringRouteImport } from './routes/kvalitetssikring'
 import { Route as KontaktRouteImport } from './routes/kontakt'
@@ -22,9 +22,9 @@ const YdelserRoute = YdelserRouteImport.update({
   path: '/ydelser',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ReferencerRoute = ReferencerRouteImport.update({
-  id: '/referencer',
-  path: '/referencer',
+const ProjekterRoute = ProjekterRouteImport.update({
+  id: '/projekter',
+  path: '/projekter',
   getParentRoute: () => rootRouteImport,
 } as any)
 const OmOsRoute = OmOsRouteImport.update({
@@ -58,7 +58,7 @@ export interface FileRoutesByFullPath {
   '/kontakt': typeof KontaktRoute
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
-  '/referencer': typeof ReferencerRoute
+  '/projekter': typeof ProjekterRoute
   '/ydelser': typeof YdelserRouteWithChildren
   '/ydelser/$slug': typeof YdelserSlugRoute
 }
@@ -67,7 +67,7 @@ export interface FileRoutesByTo {
   '/kontakt': typeof KontaktRoute
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
-  '/referencer': typeof ReferencerRoute
+  '/projekter': typeof ProjekterRoute
   '/ydelser': typeof YdelserRouteWithChildren
   '/ydelser/$slug': typeof YdelserSlugRoute
 }
@@ -77,7 +77,7 @@ export interface FileRoutesById {
   '/kontakt': typeof KontaktRoute
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
-  '/referencer': typeof ReferencerRoute
+  '/projekter': typeof ProjekterRoute
   '/ydelser': typeof YdelserRouteWithChildren
   '/ydelser/$slug': typeof YdelserSlugRoute
 }
@@ -88,7 +88,7 @@ export interface FileRouteTypes {
     | '/kontakt'
     | '/kvalitetssikring'
     | '/om-os'
-    | '/referencer'
+    | '/projekter'
     | '/ydelser'
     | '/ydelser/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -97,7 +97,7 @@ export interface FileRouteTypes {
     | '/kontakt'
     | '/kvalitetssikring'
     | '/om-os'
-    | '/referencer'
+    | '/projekter'
     | '/ydelser'
     | '/ydelser/$slug'
   id:
@@ -106,7 +106,7 @@ export interface FileRouteTypes {
     | '/kontakt'
     | '/kvalitetssikring'
     | '/om-os'
-    | '/referencer'
+    | '/projekter'
     | '/ydelser'
     | '/ydelser/$slug'
   fileRoutesById: FileRoutesById
@@ -116,7 +116,7 @@ export interface RootRouteChildren {
   KontaktRoute: typeof KontaktRoute
   KvalitetssikringRoute: typeof KvalitetssikringRoute
   OmOsRoute: typeof OmOsRoute
-  ReferencerRoute: typeof ReferencerRoute
+  ProjekterRoute: typeof ProjekterRoute
   YdelserRoute: typeof YdelserRouteWithChildren
 }
 
@@ -129,11 +129,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof YdelserRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/referencer': {
-      id: '/referencer'
-      path: '/referencer'
-      fullPath: '/referencer'
-      preLoaderRoute: typeof ReferencerRouteImport
+    '/projekter': {
+      id: '/projekter'
+      path: '/projekter'
+      fullPath: '/projekter'
+      preLoaderRoute: typeof ProjekterRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/om-os': {
@@ -190,18 +190,9 @@ const rootRouteChildren: RootRouteChildren = {
   KontaktRoute: KontaktRoute,
   KvalitetssikringRoute: KvalitetssikringRoute,
   OmOsRoute: OmOsRoute,
-  ReferencerRoute: ReferencerRoute,
+  ProjekterRoute: ProjekterRoute,
   YdelserRoute: YdelserRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}
