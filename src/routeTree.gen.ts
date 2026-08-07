@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as YdelserRouteImport } from './routes/ydelser'
+import { Route as ReferencerRouteImport } from './routes/referencer'
 import { Route as ProjekterRouteImport } from './routes/projekter'
 import { Route as OmOsRouteImport } from './routes/om-os'
 import { Route as KvalitetssikringRouteImport } from './routes/kvalitetssikring'
@@ -20,6 +21,11 @@ import { Route as YdelserSlugRouteImport } from './routes/ydelser.$slug'
 const YdelserRoute = YdelserRouteImport.update({
   id: '/ydelser',
   path: '/ydelser',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReferencerRoute = ReferencerRouteImport.update({
+  id: '/referencer',
+  path: '/referencer',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProjekterRoute = ProjekterRouteImport.update({
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
   '/projekter': typeof ProjekterRoute
+  '/referencer': typeof ReferencerRoute
   '/ydelser': typeof YdelserRouteWithChildren
   '/ydelser/$slug': typeof YdelserSlugRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
   '/projekter': typeof ProjekterRoute
+  '/referencer': typeof ReferencerRoute
   '/ydelser': typeof YdelserRouteWithChildren
   '/ydelser/$slug': typeof YdelserSlugRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
   '/projekter': typeof ProjekterRoute
+  '/referencer': typeof ReferencerRoute
   '/ydelser': typeof YdelserRouteWithChildren
   '/ydelser/$slug': typeof YdelserSlugRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/kvalitetssikring'
     | '/om-os'
     | '/projekter'
+    | '/referencer'
     | '/ydelser'
     | '/ydelser/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/kvalitetssikring'
     | '/om-os'
     | '/projekter'
+    | '/referencer'
     | '/ydelser'
     | '/ydelser/$slug'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/kvalitetssikring'
     | '/om-os'
     | '/projekter'
+    | '/referencer'
     | '/ydelser'
     | '/ydelser/$slug'
   fileRoutesById: FileRoutesById
@@ -117,6 +129,7 @@ export interface RootRouteChildren {
   KvalitetssikringRoute: typeof KvalitetssikringRoute
   OmOsRoute: typeof OmOsRoute
   ProjekterRoute: typeof ProjekterRoute
+  ReferencerRoute: typeof ReferencerRoute
   YdelserRoute: typeof YdelserRouteWithChildren
 }
 
@@ -127,6 +140,13 @@ declare module '@tanstack/react-router' {
       path: '/ydelser'
       fullPath: '/ydelser'
       preLoaderRoute: typeof YdelserRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/referencer': {
+      id: '/referencer'
+      path: '/referencer'
+      fullPath: '/referencer'
+      preLoaderRoute: typeof ReferencerRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/projekter': {
@@ -191,6 +211,7 @@ const rootRouteChildren: RootRouteChildren = {
   KvalitetssikringRoute: KvalitetssikringRoute,
   OmOsRoute: OmOsRoute,
   ProjekterRoute: ProjekterRoute,
+  ReferencerRoute: ReferencerRoute,
   YdelserRoute: YdelserRouteWithChildren,
 }
 export const routeTree = rootRouteImport
