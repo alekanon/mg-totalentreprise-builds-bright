@@ -8,33 +8,26 @@ import { referencer, type Reference } from "@/data/referencer";
 export const Route = createFileRoute("/projekter")({
   head: () => ({
     meta: [
-      { title: "Referencer – MG Totalentreprise" },
+      { title: "Projekter – MG Totalentreprise" },
       {
         name: "description",
         content:
           "Se et udvalg af vores byggesager: Novo Nordisk, Himmelbyen, Hildis Have, Skolen på Strandboulevarden, Spektrum Hotel m.fl.",
       },
-      { property: "og:title", content: "Referencer – MG Totalentreprise" },
+      { property: "og:title", content: "Projekter – MG Totalentreprise" },
       {
         property: "og:description",
-        content: "Udvalgte tømrer- og malerprojekter.",
+        content: "Udvalgte tømrer-, maler- og facadeprojekter.",
       },
     ],
   }),
-  component: Referencer,
+  component: Projekter,
 });
 
-const filters = ["Alle", "Tømrer", "Maler"] as const;
-
-function Referencer() {
-  const [filter, setFilter] = useState<(typeof filters)[number]>("Alle");
+function Projekter() {
   const [active, setActive] = useState<Reference | null>(null);
   const [slide, setSlide] = useState(0);
 
-  const filtered =
-    filter === "Alle"
-      ? referencer
-      : referencer.filter((r: Reference) => r.trades.includes(filter));
 
   const openProject = (r: Reference) => {
     setActive(r);
@@ -53,31 +46,15 @@ function Referencer() {
   return (
     <>
       <PageHero
-        eyebrow="Referencer"
+        eyebrow="Projekter"
         title="Udvalgte byggesager"
         description="Et udsnit af de projekter vi har leveret som fag- eller underentreprenør for nogle af landets førende entreprenører."
       />
 
       <section className="bg-background py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-10 flex flex-wrap gap-2">
-            {filters.map((f) => (
-              <button
-                key={f}
-                onClick={() => setFilter(f)}
-                className={`rounded-sm border px-4 py-2 text-xs font-semibold uppercase tracking-wide transition-colors ${
-                  filter === f
-                    ? "border-accent bg-accent text-accent-foreground"
-                    : "border-border bg-background text-foreground hover:border-accent hover:text-accent"
-                }`}
-              >
-                {f}
-              </button>
-            ))}
-          </div>
-
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((r, i) => (
+            {referencer.map((r, i) => (
               <button
                 key={`${r.title}-${i}`}
                 onClick={() => openProject(r)}
@@ -93,16 +70,6 @@ function Referencer() {
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
-                  <div className="absolute left-4 top-4 flex gap-1.5">
-                    {r.trades.map((t) => (
-                      <span
-                        key={t}
-                        className="rounded-sm bg-background/90 px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-foreground backdrop-blur"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-center justify-between">
