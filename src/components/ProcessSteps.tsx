@@ -1,23 +1,17 @@
-import { Phone, FileText, HardHat, CheckCircle2 } from "lucide-react";
-
 const steps = [
   {
-    icon: Phone,
     title: "Kontakt",
     text: "Ring eller skriv – vi vender tilbage hurtigt og aftaler et besøg.",
   },
   {
-    icon: FileText,
     title: "Tilbud",
     text: "Vi gennemgår projektet og leverer et klart, detaljeret tilbud.",
   },
   {
-    icon: HardHat,
     title: "Opstart",
     text: "Fast hold, fast kontaktperson og daglig projektledelse fra dag ét.",
   },
   {
-    icon: CheckCircle2,
     title: "Aflevering",
     text: "Kvalitetssikring i Dalux, Ajour eller Byggeweb – mangelfri aflevering.",
   },
@@ -39,17 +33,11 @@ export function ProcessSteps() {
           </h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {steps.map((s, i) => (
-            <div
-              key={s.title}
-              className="relative rounded-sm border border-border bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
-            >
-              <div className="absolute right-6 top-6 text-5xl font-bold text-muted-foreground/40">
-                0{i + 1}
-              </div>
-              <s.icon className="h-8 w-8 text-accent" />
-              <h3 className="mt-6 text-lg font-bold text-foreground">{s.title}</h3>
+            <div key={s.title} className="border-t-2 border-accent pt-5">
+              <div className="text-sm font-bold text-accent">0{i + 1}</div>
+              <h3 className="mt-3 text-lg font-bold text-foreground">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
             </div>
           ))}

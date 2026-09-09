@@ -47,6 +47,8 @@
   --color-ring: var(--ring);
   --color-surface: var(--surface);
   --color-surface-dark: var(--surface-dark);
+  --color-eco: var(--eco);
+  --color-eco-foreground: var(--eco-foreground);
   --color-ring-offset-background: var(--background);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
@@ -88,6 +90,9 @@
   --ring: oklch(0.55 0.22 27);
   --surface: oklch(0.97 0 0);
   --surface-dark: oklch(0.13 0 0);
+  /* Sustainability accent: deep forest green */
+  --eco: oklch(0.28 0.06 152);
+  --eco-foreground: oklch(0.99 0 0);
   --gradient-hero: linear-gradient(180deg, oklch(0.13 0 0 / 0.1), oklch(0.13 0 0 / 0.75));
   --gradient-accent: linear-gradient(135deg, oklch(0.55 0.22 27), oklch(0.45 0.2 27));
   --shadow-elegant: 0 10px 40px -10px oklch(0.13 0 0 / 0.15);

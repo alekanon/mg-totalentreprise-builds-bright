@@ -3,11 +3,30 @@ import denmarkMap from "@/assets/denmark-map.png";
 const cityGroups = [
   {
     region: "Storkøbenhavn",
-    cities: ["København", "Frederiksberg", "Gentofte", "Gladsaxe", "Lyngby", "Ballerup", "Herlev", "Rødovre", "Hvidovre", "Tårnby"],
+    cities: [
+      "København",
+      "Frederiksberg",
+      "Gentofte",
+      "Gladsaxe",
+      "Lyngby",
+      "Ballerup",
+      "Herlev",
+      "Rødovre",
+      "Hvidovre",
+      "Tårnby",
+    ],
   },
   {
     region: "Nordsjælland",
-    cities: ["Hillerød", "Helsingør", "Fredensborg", "Hørsholm", "Allerød", "Frederikssund", "Farum"],
+    cities: [
+      "Hillerød",
+      "Helsingør",
+      "Fredensborg",
+      "Hørsholm",
+      "Allerød",
+      "Frederikssund",
+      "Farum",
+    ],
   },
   {
     region: "Vestsjælland",
@@ -55,26 +74,19 @@ export function CoverageMap() {
               Vi arbejder i hele Sjælland
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground lg:text-lg">
-              Med base i hovedstadsområdet løser vi fag­entrepriser over hele
-              Sjælland – fra Helsingør i nord til Vordingborg i syd.
+              Med base i hovedstadsområdet løser vi fag­entrepriser over hele Sjælland – fra
+              Helsingør i nord til Vordingborg i syd.
             </p>
 
-            <div className="mt-10 grid gap-6 sm:grid-cols-2">
+            <div className="mt-10 space-y-4 border-t border-border pt-6">
               {cityGroups.map((group) => (
-                <div key={group.region}>
-                  <h3 className="text-xs font-bold uppercase tracking-widest text-accent">
+                <div key={group.region} className="flex flex-col gap-1 sm:flex-row sm:gap-4">
+                  <h3 className="w-36 flex-none text-xs font-bold uppercase tracking-widest text-accent">
                     {group.region}
                   </h3>
-                  <ul className="mt-3 space-y-1.5">
-                    {group.cities.map((city) => (
-                      <li
-                        key={city}
-                        className="text-sm text-foreground/80"
-                      >
-                        {city}
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-sm leading-relaxed text-foreground/70">
+                    {group.cities.join(" · ")}
+                  </p>
                 </div>
               ))}
             </div>

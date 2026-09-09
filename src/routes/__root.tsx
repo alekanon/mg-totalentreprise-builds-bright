@@ -1,9 +1,10 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts, useRouterState } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { CoverageMap } from "@/components/CoverageMap";
+import { CookieConsent } from "@/components/CookieConsent";
+import ogImage from "@/assets/hero-novo-nordisk.jpg";
 
 function NotFoundComponent() {
   return (
@@ -32,7 +33,7 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "website" },
+      { title: "MG Totalentreprise – Tømrer, maler og facadeentreprise" },
       {
         name: "description",
         content:
@@ -42,8 +43,8 @@ export const Route = createRootRoute({
       { name: "robots", content: "index, follow" },
       { name: "theme-color", content: "#0a0a0a" },
       { name: "geo.region", content: "DK" },
-      { name: "geo.placename", content: "Storkøbenhavn" },
-      { property: "og:title", content: "website" },
+      { name: "geo.placename", content: "København" },
+      { property: "og:title", content: "MG Totalentreprise" },
       {
         property: "og:description",
         content: "Tømrer, maler og facadeentreprise i hovedstadsområdet og hele Sjælland.",
@@ -52,15 +53,14 @@ export const Route = createRootRoute({
       { property: "og:locale", content: "da_DK" },
       { property: "og:site_name", content: "MG Totalentreprise" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "website" },
-      { name: "description", content: "MG Totalentreprise offers premium Scandinavian construction services, specializing in carpentry, tiling, and painting." },
-      { property: "og:description", content: "MG Totalentreprise offers premium Scandinavian construction services, specializing in carpentry, tiling, and painting." },
-      { name: "twitter:description", content: "MG Totalentreprise offers premium Scandinavian construction services, specializing in carpentry, tiling, and painting." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e0dc5802-bbb6-4973-9fab-96f9f6e12889/id-preview-fa06e8d9--17b157c3-3935-4bde-b8ac-596da0d1b8ef.lovable.app-1778952163259.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e0dc5802-bbb6-4973-9fab-96f9f6e12889/id-preview-fa06e8d9--17b157c3-3935-4bde-b8ac-596da0d1b8ef.lovable.app-1778952163259.png" },
+      { name: "twitter:title", content: "MG Totalentreprise" },
+      { property: "og:image", content: ogImage },
+      { name: "twitter:image", content: ogImage },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
       {
@@ -83,9 +83,14 @@ export const Route = createRootRoute({
           ],
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Emdrupvej 108",
+            postalCode: "2400",
+            addressLocality: "København NV",
             addressRegion: "Storkøbenhavn",
             addressCountry: "DK",
           },
+          telephone: "+4570702477",
+          vatID: "DK33041365",
           knowsAbout: ["Tømrerarbejde", "Malerarbejde", "Facadearbejde", "Snedkerarbejde"],
         }),
       },
@@ -111,16 +116,14 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const isHome = pathname === "/";
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      <main className={`flex-1 ${isHome ? "" : "pt-[72px] sm:pt-[80px]"}`}>
+      <main className="flex-1">
         <Outlet />
       </main>
-      <CoverageMap />
       <Footer />
+      <CookieConsent />
     </div>
   );
 }

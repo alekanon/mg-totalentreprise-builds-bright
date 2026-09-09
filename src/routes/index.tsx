@@ -1,12 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, HardHat, Building2, UserCheck, ClipboardCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { AboutTeaser } from "@/components/AboutTeaser";
-import { PartnersStrip } from "@/components/PartnersStrip";
 import { ProcessSteps } from "@/components/ProcessSteps";
-import { Testimonial } from "@/components/Testimonial";
+import { ProofPanel } from "@/components/ProofPanel";
+import { CoverageMap } from "@/components/CoverageMap";
 import { ydelser } from "@/data/ydelser";
-import craftsman from "@/assets/craftsman-working.jpg";
+import teamPhoto from "@/assets/om-os-team.jpg";
+import kitchenImg from "@/assets/ydelser/maler.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -15,7 +16,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Ca. 30 egne håndværkere inden for tømrer, flisemurer og maler. Fagentrepriser i hele hovedstadsområdet.",
+          "Ca. 30 egne håndværkere inden for tømrer, flisemurer og maler. Fagentrepriser for store bygherrer og private boligejere i hele hovedstadsområdet.",
       },
       { property: "og:title", content: "MG Totalentreprise" },
       {
@@ -28,12 +29,11 @@ export const Route = createFileRoute("/")({
 });
 
 const stats = [
-  { value: "Ca. 30", label: "Egne håndværkere", icon: HardHat },
-  { value: "200+", label: "Renoverede lejligheder", icon: Building2 },
-  { value: "1", label: "Fast kontaktperson pr. sag", icon: UserCheck },
-  { value: "100%", label: "Daglig projektledelse", icon: ClipboardCheck },
+  { value: "Ca. 30", label: "Egne håndværkere" },
+  { value: "200+", label: "Renoverede lejligheder" },
+  { value: "1", label: "Fast kontaktperson pr. sag" },
+  { value: "100%", label: "Daglig projektledelse" },
 ];
-
 
 function Index() {
   return (
@@ -42,64 +42,18 @@ function Index() {
 
       {/* Stats */}
       <section className="border-b border-border bg-background">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <div className="mx-auto grid max-w-5xl grid-cols-2 gap-y-10 lg:grid-cols-4">
-            {stats.map((s, i) => (
-              <div
-                key={s.label}
-                className={`flex flex-col items-center px-4 text-center ${
-                  i % 2 === 1 ? "border-l border-border" : ""
-                } ${i > 0 ? "lg:border-l lg:border-border" : "lg:border-l-0"}`}
-              >
-                <s.icon className="h-6 w-6 text-accent" />
-                <div className="mt-3 text-4xl font-bold text-foreground lg:text-5xl">{s.value}</div>
-                <div className="mt-1 text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                  {s.label}
-                </div>
+        <div className="mx-auto grid max-w-7xl grid-cols-2 divide-y divide-border lg:grid-cols-4 lg:divide-x lg:divide-y-0">
+          {stats.map((s) => (
+            <div key={s.label} className="px-6 py-12 text-center sm:px-10 lg:py-16">
+              <span className="mx-auto mb-3 block h-px w-8 bg-accent" />
+              <div className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+                {s.value}
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Intro / USPs */}
-      <section className="bg-surface py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <div className="mb-4 flex items-center gap-3">
-                <span className="h-px w-10 bg-accent" />
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                  Om MG Totalentreprise
-                </span>
+              <div className="mt-2 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
+                {s.label}
               </div>
-              <h2 className="text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl">
-                Erfarne håndværkere<br />med fokus på det færdige resultat
-              </h2>
-              <p className="mt-6 text-base leading-relaxed text-muted-foreground lg:text-lg">
-                MG Totalentreprise ApS råder over ca. 30 egne håndværkere inden for tømrer,
-                flisemurer og maler. Vi løser fagentrepriser i hele hovedstadsområdet
-                til både små og store byggeprojekter.
-              </p>
-              <Link
-                to="/om-os"
-                className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent hover:gap-3 transition-all"
-              >
-                Læs mere om os <ArrowRight className="h-4 w-4" />
-              </Link>
             </div>
-
-            <div className="relative aspect-[16/11] w-full overflow-hidden rounded-sm bg-surface">
-              <img
-                src={craftsman}
-                alt="Håndværker fra MG Totalentreprise i arbejde"
-                loading="lazy"
-                width={1600}
-                height={1100}
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
@@ -126,84 +80,115 @@ function Index() {
             </Link>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {ydelser.map((y, i) => {
-              const featured = i === 0;
-              return (
-                <Link
-                  key={y.slug}
-                  to="/ydelser/$slug"
-                  params={{ slug: y.slug }}
-                  className={`group flex flex-col justify-between rounded-sm border p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)] ${
-                    featured
-                      ? "border-accent bg-accent md:row-span-1"
-                      : "border-border bg-background hover:border-accent"
-                  }`}
-                >
-                  <div>
-                    <div
-                      className={`text-xs font-bold uppercase tracking-widest ${
-                        featured ? "text-accent-foreground/80" : "text-accent"
-                      }`}
-                    >
-                      {String(i + 1).padStart(2, "0")}
-                    </div>
-                    <h3
-                      className={`mt-3 text-xl font-bold ${
-                        featured ? "text-accent-foreground" : "text-foreground"
-                      }`}
-                    >
-                      {y.title}
-                    </h3>
-                    <p
-                      className={`mt-3 text-sm leading-relaxed ${
-                        featured ? "text-accent-foreground/85" : "text-muted-foreground"
-                      }`}
-                    >
-                      {y.short}
-                    </p>
-                  </div>
-                  <div
-                    className={`mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide transition-colors ${
-                      featured
-                        ? "text-accent-foreground"
-                        : "text-foreground group-hover:text-accent"
-                    }`}
-                  >
+          <div className="grid gap-6 md:grid-cols-3">
+            {ydelser.slice(0, 3).map((y) => (
+              <Link
+                key={y.slug}
+                to="/ydelser/$slug"
+                params={{ slug: y.slug }}
+                className="group relative flex aspect-[3/4] flex-col justify-end overflow-hidden rounded-sm"
+              >
+                <img
+                  src={y.image}
+                  alt={y.title}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                <div className="relative p-6">
+                  <h3 className="text-xl font-bold text-background">{y.title}</h3>
+                  <div className="mt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-background/80 group-hover:text-background">
                     Læs mere <ArrowRight className="h-4 w-4" />
                   </div>
-                </Link>
-              );
-            })}
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      <PartnersStrip />
+      {/* Sustainability */}
+      <section data-header-theme="dark" className="grid lg:grid-cols-2">
+        <div className="order-2 flex flex-col justify-center bg-eco px-4 py-16 text-eco-foreground sm:px-6 lg:order-1 lg:px-16 lg:py-24">
+          <div className="mx-auto w-full max-w-lg lg:mx-0">
+            <div className="mb-4 flex items-center gap-3">
+              <span className="h-px w-10 bg-eco-foreground/60" />
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-eco-foreground/80">
+                Bæredygtighed
+              </span>
+            </div>
+            <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
+              Vi bygger med fokus på fremtiden
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-eco-foreground/90 lg:text-lg">
+              MG Totalentreprise arbejder løbende på at gøre vores byggeprocesser mere bæredygtige –
+              fra ansvarlig materialevalg og mindre spild til energieffektive løsninger, der holder
+              i mange år fremover.
+            </p>
+            <Link
+              to="/kontakt"
+              className="group mt-10 inline-flex items-center gap-6 rounded-full bg-eco-foreground py-2 pl-8 pr-2 text-sm font-semibold uppercase tracking-wide text-eco transition-colors hover:bg-eco-foreground/90"
+            >
+              Kontakt os om bæredygtige løsninger
+              <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-eco text-eco-foreground transition-transform group-hover:translate-x-1">
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+          </div>
+        </div>
+        <div className="relative order-1 min-h-[320px] lg:order-2 lg:min-h-0">
+          <img
+            src={teamPhoto}
+            alt="Håndværkere fra MG Totalentreprise på byggeplads"
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
+      </section>
+
+      {/* Private clients */}
+      <section className="grid lg:grid-cols-2">
+        <div className="order-1 flex flex-col justify-center bg-background px-4 py-16 sm:px-6 lg:px-16 lg:py-24">
+          <div className="mx-auto w-full max-w-lg lg:mx-0">
+            <div className="mb-4 flex items-center gap-3">
+              <span className="h-px w-10 bg-accent" />
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+                Private kunder
+              </span>
+            </div>
+            <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
+              Vi hjælper også private boligejere
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground lg:text-lg">
+              Ud over store fag­entrepriser for professionelle bygherrer løser vi også opgaver for
+              private boligejere – fra renovering og tilbygning til nyt køkken eller bad. Samme
+              faste hold, samme høje kvalitet, uanset om opgaven er stor eller lille.
+            </p>
+            <Link
+              to="/kontakt"
+              className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent hover:gap-3 transition-all"
+            >
+              Kontakt os om dit projekt <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+        <div className="relative order-2 min-h-[320px] lg:min-h-0">
+          <img
+            src={kitchenImg}
+            alt="Nyt køkken – eksempel på privat renoveringsopgave"
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
+      </section>
 
       <AboutTeaser />
 
       <ProcessSteps />
 
-      <Testimonial />
+      <ProofPanel />
 
-      {/* CTA */}
-      <section className="relative overflow-hidden bg-surface-dark py-20 lg:py-28">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-background sm:text-4xl lg:text-5xl">
-            Skal vi løse din næste fag­entreprise?
-          </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-base text-background/75 lg:text-lg">
-            Kontakt os for en uforpligtende snak om jeres projekt – store som små.
-          </p>
-          <Link
-            to="/kontakt"
-            className="mt-10 inline-flex items-center gap-2 rounded-sm bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-colors hover:bg-accent/90"
-          >
-            Få et tilbud <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-      </section>
+      <CoverageMap />
     </>
   );
 }

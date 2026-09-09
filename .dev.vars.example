@@ -1,0 +1,10 @@
+## Copy this file to `.dev.vars` (gitignored) for local development.
+## For production, set these as Cloudflare secrets instead:
+##   wrangler secret put RESEND_API_KEY
+##   wrangler secret put CONTACT_EMAIL_TO
+
+# Resend API key — https://resend.com/api-keys
+RESEND_API_KEY=
+
+# Inbox that should receive contact-form submissions
+CONTACT_EMAIL_TO=

@@ -12,10 +12,13 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as YdelserRouteImport } from './routes/ydelser'
 import { Route as ReferencerRouteImport } from './routes/referencer'
 import { Route as ProjekterRouteImport } from './routes/projekter'
+import { Route as PrivatlivspolitikRouteImport } from './routes/privatlivspolitik'
 import { Route as OmOsRouteImport } from './routes/om-os'
 import { Route as KvalitetssikringRouteImport } from './routes/kvalitetssikring'
 import { Route as KontaktRouteImport } from './routes/kontakt'
+import { Route as CookiepolitikRouteImport } from './routes/cookiepolitik'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as YdelserIndexRouteImport } from './routes/ydelser.index'
 import { Route as YdelserSlugRouteImport } from './routes/ydelser.$slug'
 
 const YdelserRoute = YdelserRouteImport.update({
@@ -33,6 +36,11 @@ const ProjekterRoute = ProjekterRouteImport.update({
   path: '/projekter',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivatlivspolitikRoute = PrivatlivspolitikRouteImport.update({
+  id: '/privatlivspolitik',
+  path: '/privatlivspolitik',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OmOsRoute = OmOsRouteImport.update({
   id: '/om-os',
   path: '/om-os',
@@ -48,10 +56,20 @@ const KontaktRoute = KontaktRouteImport.update({
   path: '/kontakt',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CookiepolitikRoute = CookiepolitikRouteImport.update({
+  id: '/cookiepolitik',
+  path: '/cookiepolitik',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const YdelserIndexRoute = YdelserIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => YdelserRoute,
 } as any)
 const YdelserSlugRoute = YdelserSlugRouteImport.update({
   id: '/$slug',
@@ -61,73 +79,91 @@ const YdelserSlugRoute = YdelserSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/cookiepolitik': typeof CookiepolitikRoute
   '/kontakt': typeof KontaktRoute
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
+  '/privatlivspolitik': typeof PrivatlivspolitikRoute
   '/projekter': typeof ProjekterRoute
   '/referencer': typeof ReferencerRoute
   '/ydelser': typeof YdelserRouteWithChildren
   '/ydelser/$slug': typeof YdelserSlugRoute
+  '/ydelser/': typeof YdelserIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/cookiepolitik': typeof CookiepolitikRoute
   '/kontakt': typeof KontaktRoute
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
+  '/privatlivspolitik': typeof PrivatlivspolitikRoute
   '/projekter': typeof ProjekterRoute
   '/referencer': typeof ReferencerRoute
-  '/ydelser': typeof YdelserRouteWithChildren
   '/ydelser/$slug': typeof YdelserSlugRoute
+  '/ydelser': typeof YdelserIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/cookiepolitik': typeof CookiepolitikRoute
   '/kontakt': typeof KontaktRoute
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
+  '/privatlivspolitik': typeof PrivatlivspolitikRoute
   '/projekter': typeof ProjekterRoute
   '/referencer': typeof ReferencerRoute
   '/ydelser': typeof YdelserRouteWithChildren
   '/ydelser/$slug': typeof YdelserSlugRoute
+  '/ydelser/': typeof YdelserIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/cookiepolitik'
     | '/kontakt'
     | '/kvalitetssikring'
     | '/om-os'
+    | '/privatlivspolitik'
     | '/projekter'
     | '/referencer'
     | '/ydelser'
     | '/ydelser/$slug'
+    | '/ydelser/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/cookiepolitik'
     | '/kontakt'
     | '/kvalitetssikring'
     | '/om-os'
+    | '/privatlivspolitik'
     | '/projekter'
     | '/referencer'
-    | '/ydelser'
     | '/ydelser/$slug'
+    | '/ydelser'
   id:
     | '__root__'
     | '/'
+    | '/cookiepolitik'
     | '/kontakt'
     | '/kvalitetssikring'
     | '/om-os'
+    | '/privatlivspolitik'
     | '/projekter'
     | '/referencer'
     | '/ydelser'
     | '/ydelser/$slug'
+    | '/ydelser/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CookiepolitikRoute: typeof CookiepolitikRoute
   KontaktRoute: typeof KontaktRoute
   KvalitetssikringRoute: typeof KvalitetssikringRoute
   OmOsRoute: typeof OmOsRoute
+  PrivatlivspolitikRoute: typeof PrivatlivspolitikRoute
   ProjekterRoute: typeof ProjekterRoute
   ReferencerRoute: typeof ReferencerRoute
   YdelserRoute: typeof YdelserRouteWithChildren
@@ -156,6 +192,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjekterRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privatlivspolitik': {
+      id: '/privatlivspolitik'
+      path: '/privatlivspolitik'
+      fullPath: '/privatlivspolitik'
+      preLoaderRoute: typeof PrivatlivspolitikRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/om-os': {
       id: '/om-os'
       path: '/om-os'
@@ -177,12 +220,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KontaktRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cookiepolitik': {
+      id: '/cookiepolitik'
+      path: '/cookiepolitik'
+      fullPath: '/cookiepolitik'
+      preLoaderRoute: typeof CookiepolitikRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/ydelser/': {
+      id: '/ydelser/'
+      path: '/'
+      fullPath: '/ydelser/'
+      preLoaderRoute: typeof YdelserIndexRouteImport
+      parentRoute: typeof YdelserRoute
     }
     '/ydelser/$slug': {
       id: '/ydelser/$slug'
@@ -196,10 +253,12 @@ declare module '@tanstack/react-router' {
 
 interface YdelserRouteChildren {
   YdelserSlugRoute: typeof YdelserSlugRoute
+  YdelserIndexRoute: typeof YdelserIndexRoute
 }
 
 const YdelserRouteChildren: YdelserRouteChildren = {
   YdelserSlugRoute: YdelserSlugRoute,
+  YdelserIndexRoute: YdelserIndexRoute,
 }
 
 const YdelserRouteWithChildren =
@@ -207,9 +266,11 @@ const YdelserRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CookiepolitikRoute: CookiepolitikRoute,
   KontaktRoute: KontaktRoute,
   KvalitetssikringRoute: KvalitetssikringRoute,
   OmOsRoute: OmOsRoute,
+  PrivatlivspolitikRoute: PrivatlivspolitikRoute,
   ProjekterRoute: ProjekterRoute,
   ReferencerRoute: ReferencerRoute,
   YdelserRoute: YdelserRouteWithChildren,
@@ -217,3 +278,12 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { createStart } from '@tanstack/react-start'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+  }
+}

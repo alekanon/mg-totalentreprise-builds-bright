@@ -9,16 +9,14 @@ interface PageHeroProps {
 
 export function PageHero({ eyebrow, title, description, image = pageHero }: PageHeroProps) {
   return (
-    <section className="relative h-[36vh] min-h-[260px] w-full overflow-hidden bg-surface-dark">
-      <img
-        src={image}
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover opacity-50"
-      />
-      <div
-        className="absolute inset-0"
-        style={{ background: "var(--gradient-hero)" }}
-      />
+    <section
+      data-header-theme="dark"
+      className="relative h-[36vh] min-h-[260px] w-full overflow-hidden bg-surface-dark"
+    >
+      <img src={image} alt="" className="absolute inset-0 h-full w-full object-cover opacity-50" />
+      <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
+      {/* Guarantees the header logo/nav stay legible regardless of how bright the photo is. */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/45 to-transparent" />
       <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-end px-4 pb-12 sm:px-6 lg:px-8 lg:pb-16">
         <div className="max-w-3xl animate-fade-in-up">
           {eyebrow && (

@@ -48,7 +48,13 @@ export function HeroCarousel() {
   }, [emblaApi]);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-surface-dark -mt-px">
+    <section
+      data-header-theme="dark"
+      className="relative h-dvh w-full overflow-hidden bg-surface-dark -mt-px"
+    >
+      {/* Guarantees the header logo/nav stay legible regardless of how bright the current slide's photo is. */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-36 bg-gradient-to-b from-black/55 to-transparent" />
+
       <div ref={emblaRef} className="h-full overflow-hidden">
         <div className="flex h-full">
           {slides.map((slide, i) => (

@@ -46,7 +46,12 @@ function YdelseDetail() {
 
   return (
     <>
-      <PageHero eyebrow="Ydelse" title={ydelse.title} description={ydelse.short} image={ydelse.image} />
+      <PageHero
+        eyebrow="Ydelse"
+        title={ydelse.title}
+        description={ydelse.short}
+        image={ydelse.image}
+      />
 
       <section className="bg-background py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -131,13 +136,16 @@ function YdelseDetail() {
           )}
 
           <div className="mt-20 flex items-center justify-between border-t border-border pt-8">
-            <span className="text-xs uppercase tracking-wider text-muted-foreground">Næste ydelse</span>
+            <span className="text-xs uppercase tracking-wider text-muted-foreground">
+              Næste ydelse
+            </span>
             <Link
               to="/ydelser/$slug"
               params={{ slug: next.slug }}
               className="group inline-flex items-center gap-2 text-base font-semibold text-foreground hover:text-accent"
             >
-              {next.title} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              {next.title}{" "}
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
         </div>

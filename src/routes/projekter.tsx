@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Building2, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { referencer, type Reference } from "@/data/referencer";
@@ -27,7 +27,6 @@ export const Route = createFileRoute("/projekter")({
 function Projekter() {
   const [active, setActive] = useState<Reference | null>(null);
   const [slide, setSlide] = useState(0);
-
 
   const openProject = (r: Reference) => {
     setActive(r);
@@ -58,35 +57,28 @@ function Projekter() {
               <button
                 key={`${r.title}-${i}`}
                 onClick={() => openProject(r)}
-                className="group flex flex-col overflow-hidden rounded-sm border border-border bg-background text-left transition-all hover:-translate-y-1 hover:border-accent hover:shadow-[var(--shadow-elegant)]"
+                className="group relative flex aspect-[3/4] flex-col justify-end overflow-hidden rounded-sm text-left"
               >
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
-                  <img
-                    src={r.cover}
-                    alt={r.title}
-                    loading="lazy"
-                    width={1280}
-                    height={896}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <div className="flex items-center justify-between">
-                    <Building2 className="h-5 w-5 text-accent" />
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-                      Læs mere →
-                    </span>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold leading-tight text-foreground">
-                    {r.title}
-                  </h3>
-                  <div className="mt-1 text-xs font-semibold uppercase tracking-wide text-accent">
+                <img
+                  src={r.cover}
+                  alt={r.title}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/15 to-transparent" />
+                <div className="relative p-6">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-accent">
                     {r.client}
                   </div>
-                  <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
+                  <h3 className="mt-2 text-lg font-bold leading-tight text-background">
+                    {r.title}
+                  </h3>
+                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-background/80">
                     {r.scope}
                   </p>
+                  <div className="mt-4 text-xs font-semibold uppercase tracking-wide text-background/80 group-hover:text-background">
+                    Læs mere →
+                  </div>
                 </div>
               </button>
             ))}
