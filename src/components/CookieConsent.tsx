@@ -41,7 +41,12 @@ export function CookieConsent() {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="sm:rounded-sm">
+      <DialogContent
+        className="sm:rounded-sm"
+        hideClose
+        onEscapeKeyDown={(e) => e.preventDefault()}
+        onInteractOutside={(e) => e.preventDefault()}
+      >
         <DialogHeader>
           <img src={logoShort} alt="MG Totalentreprise" className="h-8 w-auto self-start" />
           <DialogTitle>Vi bruger cookies</DialogTitle>
