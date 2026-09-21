@@ -18,7 +18,7 @@ function NotFoundComponent() {
         <div className="mt-6">
           <Link
             to="/"
-            className="inline-flex items-center justify-center rounded-sm bg-accent px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-colors hover:bg-accent/90"
+            className="inline-flex items-center justify-center bg-accent px-5 py-2.5 text-sm font-semibold uppercase text-accent-foreground transition-colors hover:bg-accent/90"
           >
             Til forsiden
           </Link>
@@ -37,7 +37,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "MG Totalentreprise ApS – ca. 30 egne håndværkere inden for tømrer, maler og facadearbejde. Fagentrepriser i hele Sjælland og hovedstadsområdet.",
+          "MG Totalentreprise ApS – erfarne håndværkere inden for tømrer, maler og facadearbejde. Fagentrepriser i hele Sjælland og hovedstadsområdet.",
       },
       { name: "author", content: "MG Totalentreprise" },
       { name: "robots", content: "index, follow" },
@@ -65,7 +65,7 @@ export const Route = createRootRoute({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap",
       },
     ],
     scripts: [
@@ -76,7 +76,7 @@ export const Route = createRootRoute({
           "@type": "GeneralContractor",
           name: "MG Totalentreprise ApS",
           description:
-            "Fagentreprenør med ca. 30 egne håndværkere inden for tømrer, maler og facadearbejde.",
+            "Fagentreprenør med erfarne håndværkere inden for tømrer, maler og facadearbejde.",
           areaServed: [
             { "@type": "AdministrativeArea", name: "Sjælland" },
             { "@type": "City", name: "København" },

@@ -16,6 +16,7 @@ import { Route as PrivatlivspolitikRouteImport } from './routes/privatlivspoliti
 import { Route as OmOsRouteImport } from './routes/om-os'
 import { Route as KvalitetssikringRouteImport } from './routes/kvalitetssikring'
 import { Route as KontaktRouteImport } from './routes/kontakt'
+import { Route as EjendomsudviklingRouteImport } from './routes/ejendomsudvikling'
 import { Route as CookiepolitikRouteImport } from './routes/cookiepolitik'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as YdelserIndexRouteImport } from './routes/ydelser.index'
@@ -56,6 +57,11 @@ const KontaktRoute = KontaktRouteImport.update({
   path: '/kontakt',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EjendomsudviklingRoute = EjendomsudviklingRouteImport.update({
+  id: '/ejendomsudvikling',
+  path: '/ejendomsudvikling',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CookiepolitikRoute = CookiepolitikRouteImport.update({
   id: '/cookiepolitik',
   path: '/cookiepolitik',
@@ -80,6 +86,7 @@ const YdelserSlugRoute = YdelserSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cookiepolitik': typeof CookiepolitikRoute
+  '/ejendomsudvikling': typeof EjendomsudviklingRoute
   '/kontakt': typeof KontaktRoute
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
@@ -93,6 +100,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cookiepolitik': typeof CookiepolitikRoute
+  '/ejendomsudvikling': typeof EjendomsudviklingRoute
   '/kontakt': typeof KontaktRoute
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
@@ -106,6 +114,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cookiepolitik': typeof CookiepolitikRoute
+  '/ejendomsudvikling': typeof EjendomsudviklingRoute
   '/kontakt': typeof KontaktRoute
   '/kvalitetssikring': typeof KvalitetssikringRoute
   '/om-os': typeof OmOsRoute
@@ -121,6 +130,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/cookiepolitik'
+    | '/ejendomsudvikling'
     | '/kontakt'
     | '/kvalitetssikring'
     | '/om-os'
@@ -134,6 +144,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/cookiepolitik'
+    | '/ejendomsudvikling'
     | '/kontakt'
     | '/kvalitetssikring'
     | '/om-os'
@@ -146,6 +157,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/cookiepolitik'
+    | '/ejendomsudvikling'
     | '/kontakt'
     | '/kvalitetssikring'
     | '/om-os'
@@ -160,6 +172,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CookiepolitikRoute: typeof CookiepolitikRoute
+  EjendomsudviklingRoute: typeof EjendomsudviklingRoute
   KontaktRoute: typeof KontaktRoute
   KvalitetssikringRoute: typeof KvalitetssikringRoute
   OmOsRoute: typeof OmOsRoute
@@ -220,6 +233,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KontaktRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ejendomsudvikling': {
+      id: '/ejendomsudvikling'
+      path: '/ejendomsudvikling'
+      fullPath: '/ejendomsudvikling'
+      preLoaderRoute: typeof EjendomsudviklingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cookiepolitik': {
       id: '/cookiepolitik'
       path: '/cookiepolitik'
@@ -267,6 +287,7 @@ const YdelserRouteWithChildren =
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CookiepolitikRoute: CookiepolitikRoute,
+  EjendomsudviklingRoute: EjendomsudviklingRoute,
   KontaktRoute: KontaktRoute,
   KvalitetssikringRoute: KvalitetssikringRoute,
   OmOsRoute: OmOsRoute,

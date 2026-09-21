@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Send } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
-import { sendContactMessage } from "@/lib/contact";
+
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xgavaayv";
 
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
@@ -28,31 +29,20 @@ export const Route = createFileRoute("/kontakt")({
 function Kontakt() {
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    setSubmitting(true);
-    try {
-      await sendContactMessage({
-        data: {
-          name: String(formData.get("name") ?? ""),
-          company: String(formData.get("company") ?? "") || undefined,
-          email: String(formData.get("email") ?? ""),
-          phone: String(formData.get("phone") ?? "") || undefined,
-          subject: String(formData.get("subject") ?? "") || undefined,
-          message: String(formData.get("message") ?? ""),
-        },
-      });
+  // Formspree blocks AJAX (fetch) submissions on forms with reCAPTCHA
+  // enabled unless you wire up their reCAPTCHA widget with a site key. Since
+  // we want reCAPTCHA's spam protection, the form posts to Formspree as a
+  // plain browser submission instead, and Formspree redirects back here
+  // (via _next) once it's done so we can show the usual success toast.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("sent") === "1") {
       toast.success("Tak for din henvendelse – vi vender tilbage hurtigst muligt.");
-      form.reset();
-    } catch (error) {
-      toast.error("Der gik noget galt. Ring venligst til os på 70 70 24 77.");
-    } finally {
-      setSubmitting(false);
+      params.delete("sent");
+      const query = params.toString();
+      window.history.replaceState(null, "", `/kontakt${query ? `?${query}` : ""}`);
     }
-  };
+  }, []);
 
   return (
     <>
@@ -61,6 +51,8 @@ function Kontakt() {
         eyebrow="Kontakt"
         title="Lad os tale om dit projekt"
         description="Skriv eller ring til os – vi vender hurtigt tilbage med svar på spørgsmål eller et uforpligtende tilbud."
+        size="lg"
+        parallax
       />
 
       <section className="bg-background py-20 lg:py-28">
@@ -75,9 +67,7 @@ function Kontakt() {
 
               <dl className="mt-10 divide-y divide-border border-y border-border">
                 <div className="grid grid-cols-[6rem_1fr] gap-4 py-4 sm:grid-cols-[8rem_1fr]">
-                  <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Adresse
-                  </dt>
+                  <dt className="text-xs font-semibold uppercase text-muted-foreground">Adresse</dt>
                   <dd className="text-sm text-foreground">
                     MG Totalentreprise ApS
                     <br />
@@ -85,9 +75,7 @@ function Kontakt() {
                   </dd>
                 </div>
                 <div className="grid grid-cols-[6rem_1fr] gap-4 py-4 sm:grid-cols-[8rem_1fr]">
-                  <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Telefon
-                  </dt>
+                  <dt className="text-xs font-semibold uppercase text-muted-foreground">Telefon</dt>
                   <dd className="text-sm text-foreground">
                     <a href="tel:70702477" className="hover:text-accent">
                       70 70 24 77
@@ -95,15 +83,11 @@ function Kontakt() {
                   </dd>
                 </div>
                 <div className="grid grid-cols-[6rem_1fr] gap-4 py-4 sm:grid-cols-[8rem_1fr]">
-                  <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Email
-                  </dt>
+                  <dt className="text-xs font-semibold uppercase text-muted-foreground">Email</dt>
                   <dd className="text-sm text-foreground">Brug formularen →</dd>
                 </div>
                 <div className="grid grid-cols-[6rem_1fr] gap-4 py-4 sm:grid-cols-[8rem_1fr]">
-                  <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    CVR
-                  </dt>
+                  <dt className="text-xs font-semibold uppercase text-muted-foreground">CVR</dt>
                   <dd className="text-sm text-foreground">33041365</dd>
                 </div>
               </dl>
@@ -111,9 +95,20 @@ function Kontakt() {
 
             <div className="lg:col-span-7">
               <form
-                onSubmit={handleSubmit}
+                action={FORMSPREE_ENDPOINT}
+                method="POST"
+                onSubmit={() => setSubmitting(true)}
                 className="rounded-sm border border-border bg-background p-8 lg:p-10"
               >
+                <input
+                  type="hidden"
+                  name="_next"
+                  value={
+                    typeof window !== "undefined"
+                      ? `${window.location.origin}/kontakt?sent=1`
+                      : "/kontakt?sent=1"
+                  }
+                />
                 <div className="grid gap-5 sm:grid-cols-2">
                   <Field label="Navn" name="name" required />
                   <Field label="Virksomhed" name="company" />
@@ -121,10 +116,10 @@ function Kontakt() {
                   <Field label="Telefon" name="phone" type="tel" />
                 </div>
                 <div className="mt-5">
-                  <Field label="Emne" name="subject" />
+                  <Field label="Emne" name="_subject" />
                 </div>
                 <div className="mt-5">
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-foreground">
+                  <label className="block text-xs font-semibold uppercase text-foreground">
                     Besked
                   </label>
                   <textarea
@@ -153,8 +148,8 @@ function Kontakt() {
 
                 <button
                   type="submit"
-                  disabled={submitting}
-                  className="mt-6 inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-colors hover:bg-accent/90 disabled:opacity-60"
+                  aria-disabled={submitting}
+                  className="mt-6 inline-flex items-center gap-2 bg-accent px-6 py-3 text-sm font-semibold uppercase text-accent-foreground transition-colors hover:bg-accent/90 aria-disabled:opacity-60"
                 >
                   {submitting ? "Sender..." : "Send besked"} <Send className="h-4 w-4" />
                 </button>
@@ -180,7 +175,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-xs font-semibold uppercase tracking-wider text-foreground">
+      <label className="block text-xs font-semibold uppercase text-foreground">
         {label} {required && <span className="text-accent">*</span>}
       </label>
       <input

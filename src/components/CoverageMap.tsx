@@ -54,11 +54,6 @@ export function CoverageMap() {
                 loading="lazy"
                 className="h-auto w-full opacity-80"
               />
-              {/* Pulsing glow overlay on Sjælland / København */}
-              <div className="pointer-events-none absolute left-[76%] top-[60%] h-20 w-20 -translate-x-1/2 -translate-y-1/2">
-                <span className="absolute inset-0 animate-ping rounded-full bg-accent/40" />
-                <span className="absolute inset-5 rounded-full bg-accent shadow-[0_0_30px_8px_oklch(0.55_0.22_27_/_0.6)]" />
-              </div>
             </div>
           </div>
 
@@ -66,11 +61,9 @@ export function CoverageMap() {
           <div>
             <div className="mb-4 flex items-center gap-3">
               <span className="h-px w-10 bg-accent" />
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                Dækningsområde
-              </span>
+              <span className="text-xs font-semibold uppercase text-accent">Dækningsområde</span>
             </div>
-            <h2 className="text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl">
+            <h2 className="text-5xl text-foreground sm:text-6xl lg:text-7xl">
               Vi arbejder i hele Sjælland
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground lg:text-lg">
@@ -81,7 +74,7 @@ export function CoverageMap() {
             <div className="mt-10 space-y-4 border-t border-border pt-6">
               {cityGroups.map((group) => (
                 <div key={group.region} className="flex flex-col gap-1 sm:flex-row sm:gap-4">
-                  <h3 className="w-36 flex-none text-xs font-bold uppercase tracking-widest text-accent">
+                  <h3 className="w-36 flex-none text-xs font-bold uppercase text-accent">
                     {group.region}
                   </h3>
                   <p className="text-sm leading-relaxed text-foreground/70">

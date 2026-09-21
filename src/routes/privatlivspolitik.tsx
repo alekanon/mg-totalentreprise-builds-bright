@@ -23,7 +23,7 @@ function Privatlivspolitik() {
       <section className="bg-background py-16 lg:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="space-y-10 text-sm leading-relaxed text-muted-foreground lg:text-base">
-            <p className="text-xs uppercase tracking-wider text-muted-foreground/70">
+            <p className="text-xs uppercase text-muted-foreground/70">
               Sidst opdateret: 8. september 2026
             </p>
 

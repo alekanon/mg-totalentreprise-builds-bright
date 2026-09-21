@@ -24,11 +24,9 @@ export function ProcessSteps() {
         <div className="mb-12 max-w-2xl">
           <div className="mb-4 flex items-center gap-3">
             <span className="h-px w-10 bg-accent" />
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-              Sådan arbejder vi
-            </span>
+            <span className="text-xs font-semibold uppercase text-accent">Sådan arbejder vi</span>
           </div>
-          <h2 className="text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl">
+          <h2 className="text-5xl text-foreground sm:text-6xl lg:text-7xl">
             Fra første samtale til færdig aflevering
           </h2>
         </div>

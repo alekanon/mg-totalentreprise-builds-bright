@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { Linkedin } from "lucide-react";
 import logo from "@/assets/mg-logo.png";
 import craftsman from "@/assets/craftsman-working.jpg";
 import { openCookieSettings } from "@/lib/cookieConsent";
@@ -21,15 +22,22 @@ export function Footer() {
           <div className="lg:col-span-2">
             <img src={logo} alt="MG Totalentreprise" className="h-10 w-auto brightness-0 invert" />
             <p className="mt-6 max-w-md text-sm leading-relaxed text-background/70">
-              Ca. 30 egne håndværkere inden for tømrer, flisemurer og maler. Vi udfører
-              fag­entrepriser på byggeprojekter i hele hovedstadsområdet.
+              Håndværkere inden for tømrer, flisemurer og maler. Vi udfører fag­entrepriser på
+              byggeprojekter i hele hovedstadsområdet.
             </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="MG Totalentreprise på LinkedIn"
+              className="mt-6 inline-flex h-9 w-9 items-center justify-center border border-background/20 text-background/70 transition-colors hover:border-background/40 hover:text-background"
+            >
+              <Linkedin className="h-4 w-4" />
+            </a>
           </div>
 
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-accent">
-              Navigation
-            </h4>
+            <h4 className="mb-4 text-sm font-semibold uppercase text-accent">Navigation</h4>
             <ul className="space-y-2 text-sm text-background/70">
               <li>
                 <Link to="/om-os" className="hover:text-background">
@@ -47,8 +55,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/kvalitetssikring" className="hover:text-background">
-                  Kvalitetssikring
+                <Link to="/ejendomsudvikling" className="hover:text-background">
+                  Ejendomsudvikling
                 </Link>
               </li>
               <li>
@@ -60,9 +68,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-accent">
-              Kontakt
-            </h4>
+            <h4 className="mb-4 text-sm font-semibold uppercase text-accent">Kontakt</h4>
             <ul className="space-y-2 text-sm text-background/70">
               <li>MG Totalentreprise ApS</li>
               <li>Emdrupvej 108, 2400 København NV</li>

@@ -30,6 +30,8 @@ function Ydelser() {
         eyebrow="Ydelser"
         title="Fagentrepriser i hele byggeprocessen"
         description="Fra facade til indvendig aptering – vi løser opgaver inden for tømrer, maler og facader. Klik på en ydelse for at læse mere."
+        size="lg"
+        parallax
       />
 
       <section className="bg-background py-20 lg:py-28">
@@ -49,13 +51,13 @@ function Ydelser() {
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/15 to-transparent" />
-                <span className="absolute left-6 top-6 text-xs font-bold uppercase tracking-widest text-background/70">
+                <span className="absolute left-6 top-6 text-xs font-bold uppercase text-background/70">
                   0{i + 1}
                 </span>
                 <div className="relative p-6">
                   <h3 className="text-xl font-bold text-background">{y.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-background/80">{y.short}</p>
-                  <div className="mt-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-background/80 group-hover:text-background">
+                  <div className="mt-4 inline-flex items-center gap-2 text-xs font-semibold uppercase text-background/80 group-hover:text-background">
                     Læs mere <ArrowRight className="h-4 w-4" />
                   </div>
                 </div>

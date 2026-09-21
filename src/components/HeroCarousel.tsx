@@ -50,7 +50,7 @@ export function HeroCarousel() {
   return (
     <section
       data-header-theme="dark"
-      className="relative h-dvh w-full overflow-hidden bg-surface-dark -mt-px"
+      className="relative h-[calc(100dvh+4px)] w-full overflow-hidden bg-surface-dark -mt-px"
     >
       {/* Guarantees the header logo/nav stay legible regardless of how bright the current slide's photo is. */}
       <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-36 bg-gradient-to-b from-black/55 to-transparent" />
@@ -71,11 +71,11 @@ export function HeroCarousel() {
                 <div className="max-w-3xl">
                   <div className="mb-4 flex items-center gap-3">
                     <span className="h-px w-12 bg-accent" />
-                    <span className="text-xs font-semibold uppercase tracking-[0.25em] text-accent">
+                    <span className="text-xs font-semibold uppercase text-accent">
                       {slide.eyebrow}
                     </span>
                   </div>
-                  <h1 className="whitespace-pre-line text-4xl font-bold leading-[1.05] text-background sm:text-6xl lg:text-7xl">
+                  <h1 className="whitespace-pre-line text-5xl leading-[1.05] text-background sm:text-6xl lg:text-7xl">
                     {slide.title}
                   </h1>
                   <p className="mt-6 max-w-xl text-base text-background/85 lg:text-lg">
@@ -84,13 +84,13 @@ export function HeroCarousel() {
                   <div className="mt-8 flex flex-wrap gap-4">
                     <Link
                       to="/ydelser"
-                      className="inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-colors hover:bg-accent/90"
+                      className="inline-flex items-center gap-2 bg-accent px-6 py-3 text-sm font-semibold uppercase text-accent-foreground transition-colors hover:bg-accent/90"
                     >
                       Se ydelser <ArrowRight className="h-4 w-4" />
                     </Link>
                     <Link
                       to="/kontakt"
-                      className="inline-flex items-center gap-2 rounded-sm border border-background/40 bg-background/5 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-background backdrop-blur transition-colors hover:bg-background/15"
+                      className="inline-flex items-center gap-2 border border-background/40 bg-background/5 px-6 py-3 text-sm font-semibold uppercase text-background backdrop-blur transition-colors hover:bg-background/15"
                     >
                       Kontakt os
                     </Link>

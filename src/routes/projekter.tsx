@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { referencer, type Reference } from "@/data/referencer";
+import heroSpektrum from "@/assets/hero-spektrum.jpg";
 
 export const Route = createFileRoute("/projekter")({
   head: () => ({
@@ -48,6 +49,9 @@ function Projekter() {
         eyebrow="Projekter"
         title="Udvalgte byggesager"
         description="Et udsnit af de projekter vi har leveret som fag- eller underentreprenør for nogle af landets førende entreprenører."
+        image={heroSpektrum}
+        size="lg"
+        parallax
       />
 
       <section className="bg-background py-20 lg:py-28">
@@ -67,16 +71,14 @@ function Projekter() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/15 to-transparent" />
                 <div className="relative p-6">
-                  <div className="text-xs font-semibold uppercase tracking-wide text-accent">
-                    {r.client}
-                  </div>
+                  <div className="text-xs font-semibold uppercase text-accent">{r.client}</div>
                   <h3 className="mt-2 text-lg font-bold leading-tight text-background">
                     {r.title}
                   </h3>
                   <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-background/80">
                     {r.scope}
                   </p>
-                  <div className="mt-4 text-xs font-semibold uppercase tracking-wide text-background/80 group-hover:text-background">
+                  <div className="mt-4 text-xs font-semibold uppercase text-background/80 group-hover:text-background">
                     Læs mere →
                   </div>
                 </div>
@@ -101,14 +103,14 @@ function Projekter() {
                     <button
                       onClick={prev}
                       aria-label="Forrige billede"
-                      className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-background/90 p-2 text-foreground shadow-md transition-colors hover:bg-accent hover:text-accent-foreground"
+                      className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/90 p-2 text-foreground shadow-md transition-colors hover:bg-accent hover:text-accent-foreground"
                     >
                       <ChevronLeft className="h-5 w-5" />
                     </button>
                     <button
                       onClick={next}
                       aria-label="Næste billede"
-                      className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-background/90 p-2 text-foreground shadow-md transition-colors hover:bg-accent hover:text-accent-foreground"
+                      className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/90 p-2 text-foreground shadow-md transition-colors hover:bg-accent hover:text-accent-foreground"
                     >
                       <ChevronRight className="h-5 w-5" />
                     </button>
@@ -118,7 +120,7 @@ function Projekter() {
                           key={i}
                           onClick={() => setSlide(i)}
                           aria-label={`Gå til billede ${i + 1}`}
-                          className={`h-1.5 rounded-full transition-all ${
+                          className={`h-1.5 transition-all ${
                             i === slide ? "w-6 bg-accent" : "w-1.5 bg-background/70"
                           }`}
                         />
@@ -133,7 +135,7 @@ function Projekter() {
                   {active.trades.map((t) => (
                     <span
                       key={t}
-                      className="rounded-sm border border-accent/30 bg-accent/10 px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-accent"
+                      className="rounded-sm border border-accent/30 bg-accent/10 px-2 py-1 text-[10px] font-bold uppercase text-accent"
                     >
                       {t}
                     </span>
@@ -142,7 +144,7 @@ function Projekter() {
                 <DialogTitle className="mt-3 text-2xl font-bold text-foreground sm:text-3xl">
                   {active.title}
                 </DialogTitle>
-                <div className="mt-1 text-sm font-semibold uppercase tracking-wide text-accent">
+                <div className="mt-1 text-sm font-semibold uppercase text-accent">
                   {active.client}
                 </div>
                 <DialogDescription className="mt-4 text-base leading-relaxed text-muted-foreground">

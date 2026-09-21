@@ -51,13 +51,15 @@ function YdelseDetail() {
         title={ydelse.title}
         description={ydelse.short}
         image={ydelse.image}
+        size="lg"
+        parallax
       />
 
       <section className="bg-background py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Link
             to="/ydelser"
-            className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground hover:text-accent"
+            className="inline-flex items-center gap-2 text-sm font-semibold uppercase text-muted-foreground hover:text-accent"
           >
             <ArrowLeft className="h-4 w-4" /> Alle ydelser
           </Link>
@@ -73,9 +75,7 @@ function YdelseDetail() {
 
             <div className="lg:col-span-5">
               <div className="rounded-sm border border-border bg-surface p-8">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-accent">
-                  Hvad vi tilbyder
-                </h3>
+                <h3 className="text-sm font-semibold uppercase text-accent">Hvad vi tilbyder</h3>
                 <ul className="mt-6 space-y-3">
                   {ydelse.highlights.map((h) => (
                     <li key={h} className="flex items-start gap-3">
@@ -110,11 +110,9 @@ function YdelseDetail() {
               <div className="lg:col-span-4">
                 <div className="mb-4 flex items-center gap-3">
                   <span className="h-px w-10 bg-accent" />
-                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                    FAQ
-                  </span>
+                  <span className="text-xs font-semibold uppercase text-accent">FAQ</span>
                 </div>
-                <h2 className="text-2xl font-bold text-foreground sm:text-3xl">
+                <h2 className="text-3xl text-foreground sm:text-4xl lg:text-5xl">
                   Ofte stillede spørgsmål
                 </h2>
               </div>
@@ -136,9 +134,7 @@ function YdelseDetail() {
           )}
 
           <div className="mt-20 flex items-center justify-between border-t border-border pt-8">
-            <span className="text-xs uppercase tracking-wider text-muted-foreground">
-              Næste ydelse
-            </span>
+            <span className="text-xs uppercase text-muted-foreground">Næste ydelse</span>
             <Link
               to="/ydelser/$slug"
               params={{ slug: next.slug }}

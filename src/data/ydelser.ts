@@ -65,12 +65,7 @@ export const ydelser: Ydelse[] = [
       "Vi løser alle typer malerarbejde – fra nybyggeri og store boligprojekter til renovering og specialopgaver.",
       "Vores malere arbejder struktureret og effektivt, og vi leverer en ensartet finish, uanset projektets omfang. Vi har stor erfaring med fag­entrepriser i underentreprise for både total- og hovedentreprenører.",
     ],
-    highlights: [
-      "Nybyggeri",
-      "Renovering",
-      "Lejligheder & plejecentre",
-      "Erhverv & institutioner",
-    ],
+    highlights: ["Nybyggeri", "Renovering", "Lejligheder & plejecentre", "Erhverv & institutioner"],
     image: malerImg,
     gallery: [maler2, maler3],
     faq: [

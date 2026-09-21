@@ -85,20 +85,20 @@ export function CookieConsent() {
         <DialogFooter className="sm:flex-col sm:space-x-0 sm:gap-2">
           <button
             onClick={acceptAll}
-            className="rounded-sm bg-accent px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-colors hover:bg-accent/90"
+            className="bg-accent px-5 py-2.5 text-sm font-semibold uppercase text-accent-foreground transition-colors hover:bg-accent/90"
           >
             Accepter alle
           </button>
           <div className="flex gap-2">
             <button
               onClick={acceptNecessaryOnly}
-              className="flex-1 rounded-sm border border-border px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-foreground transition-colors hover:bg-surface"
+              className="flex-1 border border-border px-5 py-2.5 text-sm font-semibold uppercase text-foreground transition-colors hover:bg-surface"
             >
               Kun nødvendige
             </button>
             <button
               onClick={savePreferences}
-              className="flex-1 rounded-sm border border-border px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-foreground transition-colors hover:bg-surface"
+              className="flex-1 border border-border px-5 py-2.5 text-sm font-semibold uppercase text-foreground transition-colors hover:bg-surface"
             >
               Gem valg
             </button>
