@@ -176,7 +176,6 @@ function Ejendomsudvikling() {
         image={heroImg}
         size="lg"
         parallax
-        dim={false}
       />
 
       {/* Intro */}
@@ -199,7 +198,7 @@ function Ejendomsudvikling() {
       </section>
 
       {/* MG Ejendomme */}
-      <section className="border-t border-border bg-background py-20 lg:py-28">
+      <section className="border-t border-border bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-4 flex items-center gap-3">
             <span className="h-px w-10 bg-accent" />
@@ -260,7 +259,7 @@ function Ejendomsudvikling() {
                   Lad os tale om jeres næste projekt
                 </h2>
               </div>
-              <div>
+              <div className="flex lg:justify-end">
                 <Link
                   to="/kontakt"
                   className="inline-flex items-center gap-2 bg-accent px-6 py-3 text-sm font-semibold uppercase text-accent-foreground transition-colors hover:bg-accent/90"

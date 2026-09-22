@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { AboutTeaser } from "@/components/AboutTeaser";
+import { PartnerLogos } from "@/components/PartnerLogos";
 import { Reveal } from "@/components/Reveal";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { ProofPanel } from "@/components/ProofPanel";
@@ -79,22 +80,12 @@ function Index() {
               </Link>
             ))}
           </div>
-
-          <div className="mt-10 flex justify-end">
-            <Link
-              to="/kontakt"
-              className="group inline-flex items-center gap-6 bg-surface-dark py-2 pl-8 pr-2 text-sm font-semibold uppercase text-background transition-colors hover:bg-surface-dark/90"
-            >
-              Kontakt os
-              <span className="flex h-10 w-10 flex-none items-center justify-center bg-background text-surface-dark transition-transform group-hover:translate-x-1">
-                <ArrowRight className="h-4 w-4" />
-              </span>
-            </Link>
-          </div>
         </div>
       </section>
 
       <AboutTeaser />
+
+      <PartnerLogos />
 
       <ProcessSteps />
 

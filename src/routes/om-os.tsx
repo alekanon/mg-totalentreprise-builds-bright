@@ -122,27 +122,6 @@ function OmOs() {
         </div>
       </section>
 
-      {/* Partnerships */}
-      <section className="bg-background py-20 lg:py-28">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <div className="mb-4 flex items-center justify-center gap-3">
-            <span className="h-px w-10 bg-accent" />
-            <span className="text-xs font-semibold uppercase text-accent">Samarbejdspartnere</span>
-            <span className="h-px w-10 bg-accent" />
-          </div>
-          <h2 className="text-4xl text-foreground sm:text-5xl lg:text-6xl">
-            Stærkt netværk, uanset opgavens størrelse
-          </h2>
-          <p className="mt-6 text-base leading-relaxed text-muted-foreground lg:text-lg">
-            Ud over vores egne håndværkere har vi gennem årene opbygget et fast netværk af dygtige
-            samarbejdspartnere inden for de fag, vi ikke selv udfører. Det betyder, at vi kan påtage
-            os projekter af enhver størrelse – fra mindre renoveringsopgaver til store erhvervs- og
-            pharma-byggerier – uden at gå på kompromis med kvalitet, fremdrift eller vores tætte
-            projektledelse.
-          </p>
-        </div>
-      </section>
-
       {/* Leadership */}
       <section className="bg-surface py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
