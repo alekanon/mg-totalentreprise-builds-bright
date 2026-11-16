@@ -62,11 +62,11 @@ function Projekter() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/30" />
 
-                <div className="relative flex items-start justify-between p-4 sm:p-6 lg:p-10">
+                <div className="relative flex items-start justify-start gap-3 p-4 sm:justify-between sm:p-6 lg:p-10">
                   <span className="text-sm font-semibold tabular-nums text-background/90">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <div className="flex flex-wrap justify-end gap-1.5">
+                  <div className="flex flex-wrap justify-start gap-1.5 sm:justify-end">
                     {r.trades.map((t) => (
                       <span
                         key={t}

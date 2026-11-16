@@ -24,19 +24,19 @@ export function Header() {
     if (!header) return;
 
     const checkTheme = () => {
-      const prevPointerEvents = header.style.pointerEvents;
-      header.style.pointerEvents = "none";
+      // Look through everything stacked at this point (skipping the header
+      // itself and overlays such as the cookie dialog's backdrop) for the
+      // first element that sits inside a marked section.
       const x = window.innerWidth / 2;
       const y = header.getBoundingClientRect().height / 2 || 40;
-      const el = document.elementFromPoint(x, y);
-      header.style.pointerEvents = prevPointerEvents;
-
-      let node: Element | null = el;
       let theme: string | null = null;
-      while (node) {
-        theme = node.getAttribute("data-header-theme");
-        if (theme) break;
-        node = node.parentElement;
+      for (const el of document.elementsFromPoint(x, y)) {
+        if (header.contains(el)) continue;
+        const marked = el.closest("[data-header-theme]");
+        if (marked) {
+          theme = marked.getAttribute("data-header-theme");
+          break;
+        }
       }
       // Default (no marker found) assumes a light section, since most of the
       // page is light and only specific panels are explicitly marked dark.
@@ -45,28 +45,57 @@ export function Header() {
 
     const checkScroll = () => setAtTop(window.scrollY < 10);
 
-    // Hide the header while scrolling down, bring it back on any scroll up.
+    // Hide on a short, deliberate downward scroll and show on a short upward
+    // one. Movement is accumulated per direction so tiny jitters (touch
+    // bounce, trackpad noise) don't make the header flicker.
     let lastY = window.scrollY;
+    let acc = 0;
     const checkDirection = () => {
       const y = window.scrollY;
-      if (y < 10 || y < lastY - 4) setHidden(false);
-      else if (y > lastY + 4 && y > 120) setHidden(true);
+      const dy = y - lastY;
       lastY = y;
+      if (y < 10) {
+        acc = 0;
+        setHidden(false);
+        return;
+      }
+      if (dy === 0) return;
+      if (Math.sign(dy) !== Math.sign(acc)) acc = 0;
+      acc += dy;
+      if (acc > 24) setHidden(true);
+      else if (acc < -12) setHidden(false);
     };
 
     checkTheme();
     checkScroll();
-    window.addEventListener("scroll", checkTheme, { passive: true });
+    let themeRaf = 0;
+    const scheduleTheme = () => {
+      if (themeRaf) return;
+      themeRaf = requestAnimationFrame(() => {
+        themeRaf = 0;
+        checkTheme();
+      });
+    };
+    window.addEventListener("scroll", scheduleTheme, { passive: true });
     window.addEventListener("scroll", checkScroll, { passive: true });
     window.addEventListener("scroll", checkDirection, { passive: true });
     window.addEventListener("resize", checkTheme);
+    // Dialogs (cookie banner) change the DOM/scroll lock without scrolling,
+    // so re-check the theme when the body's children or attributes change.
+    const observer = new MutationObserver(() => {
+      checkTheme();
+      setTimeout(checkTheme, 250);
+    });
+    observer.observe(document.body, { childList: true, attributes: true, attributeFilter: ["style", "class", "data-scroll-locked"] });
     // Re-check once layout has settled after a route change.
     const t = setTimeout(checkTheme, 80);
     return () => {
-      window.removeEventListener("scroll", checkTheme);
+      window.removeEventListener("scroll", scheduleTheme);
+      cancelAnimationFrame(themeRaf);
       window.removeEventListener("scroll", checkScroll);
       window.removeEventListener("scroll", checkDirection);
       window.removeEventListener("resize", checkTheme);
+      observer.disconnect();
       clearTimeout(t);
     };
   }, [pathname]);
@@ -97,7 +126,7 @@ export function Header() {
     <header
       ref={headerRef}
       className={`fixed top-0 left-0 right-0 z-50 ${
-        justToggled ? "" : "transition-[background-color,box-shadow,transform] duration-300"
+        justToggled ? "" : "transition-[background-color,box-shadow,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
       } ${hidden && !open ? "-translate-y-full" : "translate-y-0"} ${showBg ? "bg-background shadow-[0_1px_12px_rgba(0,0,0,0.08)]" : "bg-transparent"}`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">

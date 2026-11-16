@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import heroNovo from "@/assets/projects/novokøge-UPSCALED.png";
+import heroNovo from "@/assets/projects/novokoge.jpg";
 import heroSpektrum from "@/assets/hero-spektrum.jpg";
 import heroStrand from "@/assets/hero-strandboulevarden.jpg";
 

@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
-import naleczow1 from "@/assets/Ejendomsudvikling/naleczow1-UPSCALED.png";
+import naleczow1 from "@/assets/Ejendomsudvikling/naleczow1.jpg";
 import naleczow2 from "@/assets/Ejendomsudvikling/naleczow2/naleczow2(4).jpg";
-import lellinge from "@/assets/Ejendomsudvikling/lellinge-UPSCALED.png";
+import lellinge from "@/assets/Ejendomsudvikling/lellinge.jpg";
 
 const projects = [
   { title: "Nałęczów I", location: "Polen", image: naleczow1 },

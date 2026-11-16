@@ -9,7 +9,7 @@ import hildisHave from "@/assets/projects/Hildis have.jpeg";
 import oerbygaard from "@/assets/projects/Ørbygaard Pleje center.jpg";
 import groenneFatning from "@/assets/projects/Den_gronne_fatning_850.jpg";
 import referenceLetter from "@/assets/projects/Referance letter.pdf?url";
-import novoKoege from "@/assets/projects/novokøge-UPSCALED.png";
+import novoKoege from "@/assets/projects/novokoge.jpg";
 import hq27 from "@/assets/projects/Novo fonden hovedkontor.jpeg";
 
 export type Trade = "Tømrer" | "Maler";
