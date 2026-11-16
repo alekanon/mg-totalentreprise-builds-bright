@@ -1,0 +1,169 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "MG Totalentreprise" [ref=e6]
+      - navigation [ref=e7]:
+        - link "Forside" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Om os" [ref=e9] [cursor=pointer]:
+          - /url: /om-os
+        - link "Ydelser" [ref=e10] [cursor=pointer]:
+          - /url: /ydelser
+        - link "Projekter" [ref=e11] [cursor=pointer]:
+          - /url: /projekter
+        - link "Ejendomsudvikling" [ref=e12] [cursor=pointer]:
+          - /url: /ejendomsudvikling
+      - generic [ref=e13]:
+        - link "70 70 24 77" [ref=e14] [cursor=pointer]:
+          - /url: tel:70702477
+        - link "MG Totalentreprise på LinkedIn" [ref=e17] [cursor=pointer]:
+          - /url: "#"
+        - link "Kontakt" [ref=e22] [cursor=pointer]:
+          - /url: /kontakt
+  - main [ref=e23]:
+    - generic [ref=e27]:
+      - generic [ref=e28]: Om os
+      - heading "Erfarne håndværkere – tæt projektledelse" [level=1] [ref=e31]
+      - paragraph [ref=e32]: MG Totalentreprise ApS er en dansk byggevirksomhed med fokus på kvalitet, kontinuitet og tæt dialog gennem hele byggeprocessen.
+    - generic [ref=e34]:
+      - generic [ref=e36]:
+        - img "MG Totalentreprise – håndværkere på byggepladsen" [ref=e37]
+        - img "Malere på lift på byggepladsen" [ref=e38]
+        - img "Malere i arbejde på byggepladsen" [ref=e39]
+      - generic [ref=e44]:
+        - article [ref=e45]:
+          - generic [ref=e46]: Hvem vi er
+          - heading "Egne håndværkere – tømrere, flisemurere og malere" [level=2] [ref=e49]
+          - paragraph [ref=e50]: Vores medarbejdere er fastansatte, og det samme hold følger så vidt muligt en sag fra start til slut.
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - generic [ref=e53]: "3"
+              - paragraph [ref=e54]: "hovedfag: tømrer, maler og flisemurer"
+            - generic [ref=e55]:
+              - generic [ref=e56]: "1"
+              - paragraph [ref=e57]: fast kontaktperson pr. sag
+        - article [ref=e58]:
+          - generic [ref=e59]: Sådan arbejder vi
+          - heading "Tæt projektledelse på hver sag" [level=2] [ref=e62]
+          - paragraph [ref=e63]: Vores projektledere fører dagligt tilsyn med byggesagerne, så vi straks kan følge op på spørgsmål og uklarheder.
+          - list [ref=e64]:
+            - listitem [ref=e65]: Hurtig opfølgning på projektspørgsmål
+            - listitem [ref=e66]: Kvalitetssikring i Dalux, Ajour, Byggeweb eller eget KS-system
+            - listitem [ref=e67]: Én fast kontaktperson på alle projekter
+        - article [ref=e68]:
+          - generic [ref=e69]: Kunder
+          - heading "Derfor vælger kunder os igen" [level=2] [ref=e72]
+          - paragraph [ref=e73]: Vi vil være den underentreprenør, vores kunder gerne vender tilbage til, fordi vi holder, hvad vi lover.
+          - list [ref=e74]:
+            - listitem [ref=e75]: CG Jensen A/S
+            - listitem [ref=e76]: B. Nygaard Sørensen A/S
+            - listitem [ref=e77]: Enemærke & Pedersen A/S
+            - listitem [ref=e78]: Phil & Søn
+    - generic [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e82]: Ledelse
+        - heading "Mød menneskerne bag MG" [level=2] [ref=e85]
+      - generic [ref=e86]:
+        - article [ref=e87]:
+          - generic [ref=e88]:
+            - img "Anders Johnsen, direktør i MG Totalentreprise" [ref=e89]
+            - generic [ref=e91]:
+              - heading "Anders Johnsen" [level=3] [ref=e92]
+              - generic [ref=e93]: Adm. direktør
+          - paragraph [ref=e95]: Anders Johnsen er direktør i MG Totalentreprise ApS og står i spidsen for både den daglige drift og virksomhedens byggesager. Med mange år i byggebranchen lægger han vægt på ordentligt håndværk, klare aftaler og tæt dialog med kunderne – og du møder ham typisk allerede i tilbudsfasen.
+        - article [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]: Billede af Magdalena
+            - generic [ref=e100]:
+              - heading "Magdalena Malinowska" [level=3] [ref=e101]
+              - generic [ref=e102]: Direktør
+          - paragraph [ref=e104]: Magda har mange års erfaring inden for økonomi, investeringer og ledelse inden for byggeri. Hun er ansvarlig for opførelsen af vores polske ejendomsprojekter.
+      - link "Kom i kontakt" [ref=e105] [cursor=pointer]:
+        - /url: /kontakt
+  - generic [ref=e109]:
+    - region "Notifications alt+T"
+    - generic [ref=e111]:
+      - generic [ref=e112]:
+        - generic [ref=e113]: Kontakt
+        - heading "Lad os tale om dit projekt" [level=2] [ref=e116]
+        - paragraph [ref=e117]:
+          - text: Skriv til os, så vender vi tilbage hurtigst muligt – eller ring på
+          - link "70 70 24 77" [ref=e118] [cursor=pointer]:
+            - /url: tel:70702477
+          - text: .
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - generic [ref=e122]: Navn *
+              - textbox [ref=e123]
+            - generic [ref=e124]:
+              - generic [ref=e125]: Email *
+              - textbox [ref=e126]
+            - generic [ref=e127]:
+              - generic [ref=e128]: Virksomhed
+              - textbox [ref=e129]
+            - generic [ref=e130]:
+              - generic [ref=e131]: Telefon
+              - textbox [ref=e132]
+          - generic [ref=e133]:
+            - generic [ref=e134]: Besked *
+            - textbox [ref=e135]
+          - generic [ref=e136]:
+            - checkbox "Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf. privatlivspolitikken." [ref=e137]
+            - generic [ref=e138]:
+              - text: Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf.
+              - link "privatlivspolitikken" [ref=e139] [cursor=pointer]:
+                - /url: /privatlivspolitik
+              - text: .
+          - button "Send besked" [ref=e140]
+      - generic [ref=e144]:
+        - img "Kort over Danmark med Sjælland markeret" [ref=e145]
+        - generic [ref=e146]: Vi arbejder i hele Sjælland – fra Helsingør i nord til Vordingborg i syd.
+  - contentinfo [ref=e147]:
+    - generic [ref=e149]:
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - img "MG Totalentreprise" [ref=e152]
+          - paragraph [ref=e153]: Håndværkere inden for tømrer, flisemurer og maler. Vi udfører fagentrepriser på byggeprojekter i hele hovedstadsområdet.
+          - link "MG Totalentreprise på LinkedIn" [ref=e154] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e159]:
+          - heading "Navigation" [level=4] [ref=e160]
+          - list [ref=e161]:
+            - listitem [ref=e162]:
+              - link "Om os" [ref=e163] [cursor=pointer]:
+                - /url: /om-os
+            - listitem [ref=e164]:
+              - link "Ydelser" [ref=e165] [cursor=pointer]:
+                - /url: /ydelser
+            - listitem [ref=e166]:
+              - link "Projekter" [ref=e167] [cursor=pointer]:
+                - /url: /projekter
+            - listitem [ref=e168]:
+              - link "Ejendomsudvikling" [ref=e169] [cursor=pointer]:
+                - /url: /ejendomsudvikling
+            - listitem [ref=e170]:
+              - link "Kontakt" [ref=e171] [cursor=pointer]:
+                - /url: /kontakt
+        - generic [ref=e172]:
+          - heading "Kontakt" [level=4] [ref=e173]
+          - list [ref=e174]:
+            - listitem [ref=e175]: MG Totalentreprise ApS
+            - listitem [ref=e176]: Emdrupvej 108, 2400 København NV
+            - listitem [ref=e177]:
+              - link "Tlf. 70 70 24 77" [ref=e178] [cursor=pointer]:
+                - /url: tel:70702477
+            - listitem [ref=e179]: "CVR: 33041365"
+            - listitem [ref=e180]:
+              - link "Kontakt os →" [ref=e181] [cursor=pointer]:
+                - /url: /kontakt
+      - generic [ref=e182]:
+        - generic [ref=e183]: © 2026 MG Totalentreprise ApS. Alle rettigheder forbeholdes.
+        - generic [ref=e184]:
+          - link "Privatlivspolitik" [ref=e185] [cursor=pointer]:
+            - /url: /privatlivspolitik
+          - link "Cookiepolitik" [ref=e186] [cursor=pointer]:
+            - /url: /cookiepolitik
+          - button "Cookieindstillinger" [ref=e187]

@@ -1,0 +1,280 @@
+- generic [ref=f5e2]:
+  - banner [ref=f5e3]:
+    - generic [ref=f5e4]:
+      - link [ref=f5e5] [cursor=pointer]:
+        - /url: /
+        - img "MG Totalentreprise" [ref=f5e6]
+      - button "Toggle menu" [ref=f5e8]
+  - main [ref=f5e10]:
+    - generic [ref=f5e14]:
+      - generic [ref=f5e15]: Projekter
+      - heading "Udvalgte byggesager" [level=1] [ref=f5e18]
+      - paragraph [ref=f5e19]: Et udsnit af de projekter vi har leveret som fag- eller underentreprenør for nogle af landets førende entreprenører.
+    - generic [ref=f5e22]:
+      - button "Maler og Tømrerarbejdet på nyopførelse af fabrik i Køge 01 Maler Tømrer Phil & Søn Maler og Tømrerarbejdet på nyopførelse af fabrik i Køge Maler- og tømrerarbejde på fabriksbyggeri. Læs mere →" [ref=f5e23]:
+        - img "Maler og Tømrerarbejdet på nyopførelse af fabrik i Køge" [ref=f5e24]
+        - generic [ref=f5e26]:
+          - generic [ref=f5e27]: "01"
+          - generic [ref=f5e28]:
+            - generic [ref=f5e29]: Maler
+            - generic [ref=f5e30]: Tømrer
+        - generic [ref=f5e31]:
+          - generic [ref=f5e32]: Phil & Søn
+          - heading "Maler og Tømrerarbejdet på nyopførelse af fabrik i Køge" [level=3] [ref=f5e33]
+          - paragraph [ref=f5e34]: Maler- og tømrerarbejde på fabriksbyggeri.
+          - generic [ref=f5e35]:
+            - text: Læs mere
+            - generic [ref=f5e36]: →
+      - button "Hovedkontor for større dansk medicinalfirma 02 Tømrer LM Byg Hovedkontor for større dansk medicinalfirma Isolering af hele kælderen, montering af rør og beton finish. Læs mere →" [ref=f5e37]:
+        - img "Hovedkontor for større dansk medicinalfirma" [ref=f5e38]
+        - generic [ref=f5e40]:
+          - generic [ref=f5e41]: "02"
+          - generic [ref=f5e42]: Tømrer
+        - generic [ref=f5e44]:
+          - generic [ref=f5e45]: LM Byg
+          - heading "Hovedkontor for større dansk medicinalfirma" [level=3] [ref=f5e46]
+          - paragraph [ref=f5e47]: Isolering af hele kælderen, montering af rør og beton finish.
+          - generic [ref=f5e48]:
+            - text: Læs mere
+            - generic [ref=f5e49]: →
+      - button "Spektrum Hotel 03 Maler Phil & Søn Spektrum Hotel Malerarbejde på nyt hotelbyggeri. Læs mere →" [ref=f5e50]:
+        - img "Spektrum Hotel" [ref=f5e51]
+        - generic [ref=f5e53]:
+          - generic [ref=f5e54]: "03"
+          - generic [ref=f5e55]: Maler
+        - generic [ref=f5e57]:
+          - generic [ref=f5e58]: Phil & Søn
+          - heading "Spektrum Hotel" [level=3] [ref=f5e59]
+          - paragraph [ref=f5e60]: Malerarbejde på nyt hotelbyggeri.
+          - generic [ref=f5e61]:
+            - text: Læs mere
+            - generic [ref=f5e62]: →
+      - button "Himmelbyen 04 Tømrer CG Jensen A/S Himmelbyen Indvendig tømrer- og snedkerarbejde i 135 lejligheder og ca. 12.000 m² erhverv. Læs mere →" [ref=f5e63]:
+        - img "Himmelbyen" [ref=f5e64]
+        - generic [ref=f5e66]:
+          - generic [ref=f5e67]: "04"
+          - generic [ref=f5e68]: Tømrer
+        - generic [ref=f5e70]:
+          - generic [ref=f5e71]: CG Jensen A/S
+          - heading "Himmelbyen" [level=3] [ref=f5e72]
+          - paragraph [ref=f5e73]: Indvendig tømrer- og snedkerarbejde i 135 lejligheder og ca. 12.000 m² erhverv.
+          - generic [ref=f5e74]:
+            - text: Læs mere
+            - generic [ref=f5e75]: →
+      - button "Skolen på Strandboulevarden 05 Tømrer Maler B. Nygaard Sørensen A/S Skolen på Strandboulevarden Tømrer-, snedker- og malerarbejde på renoverings- og nybygningsdelen. Læs mere →" [ref=f5e76]:
+        - img "Skolen på Strandboulevarden" [ref=f5e77]
+        - generic [ref=f5e79]:
+          - generic [ref=f5e80]: "05"
+          - generic [ref=f5e81]:
+            - generic [ref=f5e82]: Tømrer
+            - generic [ref=f5e83]: Maler
+        - generic [ref=f5e84]:
+          - generic [ref=f5e85]: B. Nygaard Sørensen A/S
+          - heading "Skolen på Strandboulevarden" [level=3] [ref=f5e86]
+          - paragraph [ref=f5e87]: Tømrer-, snedker- og malerarbejde på renoverings- og nybygningsdelen.
+          - generic [ref=f5e88]:
+            - text: Læs mere
+            - generic [ref=f5e89]: →
+      - button "Øresyd 06 Tømrer Maler CG Jensen A/S Øresyd Montering af vinduer, døre, trapperum og taghuse på lejlighedskompleks med 100 boliger samt malerarbejde. Læs mere →" [ref=f5e90]:
+        - img "Øresyd" [ref=f5e91]
+        - generic [ref=f5e93]:
+          - generic [ref=f5e94]: "06"
+          - generic [ref=f5e95]:
+            - generic [ref=f5e96]: Tømrer
+            - generic [ref=f5e97]: Maler
+        - generic [ref=f5e98]:
+          - generic [ref=f5e99]: CG Jensen A/S
+          - heading "Øresyd" [level=3] [ref=f5e100]
+          - paragraph [ref=f5e101]: Montering af vinduer, døre, trapperum og taghuse på lejlighedskompleks med 100 boliger samt malerarbejde.
+          - generic [ref=f5e102]:
+            - text: Læs mere
+            - generic [ref=f5e103]: →
+      - button "BIG Shoppingcenter Herlev 07 Tømrer Maler NPV A/S BIG Shoppingcenter Herlev Skillevægge, indskudte dæk, apteringer og malerarbejde i 8 lejemål. Læs mere →" [ref=f5e104]:
+        - img "BIG Shoppingcenter Herlev" [ref=f5e105]
+        - generic [ref=f5e107]:
+          - generic [ref=f5e108]: "07"
+          - generic [ref=f5e109]:
+            - generic [ref=f5e110]: Tømrer
+            - generic [ref=f5e111]: Maler
+        - generic [ref=f5e112]:
+          - generic [ref=f5e113]: NPV A/S
+          - heading "BIG Shoppingcenter Herlev" [level=3] [ref=f5e114]
+          - paragraph [ref=f5e115]: Skillevægge, indskudte dæk, apteringer og malerarbejde i 8 lejemål.
+          - generic [ref=f5e116]:
+            - text: Læs mere
+            - generic [ref=f5e117]: →
+      - button "Majatta Næstved 08 Tømrer B. Nygaard Sørensen A/S Majatta Næstved Tømrer- og snedkerarbejde. Montage af trækassetter som ydervægge, indervægge og tag samt komplet indvendig aptering. Læs mere →" [ref=f5e118]:
+        - img "Majatta Næstved" [ref=f5e119]
+        - generic [ref=f5e121]:
+          - generic [ref=f5e122]: "08"
+          - generic [ref=f5e123]: Tømrer
+        - generic [ref=f5e125]:
+          - generic [ref=f5e126]: B. Nygaard Sørensen A/S
+          - heading "Majatta Næstved" [level=3] [ref=f5e127]
+          - paragraph [ref=f5e128]: Tømrer- og snedkerarbejde. Montage af trækassetter som ydervægge, indervægge og tag samt komplet indvendig aptering.
+          - generic [ref=f5e129]:
+            - text: Læs mere
+            - generic [ref=f5e130]: →
+      - button "Multicenter Præstø 09 Tømrer Maler CG Jensen A/S Multicenter Præstø Tømrer-, snedker- og malerarbejde på plejecenter, multicenterdel samt renovering af eksisterende hal. Læs mere →" [ref=f5e131]:
+        - img "Multicenter Præstø" [ref=f5e132]
+        - generic [ref=f5e134]:
+          - generic [ref=f5e135]: "09"
+          - generic [ref=f5e136]:
+            - generic [ref=f5e137]: Tømrer
+            - generic [ref=f5e138]: Maler
+        - generic [ref=f5e139]:
+          - generic [ref=f5e140]: CG Jensen A/S
+          - heading "Multicenter Præstø" [level=3] [ref=f5e141]
+          - paragraph [ref=f5e142]: Tømrer-, snedker- og malerarbejde på plejecenter, multicenterdel samt renovering af eksisterende hal.
+          - generic [ref=f5e143]:
+            - text: Læs mere
+            - generic [ref=f5e144]: →
+      - button "Hildis Have, Hillerød 10 Maler RG2 Development ApS Hildis Have, Hillerød Malerarbejde i 85 boliger og fælleshus. Læs mere →" [ref=f5e145]:
+        - img "Hildis Have, Hillerød" [ref=f5e146]
+        - generic [ref=f5e148]:
+          - generic [ref=f5e149]: "10"
+          - generic [ref=f5e150]: Maler
+        - generic [ref=f5e152]:
+          - generic [ref=f5e153]: RG2 Development ApS
+          - heading "Hildis Have, Hillerød" [level=3] [ref=f5e154]
+          - paragraph [ref=f5e155]: Malerarbejde i 85 boliger og fælleshus.
+          - generic [ref=f5e156]:
+            - text: Læs mere
+            - generic [ref=f5e157]: →
+      - button "Ørbygård Plejecenter 11 Maler Ole Jepsen A/S Ørbygård Plejecenter Malerarbejde på plejecenter med 82 lejligheder. Læs mere →" [ref=f5e158]:
+        - img "Ørbygård Plejecenter" [ref=f5e159]
+        - generic [ref=f5e161]:
+          - generic [ref=f5e162]: "11"
+          - generic [ref=f5e163]: Maler
+        - generic [ref=f5e165]:
+          - generic [ref=f5e166]: Ole Jepsen A/S
+          - heading "Ørbygård Plejecenter" [level=3] [ref=f5e167]
+          - paragraph [ref=f5e168]: Malerarbejde på plejecenter med 82 lejligheder.
+          - generic [ref=f5e169]:
+            - text: Læs mere
+            - generic [ref=f5e170]: →
+      - button "Den Grønne Fatning 12 Maler Enemærke & Pedersen A/S Den Grønne Fatning Malerarbejde i 200 lejligheder. Læs mere →" [ref=f5e171]:
+        - img "Den Grønne Fatning" [ref=f5e172]
+        - generic [ref=f5e174]:
+          - generic [ref=f5e175]: "12"
+          - generic [ref=f5e176]: Maler
+        - generic [ref=f5e178]:
+          - generic [ref=f5e179]: Enemærke & Pedersen A/S
+          - heading "Den Grønne Fatning" [level=3] [ref=f5e180]
+          - paragraph [ref=f5e181]: Malerarbejde i 200 lejligheder.
+          - generic [ref=f5e182]:
+            - text: Læs mere
+            - generic [ref=f5e183]: →
+  - generic [ref=f5e184]:
+    - region "Notifications alt+T"
+    - generic [ref=f5e186]:
+      - generic [ref=f5e187]:
+        - generic [ref=f5e188]: Kontakt
+        - heading "Lad os tale om dit projekt" [level=2] [ref=f5e191]
+        - paragraph [ref=f5e192]:
+          - text: Skriv til os, så vender vi tilbage hurtigst muligt – eller ring på
+          - link "70 70 24 77" [ref=f5e193] [cursor=pointer]:
+            - /url: tel:70702477
+          - text: .
+        - generic [ref=f5e194]:
+          - generic [ref=f5e195]:
+            - generic [ref=f5e196]:
+              - generic [ref=f5e197]: Navn *
+              - textbox [ref=f5e198]
+            - generic [ref=f5e199]:
+              - generic [ref=f5e200]: Email *
+              - textbox [ref=f5e201]
+            - generic [ref=f5e202]:
+              - generic [ref=f5e203]: Virksomhed
+              - textbox [ref=f5e204]
+            - generic [ref=f5e205]:
+              - generic [ref=f5e206]: Telefon
+              - textbox [ref=f5e207]
+          - generic [ref=f5e208]:
+            - generic [ref=f5e209]: Besked *
+            - textbox [ref=f5e210]
+          - generic [ref=f5e211]:
+            - checkbox "Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf. privatlivspolitikken." [ref=f5e212]
+            - generic [ref=f5e213]:
+              - text: Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf.
+              - link "privatlivspolitikken" [ref=f5e214] [cursor=pointer]:
+                - /url: /privatlivspolitik
+              - text: .
+          - button "Send besked" [ref=f5e215]
+      - generic [ref=f5e219]:
+        - generic [ref=f5e220]:
+          - img "Kort over Danmark med Sjælland markeret" [ref=f5e221]
+          - generic [ref=f5e222]:
+            - generic [ref=f5e223]:
+              - heading "Storkøbenhavn" [level=4] [ref=f5e224]
+              - list [ref=f5e225]:
+                - listitem [ref=f5e226]: København – Frederiksberg, Amager, Valby
+                - listitem [ref=f5e227]: Lyngby – Gentofte, Gladsaxe, Søborg
+                - listitem [ref=f5e228]: Ballerup – Herlev, Rødovre, Glostrup
+            - generic [ref=f5e229]:
+              - heading "Nordsjælland" [level=4] [ref=f5e230]
+              - list [ref=f5e231]:
+                - listitem [ref=f5e232]: Hillerød – Allerød, Farum, Fredensborg
+                - listitem [ref=f5e233]: Helsingør – Espergærde, Humlebæk
+                - listitem [ref=f5e234]: Hørsholm – Rungsted, Kokkedal
+            - generic [ref=f5e235]:
+              - heading "Midt- og Vestsjælland" [level=4] [ref=f5e236]
+              - list [ref=f5e237]:
+                - listitem [ref=f5e238]: Roskilde – Hedehusene, Viby Sj., Lejre
+                - listitem [ref=f5e239]: Holbæk – Tølløse, Jyderup
+                - listitem [ref=f5e240]: Slagelse – Korsør, Skælskør
+                - listitem [ref=f5e241]: Kalundborg – Høng, Gørlev
+                - listitem [ref=f5e242]: Ringsted – Sorø, Haslev
+            - generic [ref=f5e243]:
+              - heading "Sydsjælland" [level=4] [ref=f5e244]
+              - list [ref=f5e245]:
+                - listitem [ref=f5e246]: Køge – Greve, Solrød Strand
+                - listitem [ref=f5e247]: Næstved – Fensmark, Karrebæksminde
+                - listitem [ref=f5e248]: Vordingborg – Præstø, Stege
+        - generic [ref=f5e249]: Vi arbejder i hele Sjælland – fra Helsingør i nord til Vordingborg i syd.
+  - contentinfo [ref=f5e250]:
+    - generic [ref=f5e252]:
+      - generic [ref=f5e253]:
+        - generic [ref=f5e254]:
+          - img "MG Totalentreprise" [ref=f5e255]
+          - paragraph [ref=f5e256]: Håndværkere inden for tømrer, flisemurer og maler. Vi udfører fagentrepriser på byggeprojekter i hele hovedstadsområdet.
+          - link "MG Totalentreprise på LinkedIn" [ref=f5e257] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f5e262]:
+          - heading "Navigation" [level=4] [ref=f5e263]
+          - list [ref=f5e264]:
+            - listitem [ref=f5e265]:
+              - link "Om os" [ref=f5e266] [cursor=pointer]:
+                - /url: /om-os
+            - listitem [ref=f5e267]:
+              - link "Ydelser" [ref=f5e268] [cursor=pointer]:
+                - /url: /ydelser
+            - listitem [ref=f5e269]:
+              - link "Projekter" [ref=f5e270] [cursor=pointer]:
+                - /url: /projekter
+            - listitem [ref=f5e271]:
+              - link "Ejendomsudvikling" [ref=f5e272] [cursor=pointer]:
+                - /url: /ejendomsudvikling
+            - listitem [ref=f5e273]:
+              - link "Kontakt" [ref=f5e274] [cursor=pointer]:
+                - /url: /kontakt
+        - generic [ref=f5e275]:
+          - heading "Kontakt" [level=4] [ref=f5e276]
+          - list [ref=f5e277]:
+            - listitem [ref=f5e278]: MG Totalentreprise ApS
+            - listitem [ref=f5e279]: Emdrupvej 108, 2400 København NV
+            - listitem [ref=f5e280]:
+              - link "Tlf. 70 70 24 77" [ref=f5e281] [cursor=pointer]:
+                - /url: tel:70702477
+            - listitem [ref=f5e282]: "CVR: 33041365"
+            - listitem [ref=f5e283]:
+              - link "Kontakt os →" [ref=f5e284] [cursor=pointer]:
+                - /url: /kontakt
+      - generic [ref=f5e285]:
+        - generic [ref=f5e286]: © 2026 MG Totalentreprise ApS. Alle rettigheder forbeholdes.
+        - generic [ref=f5e287]:
+          - link "Privatlivspolitik" [ref=f5e288] [cursor=pointer]:
+            - /url: /privatlivspolitik
+          - link "Cookiepolitik" [ref=f5e289] [cursor=pointer]:
+            - /url: /cookiepolitik
+          - button "Cookieindstillinger" [ref=f5e290]

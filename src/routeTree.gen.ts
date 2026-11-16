@@ -9,57 +9,22 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as YdelserRouteImport } from './routes/ydelser'
-import { Route as ReferencerRouteImport } from './routes/referencer'
-import { Route as ProjekterRouteImport } from './routes/projekter'
-import { Route as PrivatlivspolitikRouteImport } from './routes/privatlivspolitik'
-import { Route as OmOsRouteImport } from './routes/om-os'
-import { Route as KvalitetssikringRouteImport } from './routes/kvalitetssikring'
-import { Route as KontaktRouteImport } from './routes/kontakt'
-import { Route as EjendomsudviklingRouteImport } from './routes/ejendomsudvikling'
-import { Route as CookiepolitikRouteImport } from './routes/cookiepolitik'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CookiepolitikRouteImport } from './routes/cookiepolitik'
+import { Route as EjendomsudviklingRouteImport } from './routes/ejendomsudvikling'
+import { Route as KontaktRouteImport } from './routes/kontakt'
+import { Route as KvalitetssikringRouteImport } from './routes/kvalitetssikring'
+import { Route as OmOsRouteImport } from './routes/om-os'
+import { Route as PrivatlivspolitikRouteImport } from './routes/privatlivspolitik'
+import { Route as ProjekterRouteImport } from './routes/projekter'
+import { Route as ReferencerRouteImport } from './routes/referencer'
+import { Route as YdelserRouteImport } from './routes/ydelser'
 import { Route as YdelserIndexRouteImport } from './routes/ydelser.index'
 import { Route as YdelserSlugRouteImport } from './routes/ydelser.$slug'
 
-const YdelserRoute = YdelserRouteImport.update({
-  id: '/ydelser',
-  path: '/ydelser',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ReferencerRoute = ReferencerRouteImport.update({
-  id: '/referencer',
-  path: '/referencer',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProjekterRoute = ProjekterRouteImport.update({
-  id: '/projekter',
-  path: '/projekter',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivatlivspolitikRoute = PrivatlivspolitikRouteImport.update({
-  id: '/privatlivspolitik',
-  path: '/privatlivspolitik',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OmOsRoute = OmOsRouteImport.update({
-  id: '/om-os',
-  path: '/om-os',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const KvalitetssikringRoute = KvalitetssikringRouteImport.update({
-  id: '/kvalitetssikring',
-  path: '/kvalitetssikring',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const KontaktRoute = KontaktRouteImport.update({
-  id: '/kontakt',
-  path: '/kontakt',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EjendomsudviklingRoute = EjendomsudviklingRouteImport.update({
-  id: '/ejendomsudvikling',
-  path: '/ejendomsudvikling',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CookiepolitikRoute = CookiepolitikRouteImport.update({
@@ -67,9 +32,44 @@ const CookiepolitikRoute = CookiepolitikRouteImport.update({
   path: '/cookiepolitik',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const EjendomsudviklingRoute = EjendomsudviklingRouteImport.update({
+  id: '/ejendomsudvikling',
+  path: '/ejendomsudvikling',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KontaktRoute = KontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KvalitetssikringRoute = KvalitetssikringRouteImport.update({
+  id: '/kvalitetssikring',
+  path: '/kvalitetssikring',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OmOsRoute = OmOsRouteImport.update({
+  id: '/om-os',
+  path: '/om-os',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivatlivspolitikRoute = PrivatlivspolitikRouteImport.update({
+  id: '/privatlivspolitik',
+  path: '/privatlivspolitik',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjekterRoute = ProjekterRouteImport.update({
+  id: '/projekter',
+  path: '/projekter',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReferencerRoute = ReferencerRouteImport.update({
+  id: '/referencer',
+  path: '/referencer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const YdelserRoute = YdelserRouteImport.update({
+  id: '/ydelser',
+  path: '/ydelser',
   getParentRoute: () => rootRouteImport,
 } as any)
 const YdelserIndexRoute = YdelserIndexRouteImport.update({
@@ -184,60 +184,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/ydelser': {
-      id: '/ydelser'
-      path: '/ydelser'
-      fullPath: '/ydelser'
-      preLoaderRoute: typeof YdelserRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/referencer': {
-      id: '/referencer'
-      path: '/referencer'
-      fullPath: '/referencer'
-      preLoaderRoute: typeof ReferencerRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/projekter': {
-      id: '/projekter'
-      path: '/projekter'
-      fullPath: '/projekter'
-      preLoaderRoute: typeof ProjekterRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privatlivspolitik': {
-      id: '/privatlivspolitik'
-      path: '/privatlivspolitik'
-      fullPath: '/privatlivspolitik'
-      preLoaderRoute: typeof PrivatlivspolitikRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/om-os': {
-      id: '/om-os'
-      path: '/om-os'
-      fullPath: '/om-os'
-      preLoaderRoute: typeof OmOsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/kvalitetssikring': {
-      id: '/kvalitetssikring'
-      path: '/kvalitetssikring'
-      fullPath: '/kvalitetssikring'
-      preLoaderRoute: typeof KvalitetssikringRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/kontakt': {
-      id: '/kontakt'
-      path: '/kontakt'
-      fullPath: '/kontakt'
-      preLoaderRoute: typeof KontaktRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ejendomsudvikling': {
-      id: '/ejendomsudvikling'
-      path: '/ejendomsudvikling'
-      fullPath: '/ejendomsudvikling'
-      preLoaderRoute: typeof EjendomsudviklingRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cookiepolitik': {
@@ -247,11 +198,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CookiepolitikRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/ejendomsudvikling': {
+      id: '/ejendomsudvikling'
+      path: '/ejendomsudvikling'
+      fullPath: '/ejendomsudvikling'
+      preLoaderRoute: typeof EjendomsudviklingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kontakt': {
+      id: '/kontakt'
+      path: '/kontakt'
+      fullPath: '/kontakt'
+      preLoaderRoute: typeof KontaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kvalitetssikring': {
+      id: '/kvalitetssikring'
+      path: '/kvalitetssikring'
+      fullPath: '/kvalitetssikring'
+      preLoaderRoute: typeof KvalitetssikringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/om-os': {
+      id: '/om-os'
+      path: '/om-os'
+      fullPath: '/om-os'
+      preLoaderRoute: typeof OmOsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privatlivspolitik': {
+      id: '/privatlivspolitik'
+      path: '/privatlivspolitik'
+      fullPath: '/privatlivspolitik'
+      preLoaderRoute: typeof PrivatlivspolitikRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projekter': {
+      id: '/projekter'
+      path: '/projekter'
+      fullPath: '/projekter'
+      preLoaderRoute: typeof ProjekterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/referencer': {
+      id: '/referencer'
+      path: '/referencer'
+      fullPath: '/referencer'
+      preLoaderRoute: typeof ReferencerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ydelser': {
+      id: '/ydelser'
+      path: '/ydelser'
+      fullPath: '/ydelser'
+      preLoaderRoute: typeof YdelserRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ydelser/': {

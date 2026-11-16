@@ -1,0 +1,213 @@
+- generic [active] [ref=f7e1]:
+  - banner [ref=f7e2]:
+    - 'dialog "Vi og vores samarbejdspartnere bruger teknologier, herunder cookies, til at indsamle oplysninger om dig til forskellige formål, herunder: Funktionelle, Statistiske, Marketing Ved at klikke på \"OK\" giver du samtykke til alle disse formål. Du kan også vælge at tilkendegive, hvilke formål du vil give samtykke til nedenfor og derefter trykke på \"Gem indstillinger\". Du kan til enhver tid trække dit samtykke tilbage ved at klikke på \"Cookie-politik\" i bunden af hjemmesiden. Du kan læse mere om vores brug af cookies og andre teknologier, samt om vores indsamling og behandling af personoplysninger ved at klikke på linket. Om cookies" [ref=f7e3]':
+      - generic [ref=f7e4]:
+        - generic [ref=f7e6]:
+          - heading "Du bestemmer over dine data" [level=2] [ref=f7e7]
+          - generic [ref=f7e8]:
+            - paragraph [ref=f7e9]: "Vi og vores samarbejdspartnere bruger teknologier, herunder cookies, til at indsamle oplysninger om dig til forskellige formål, herunder:"
+            - list [ref=f7e10]:
+              - listitem [ref=f7e11]: Funktionelle,
+              - listitem [ref=f7e12]: Statistiske,
+              - listitem [ref=f7e13]: Marketing
+            - paragraph [ref=f7e14]: Ved at klikke på "OK" giver du samtykke til alle disse formål. Du kan også vælge at tilkendegive, hvilke formål du vil give samtykke til nedenfor og derefter trykke på "Gem indstillinger".Du kan til enhver tid trække dit samtykke tilbage ved at klikke på "Cookie-politik" i bunden af hjemmesiden.
+            - paragraph [ref=f7e15]: Du kan læse mere om vores brug af cookies og andre teknologier, samt om vores indsamling og behandling af personoplysninger ved at klikke på linket.
+            - link "Om cookies" [ref=f7e16] [cursor=pointer]:
+              - /url: javascript:TogglePage(this, 'coiPage-3');
+          - button "Vis detaljer" [ref=f7e18] [cursor=pointer]
+        - navigation "menu" [ref=f7e19]:
+          - generic [ref=f7e20]:
+            - alert "OK til valgte" [ref=f7e21] [cursor=pointer]
+            - button "OK" [ref=f7e22] [cursor=pointer]
+        - generic [ref=f7e23]:
+          - generic [ref=f7e26] [cursor=pointer]:
+            - checkbox "Nødvendige" [checked] [disabled] [ref=f7e27]
+            - text: Nødvendige
+          - generic [ref=f7e31] [cursor=pointer]:
+            - checkbox "Funktionelle" [ref=f7e32]
+            - text: Funktionelle
+          - generic [ref=f7e36] [cursor=pointer]:
+            - checkbox "Statistiske" [ref=f7e37]
+            - text: Statistiske
+          - generic [ref=f7e41] [cursor=pointer]:
+            - checkbox "Marketing" [ref=f7e42]
+            - text: Marketing
+        - generic [ref=f7e44]:
+          - img "MT Højgaard" [ref=f7e45]
+          - generic [ref=f7e46]:
+            - text: "powered by:"
+            - link "Cookie Information" [ref=f7e47] [cursor=pointer]:
+              - /url: https://cookieinformation.com/
+  - generic [ref=f7e48]:
+    - link "Spring til hovedindhold" [ref=f7e49] [cursor=pointer]:
+      - /url: "#main"
+    - navigation [ref=f7e50]:
+      - link "MT Højgaard Danmark" [ref=f7e51] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f7e76]:
+        - list [ref=f7e77]:
+          - listitem [ref=f7e78]:
+            - button "Job hos os" [ref=f7e79] [cursor=pointer]
+            - list [aria-hidden]:
+              - listitem
+              - listitem
+              - listitem
+              - listitem
+              - listitem
+              - listitem
+              - listitem
+          - listitem [ref=f7e84]:
+            - button "Vi tilbyder" [ref=f7e85] [cursor=pointer]
+            - list [aria-hidden]:
+              - listitem
+              - listitem
+              - listitem
+              - listitem
+              - listitem
+          - listitem [ref=f7e90]:
+            - link "Projekter" [ref=f7e91] [cursor=pointer]:
+              - /url: /projekter
+          - listitem [ref=f7e93]:
+            - link "Nyheder" [ref=f7e94] [cursor=pointer]:
+              - /url: /nyheder
+          - listitem [ref=f7e96]:
+            - button "Om MT Højgaard Danmark" [ref=f7e97] [cursor=pointer]
+            - list [aria-hidden]:
+              - listitem
+              - listitem
+          - listitem [ref=f7e102]:
+            - generic [ref=f7e103]:
+              - generic [ref=f7e104] [cursor=pointer]: DA
+              - list:
+                - listitem:
+                  - link "EN":
+                    - /url: https://mth.com/
+        - generic [ref=f7e109]:
+          - generic:
+            - generic:
+              - textbox "Søg"
+            - button "Søg"
+          - generic "Søg" [ref=f7e110] [cursor=pointer]
+    - main [ref=f7e113]:
+      - generic [ref=f7e115]:
+        - generic [ref=f7e116]: En entreprenør med noget på hjerte
+        - heading "Alle vores byggerier starter med et helstøbt menneske" [level=1] [ref=f7e117]
+        - paragraph [ref=f7e118]: Det er på vores bygge- og anlægsprojekter at fagligheden mødes, innovationen sker og samarbejdet skabes. Derfor sætter vi projekterne øverst på dagsordenen og skaber de bedste rammer for menneskerne på - og omkring - vores projekter.
+        - link "Se alle vores projekter her" [ref=f7e119] [cursor=pointer]:
+          - /url: /projekter
+      - article [ref=f7e131]:
+        - heading "En forretning på tre stærke ben" [level=2] [ref=f7e132]
+        - paragraph [ref=f7e135]: MT Højgaard Danmark har tre stærke forretningsben indenfor anlæg, nybyggeri og renovering. Samtidig løser vi løbende mindre håndværksopgaver med vores store egenproduktion. Vi har kontinuerligt mange projekter under udførelse i størrelser fra flere milliarder og ned til nogle få hundredetusinde kroner.
+        - generic [ref=f7e138]:
+          - link [ref=f7e140] [cursor=pointer]:
+            - /url: /vi-tilbyder/renovering-og-transformation
+            - img "Renovering og transformation" [ref=f7e142]
+            - heading "Renovering og transformation" [level=3] [ref=f7e145]
+          - link [ref=f7e151] [cursor=pointer]:
+            - /url: /vi-tilbyder/nybyggeri
+            - img "Nybyggeri" [ref=f7e153]
+            - heading "Nybyggeri" [level=3] [ref=f7e156]
+          - link [ref=f7e162] [cursor=pointer]:
+            - /url: /vi-tilbyder/anlaeg-og-infrastruktur
+            - img "Anlæg og infrastruktur" [ref=f7e164]
+            - heading "Anlæg og infrastruktur" [level=3] [ref=f7e167]
+      - article [ref=f7e172]
+      - article [ref=f7e174]:
+        - heading "Læs vores seneste nyheder her" [level=2] [ref=f7e175]
+        - generic [ref=f7e176]:
+          - paragraph [ref=f7e177]: I MT Højgaard Danmark udfører vi en lang række forskellige bygge- og anlægsopgaver - lige fra broer, til boliger, til supersygehuse og meget meget mere. Den stærke projektkultur er en vigtig del af vores hverdag, ligesom vi prioriterer fællesskab og udvikling.
+          - paragraph [ref=f7e178]:
+            - link "Se alle" [ref=f7e179] [cursor=pointer]:
+              - /url: /nyheder
+        - generic [ref=f7e180]:
+          - link "MT Højgaard Danmark vinder kontrakt om renovering af Storebæltsforbindelsens Vestbro 04.11.2026 MT Højgaard Danmark vinder kontrakt om renovering af Storebæltsforbindelsens Vestbro Læs mere" [ref=f7e182] [cursor=pointer]:
+            - /url: /nyheder/mt-hoejgaard-danmark-vinder-kontrakt-om-renovering-af-storebaeltsforbindelsens-vestbro
+            - img "MT Højgaard Danmark vinder kontrakt om renovering af Storebæltsforbindelsens Vestbro" [ref=f7e184]
+            - generic [ref=f7e185]:
+              - generic [ref=f7e186]: 04.11.2026
+              - heading "MT Højgaard Danmark vinder kontrakt om renovering af Storebæltsforbindelsens Vestbro" [level=3] [ref=f7e187]
+              - generic [ref=f7e188]: Læs mere
+          - link "Vi har afleveret moderne livsstilsunivers på Kultorvet til Salling Group 02.10.2026 Vi har afleveret moderne livsstilsunivers på Kultorvet til Salling Group Læs mere" [ref=f7e190] [cursor=pointer]:
+            - /url: /nyheder/vi-har-afleveret-moderne-livsstilsunivers-paa-kultorvet-til-salling-group
+            - img "Vi har afleveret moderne livsstilsunivers på Kultorvet til Salling Group" [ref=f7e192]
+            - generic [ref=f7e193]:
+              - generic [ref=f7e194]: 02.10.2026
+              - heading "Vi har afleveret moderne livsstilsunivers på Kultorvet til Salling Group" [level=3] [ref=f7e195]
+              - generic [ref=f7e196]: Læs mere
+          - link "Vi har afleveret nyt og prisvindende campusbyggeri til UCL på Svendborg Havn 07.10.2026 Vi har afleveret nyt og prisvindende campusbyggeri til UCL på Svendborg Havn Læs mere" [ref=f7e198] [cursor=pointer]:
+            - /url: /nyheder/vi-har-afleveret-nyt-og-prisvindende-campusbyggeri-til-ucl-paa-svendborg-havn
+            - img "Vi har afleveret nyt og prisvindende campusbyggeri til UCL på Svendborg Havn" [ref=f7e200]
+            - generic [ref=f7e201]:
+              - generic [ref=f7e202]: 07.10.2026
+              - heading "Vi har afleveret nyt og prisvindende campusbyggeri til UCL på Svendborg Havn" [level=3] [ref=f7e203]
+              - generic [ref=f7e204]: Læs mere
+    - contentinfo [ref=f7e205]:
+      - generic [ref=f7e206]:
+        - generic [ref=f7e207]:
+          - generic [ref=f7e208]: Kontakt
+          - generic [ref=f7e209]:
+            - paragraph [ref=f7e210]: Knud Højgaards Vej 72860 SøborgDanmark
+            - paragraph [ref=f7e211]:
+              - link "+45 7012 2400" [ref=f7e212] [cursor=pointer]:
+                - /url: tel:+4570122400
+              - link "info@mth.dk" [ref=f7e213] [cursor=pointer]:
+                - /url: mailto:info@mth.dk
+              - text: "CVR: 12562233"
+            - paragraph [ref=f7e214]:
+              - link "Cookie-politik" [ref=f7e215] [cursor=pointer]:
+                - /url: javascript:CookieConsent.renew();
+        - generic [ref=f7e216]:
+          - generic [ref=f7e217]: Din nye arbejdsplads?
+          - list [ref=f7e218]:
+            - listitem [ref=f7e219]:
+              - link "Ledige stillinger" [ref=f7e220] [cursor=pointer]:
+                - /url: /job-hos-os/ledige-stillinger
+            - listitem [ref=f7e221]:
+              - link "Mød dine nye kollegaer" [ref=f7e222] [cursor=pointer]:
+                - /url: /job-hos-os/moed-vores-medarbejdere
+            - listitem [ref=f7e223]:
+              - link "En lang og stolt historie" [ref=f7e224] [cursor=pointer]:
+                - /url: /om-mt-hoejgaard-danmark/vores-historie
+        - generic [ref=f7e225]:
+          - generic [ref=f7e226]: Hjælp til dit projekt?
+          - list [ref=f7e227]:
+            - listitem [ref=f7e228]:
+              - link "Sådan samarbejder vi" [ref=f7e229] [cursor=pointer]:
+                - /url: /vi-tilbyder/samarbejde
+            - listitem [ref=f7e230]:
+              - link "Se hvad vi har skabt" [ref=f7e231] [cursor=pointer]:
+                - /url: /projekter
+            - listitem [ref=f7e232]:
+              - link "Vi tilbyder" [ref=f7e233] [cursor=pointer]:
+                - /url: /vi-tilbyder
+        - generic [ref=f7e234]:
+          - generic [ref=f7e235]: Om MT Højgaard Danmark
+          - list [ref=f7e236]:
+            - listitem [ref=f7e237]:
+              - link "Praktisk information" [ref=f7e238] [cursor=pointer]:
+                - /url: /om-mt-hoejgaard-danmark/praktisk-information
+            - listitem [ref=f7e239]:
+              - link "Fakturering" [ref=f7e240] [cursor=pointer]:
+                - /url: /om-mt-hoejgaard-danmark/fakturering
+            - listitem [ref=f7e241]:
+              - link "Kontraktdokumenter" [ref=f7e242] [cursor=pointer]:
+                - /url: /om-mt-hoejgaard-danmark/kontraktdokumenter
+            - listitem [ref=f7e243]:
+              - link "Persondatapolitik" [ref=f7e244] [cursor=pointer]:
+                - /url: /om-mt-hoejgaard-danmark/persondatapolitik
+            - listitem [ref=f7e245]:
+              - link "Personoplysninger om kunder" [ref=f7e246] [cursor=pointer]:
+                - /url: /om-mt-hoejgaard-danmark/personoplysninger-om-kunder
+            - listitem [ref=f7e247]:
+              - link "Klagemuligheder" [ref=f7e248] [cursor=pointer]:
+                - /url: /om-mt-hoejgaard-danmark/klagemuligheder
+            - listitem [ref=f7e249]:
+              - link "Kontakt" [ref=f7e250] [cursor=pointer]:
+                - /url: /om-mt-hoejgaard-danmark/kontakt
+      - list [ref=f7e252]:
+        - listitem [ref=f7e253]:
+          - link "LinkedIn" [ref=f7e254] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/mt-hojgaarddanmark
+        - listitem [ref=f7e259]:
+          - link "Facebook" [ref=f7e260] [cursor=pointer]:
+            - /url: https://www.facebook.com/mthojgaarddanmark

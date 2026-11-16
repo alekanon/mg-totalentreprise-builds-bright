@@ -1,0 +1,316 @@
+- generic:
+  - generic:
+    - banner [aria-hidden]:
+      - generic:
+        - link:
+          - /url: /
+        - navigation:
+          - link:
+            - /url: /
+            - text: Forside
+          - link:
+            - /url: /om-os
+            - text: Om os
+          - link:
+            - /url: /ydelser
+            - text: Ydelser
+          - link:
+            - /url: /projekter
+            - text: Projekter
+          - link:
+            - /url: /ejendomsudvikling
+            - text: Ejendomsudvikling
+        - generic:
+          - link:
+            - /url: tel:70702477
+            - text: 70 70 24 77
+          - link:
+            - /url: "#"
+          - link:
+            - /url: /kontakt
+            - text: Kontakt
+    - main [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Novo Nordisk Fabrik – Køge
+                  - heading [level=1]: Maler- og tømrerarbejde på fabriksbyggeri
+                  - paragraph: Komplet maler- og tømrerentreprise på et af Novo Nordisks fabriksbyggerier under høje krav til renhed og dokumentation.
+                  - generic:
+                    - link:
+                      - /url: /ydelser
+                      - text: Se ydelser
+                    - link:
+                      - /url: /kontakt
+                      - text: Kontakt os
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Spektrum Hotel
+                  - heading [level=1]: Malerentreprise på nyt hotelbyggeri
+                  - paragraph: Komplet malerentreprise på Spektrum Hotel — værelser, korridorer og fællesarealer, leveret med fast hold.
+                  - generic:
+                    - link:
+                      - /url: /ydelser
+                      - text: Se ydelser
+                    - link:
+                      - /url: /kontakt
+                      - text: Kontakt os
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Skolen på Strandboulevarden
+                  - heading [level=1]: Tømrer-, snedker- og malerarbejde
+                  - paragraph: Tømrer- og snedkerarbejde samt komplet malerentreprise på både renoverings- og nybygningsdelen i København.
+                  - generic:
+                    - link:
+                      - /url: /ydelser
+                      - text: Se ydelser
+                    - link:
+                      - /url: /kontakt
+                      - text: Kontakt os
+        - generic:
+          - button
+          - button
+          - button
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: Vores ydelser
+              - heading [level=2]: Fagentrepriser til store byggesager og erhvervsprojekter
+            - paragraph: Vores primære fokus er fagentrepriser for professionelle bygherrer, entreprenører og erhvervsvirksomheder. Vi løser også mindre opgaver – altid med samme faste hold og høje kvalitet.
+          - generic:
+            - link:
+              - /url: /ydelser/tomrer
+              - generic:
+                - generic:
+                  - heading [level=3]: Tømrerarbejde
+              - paragraph: Indvendig tømrer- og snedkerarbejde – fra gipsvægge til trægulve.
+            - link:
+              - /url: /ydelser/maler
+              - generic:
+                - generic:
+                  - heading [level=3]: Malerarbejde
+              - paragraph: Komplet malerarbejde – alle opgaver inden for faget.
+            - link:
+              - /url: /ydelser/erhvervsbyggeri
+              - generic:
+                - generic:
+                  - heading [level=3]: Erhvervsbyggeri
+              - paragraph: Kontorer, butikker, lejemål og industri – fra råhus til indflytningsklar.
+            - link:
+              - /url: /ydelser/totalentreprise
+              - generic:
+                - generic:
+                  - heading [level=3]: Totalentreprise
+              - paragraph: Én aftale, én kontaktperson – vi står for hele opgaven.
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: Hvem vi er
+              - heading [level=2]: Faste hold, fra opstart til aflevering
+              - paragraph: MG Totalentreprise ApS er en dansk byggevirksomhed med egne håndværkere. Vi sætter en ære i kontinuitet, uanset projektets størrelse.
+              - list:
+                - listitem: Egne, fastansatte håndværkere
+                - listitem: Én fast kontaktperson
+                - listitem: Dagligt tilsyn på sagen
+              - link:
+                - /url: /om-os
+                - text: Læs mere om os
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: Samarbejdspartnere
+              - heading [level=2]: Vi samarbejder med de stærkeste firmaer inden for byggeri
+            - paragraph: Et solidt netværk af leverandører og fagfolk er med til at sikre kvalitet i hvert projekt.
+      - generic:
+        - generic:
+          - generic:
+            - generic: Sådan arbejder vi
+            - heading [level=2]: Fra første samtale til færdig aflevering
+          - generic:
+            - generic:
+              - generic: "01"
+              - heading [level=3]: Kontakt
+              - paragraph: Ring eller skriv – vi vender tilbage hurtigt og aftaler et besøg.
+            - generic:
+              - generic: "02"
+              - heading [level=3]: Tilbud
+              - paragraph: Vi gennemgår projektet og leverer et klart, detaljeret tilbud.
+            - generic:
+              - generic: "03"
+              - heading [level=3]: Opstart
+              - paragraph: Fast hold, fast kontaktperson og daglig projektledelse fra dag ét.
+            - generic:
+              - generic: "04"
+              - heading [level=3]: Aflevering
+              - paragraph: Kvalitetssikring i Dalux, Ajour eller Byggeweb – mangelfri aflevering.
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: Ejendomsudvikling
+              - heading [level=2]: Vi udvikler ejendomme i eget regi.
+              - link:
+                - /url: /ejendomsudvikling
+                - text: Se ejendomsudvikling
+            - list:
+              - listitem:
+                - generic: "01"
+                - generic: Nałęczów I
+                - generic: Polen
+              - listitem:
+                - generic: "02"
+                - generic: Nałęczów II
+                - generic: Polen
+              - listitem:
+                - generic: "03"
+                - generic: Ringstedvej 204, Lellinge
+                - generic: Danmark
+      - generic:
+        - generic:
+          - generic:
+            - generic: Bæredygtighed
+            - heading [level=2]: Vi bygger med fokus på fremtiden.
+          - generic:
+            - generic:
+              - heading [level=3]: Bedre materialevalg
+              - paragraph: Vi reducerer CO₂-aftrykket gennem de materialer, vi vælger.
+            - generic:
+              - heading [level=3]: Mindre spild
+              - paragraph: Planlægning og tæt styring af forbrug på byggepladsen.
+            - generic:
+              - heading [level=3]: Energieffektive løsninger
+              - paragraph: Isolering og detaljer, der holder – energimæssigt og fugtteknisk.
+      - generic:
+        - generic:
+          - generic: Reference
+          - blockquote: Baseret på vores erfaring kan vi uden tøven anbefale MG-T til andre pharma-anlæg og lignende krævende projektmiljøer, hvor kvalitet, professionalisme, tilpasningsevne og samarbejde er afgørende.
+          - generic:
+            - generic: Peter Dé Armand
+            - generic: Construction Technical Lead, Novo Nordisk Pharmatech A/S
+    - generic:
+      - region "Notifications alt+T"
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - generic: Kontakt
+            - heading [level=2]: Lad os tale om dit projekt
+            - paragraph:
+              - text: Skriv til os, så vender vi tilbage hurtigst muligt – eller ring på
+              - link:
+                - /url: tel:70702477
+                - text: 70 70 24 77
+              - text: .
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Navn *
+                  - textbox
+                - generic:
+                  - generic: Email *
+                  - textbox
+                - generic:
+                  - generic: Virksomhed
+                  - textbox
+                - generic:
+                  - generic: Telefon
+                  - textbox
+              - generic:
+                - generic: Besked *
+                - textbox
+              - generic:
+                - checkbox
+                - generic:
+                  - text: Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf.
+                  - link:
+                    - /url: /privatlivspolitik
+                    - text: privatlivspolitikken
+                  - text: .
+              - button: Send besked
+          - generic: Vi arbejder i hele Sjælland – fra Helsingør i nord til Vordingborg i syd.
+    - contentinfo [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - paragraph: Håndværkere inden for tømrer, flisemurer og maler. Vi udfører fagentrepriser på byggeprojekter i hele hovedstadsområdet.
+            - link:
+              - /url: "#"
+          - generic:
+            - heading [level=4]: Navigation
+            - list:
+              - listitem:
+                - link:
+                  - /url: /om-os
+                  - text: Om os
+              - listitem:
+                - link:
+                  - /url: /ydelser
+                  - text: Ydelser
+              - listitem:
+                - link:
+                  - /url: /projekter
+                  - text: Projekter
+              - listitem:
+                - link:
+                  - /url: /ejendomsudvikling
+                  - text: Ejendomsudvikling
+              - listitem:
+                - link:
+                  - /url: /kontakt
+                  - text: Kontakt
+          - generic:
+            - heading [level=4]: Kontakt
+            - list:
+              - listitem: MG Totalentreprise ApS
+              - listitem: Emdrupvej 108, 2400 København NV
+              - listitem:
+                - link:
+                  - /url: tel:70702477
+                  - text: Tlf. 70 70 24 77
+              - listitem: "CVR: 33041365"
+              - listitem:
+                - link:
+                  - /url: /kontakt
+                  - text: Kontakt os →
+        - generic:
+          - generic: © 2026 MG Totalentreprise ApS. Alle rettigheder forbeholdes.
+          - generic:
+            - link:
+              - /url: /privatlivspolitik
+              - text: Privatlivspolitik
+            - link:
+              - /url: /cookiepolitik
+              - text: Cookiepolitik
+            - button: Cookieindstillinger
+  - dialog "Vi bruger cookies" [ref=f9e366]:
+    - generic [ref=f9e367]:
+      - img "MG Totalentreprise" [ref=f9e368]
+      - heading "Vi bruger cookies" [level=2] [ref=f9e369]
+      - paragraph [ref=f9e370]:
+        - text: Nødvendige cookies får hjemmesiden til at fungere. Statistik-cookies bruges kun, hvis du tillader det. Læs mere i vores
+        - link "cookiepolitik" [ref=f9e371] [cursor=pointer]:
+          - /url: /cookiepolitik
+        - text: .
+    - generic [ref=f9e372]:
+      - generic [ref=f9e373]:
+        - generic [ref=f9e374]:
+          - generic [ref=f9e375]: Nødvendige
+          - paragraph [ref=f9e376]: Kræves for at hjemmesiden kan fungere. Kan ikke fravælges.
+        - switch [checked] [disabled] [ref=f9e377]
+      - generic [ref=f9e378]:
+        - generic [ref=f9e379]:
+          - generic [ref=f9e380]: Statistik
+          - paragraph [ref=f9e381]: Hjælper os med at forstå, hvordan hjemmesiden bliver brugt.
+        - switch [active] [ref=f9e382] [cursor=pointer]
+    - generic [ref=f9e383]:
+      - button "Accepter alle" [ref=f9e384]
+      - generic [ref=f9e385]:
+        - button "Kun nødvendige" [ref=f9e386]
+        - button "Gem valg" [ref=f9e387]

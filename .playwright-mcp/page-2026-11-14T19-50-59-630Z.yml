@@ -1,0 +1,207 @@
+- generic [ref=f26e2]:
+  - banner [ref=f26e3]:
+    - generic [ref=f26e4]:
+      - link [ref=f26e5] [cursor=pointer]:
+        - /url: /
+        - img "MG Totalentreprise" [ref=f26e6]
+      - navigation [ref=f26e7]:
+        - link "Forside" [ref=f26e8] [cursor=pointer]:
+          - /url: /
+        - link "Om os" [ref=f26e9] [cursor=pointer]:
+          - /url: /om-os
+        - link "Ydelser" [ref=f26e10] [cursor=pointer]:
+          - /url: /ydelser
+        - link "Projekter" [ref=f26e11] [cursor=pointer]:
+          - /url: /projekter
+        - link "Ejendomsudvikling" [ref=f26e12] [cursor=pointer]:
+          - /url: /ejendomsudvikling
+      - generic [ref=f26e13]:
+        - link "70 70 24 77" [ref=f26e14] [cursor=pointer]:
+          - /url: tel:70702477
+        - link "MG Totalentreprise på LinkedIn" [ref=f26e17] [cursor=pointer]:
+          - /url: "#"
+        - link "Kontakt" [ref=f26e22] [cursor=pointer]:
+          - /url: /kontakt
+  - main [ref=f26e23]:
+    - generic [ref=f26e27]:
+      - generic [ref=f26e28]: Ejendomsudvikling
+      - heading "Ejendomsudvikling i Danmark og Polen" [level=1] [ref=f26e31]
+      - paragraph [ref=f26e32]: Vi udvikler og opfører ejendomme i eget regi gennem MG Ejendomme i Danmark og Viridis Sp. z o.o. i Polen.
+    - generic [ref=f26e35]:
+      - generic [ref=f26e36]: Fra første skitse til aflevering – i eget regi.
+      - paragraph [ref=f26e37]: Ud over vores rolle som fag- og totalentreprenør udvikler vi selv ejendomsprojekter. Det giver os fuld kontrol over kvalitet, tidsplan og økonomi.
+    - generic [ref=f26e39]:
+      - heading "Det udvikler vi" [level=2] [ref=f26e40]
+      - generic [ref=f26e41]:
+        - link "MG Ejendomme MG Ejendomme Danmark" [ref=f26e42] [cursor=pointer]:
+          - /url: "#mg-ejendomme"
+          - generic [ref=f26e43]:
+            - img "MG Ejendomme" [ref=f26e44]
+            - generic [ref=f26e46]:
+              - generic [ref=f26e47]: MG Ejendomme
+              - generic [ref=f26e48]: Danmark
+        - link "Viridis Sp. z o.o. Viridis Sp. z o.o. Polen" [ref=f26e52] [cursor=pointer]:
+          - /url: "#viridis"
+          - generic [ref=f26e53]:
+            - img "Viridis Sp. z o.o." [ref=f26e54]
+            - generic [ref=f26e56]:
+              - generic [ref=f26e57]: Viridis Sp. z o.o.
+              - generic [ref=f26e58]: Polen
+    - generic [ref=f26e64]:
+      - heading "Godt at vide om vores ejendomsudvikling" [level=2] [ref=f26e65]
+      - generic [ref=f26e66]:
+        - generic [ref=f26e67]:
+          - generic [ref=f26e68]: "2"
+          - generic [ref=f26e69]: Lande
+          - paragraph [ref=f26e70]: Vi udvikler ejendomme i både Danmark og Polen.
+        - generic [ref=f26e71]:
+          - generic [ref=f26e72]: "6"
+          - generic [ref=f26e73]: Projekter
+          - paragraph [ref=f26e74]: Boligprojekter i eget regi og som totalentreprenør.
+        - generic [ref=f26e75]:
+          - generic [ref=f26e76]: "2"
+          - generic [ref=f26e77]: Selskaber
+          - paragraph [ref=f26e78]: MG Ejendomme i Danmark og Viridis Sp. z o.o. i Polen.
+    - generic [ref=f26e80]:
+      - generic [ref=f26e81]:
+        - heading "MG Ejendomme" [level=2] [ref=f26e82]
+        - paragraph [ref=f26e83]: Gennem MG Ejendomme udvikler og opfører vi boligprojekter i eget regi i Danmark, fra projektudvikling til udførelse.
+      - generic [ref=f26e84]:
+        - button "Se billeder af Solrød Byvej 58" [ref=f26e85]:
+          - img "Solrød Byvej 58" [ref=f26e87]
+          - generic [ref=f26e89]:
+            - heading "Solrød Byvej 58" [level=3] [ref=f26e90]
+            - generic [ref=f26e91]:
+              - generic [ref=f26e92]: Solrød
+              - generic [ref=f26e93]: Udføres i eget regi
+              - generic [ref=f26e94]: Projektværdi oplyses senere
+        - button "Se billeder af Ringstedvej 204" [ref=f26e97]:
+          - img "Ringstedvej 204" [ref=f26e99]
+          - generic [ref=f26e101]:
+            - heading "Ringstedvej 204" [level=3] [ref=f26e102]
+            - generic [ref=f26e103]:
+              - generic [ref=f26e104]: Lellinge
+              - generic [ref=f26e105]: Udføres i eget regi
+              - generic [ref=f26e106]: Projektværdi oplyses senere
+    - generic [ref=f26e110]:
+      - generic [ref=f26e111]:
+        - heading "Viridis Sp. z o.o." [level=2] [ref=f26e112]
+        - paragraph [ref=f26e113]: Viridis er vores polske selskab, der udfører byggeopgaver som totalentreprenør og udvikler egne ejendomsprojekter.
+      - generic [ref=f26e114]:
+        - button "Se billeder af Nałęczów I" [ref=f26e115]:
+          - img "Nałęczów I" [ref=f26e117]
+          - generic [ref=f26e119]:
+            - heading "Nałęczów I" [level=3] [ref=f26e120]
+            - generic [ref=f26e121]:
+              - generic [ref=f26e122]: Polen
+              - generic [ref=f26e123]: Totalentreprenør
+              - generic [ref=f26e124]: Projektværdi oplyses senere
+        - button "Se billeder af Nałęczów II" [ref=f26e127]:
+          - img "Nałęczów II" [ref=f26e129]
+          - generic [ref=f26e131]:
+            - heading "Nałęczów II" [level=3] [ref=f26e132]
+            - generic [ref=f26e133]:
+              - generic [ref=f26e134]: Polen
+              - generic [ref=f26e135]: Totalentreprenør
+              - generic [ref=f26e136]: Projektværdi oplyses senere
+        - generic [ref=f26e139]:
+          - generic [ref=f26e140]: Billede tilføjes
+          - generic [ref=f26e144]:
+            - heading "Snopków" [level=3] [ref=f26e145]
+            - generic [ref=f26e146]:
+              - generic [ref=f26e147]: Polen
+              - generic [ref=f26e148]: Totalentreprenør
+              - generic [ref=f26e149]: Projektværdi oplyses senere
+        - button "Se billeder af Marysin" [ref=f26e150]:
+          - img "Marysin" [ref=f26e152]
+          - generic [ref=f26e154]:
+            - heading "Marysin" [level=3] [ref=f26e155]
+            - generic [ref=f26e156]:
+              - generic [ref=f26e157]: Polen
+              - generic [ref=f26e158]: Projektudvikling
+              - generic [ref=f26e159]: Projektværdi oplyses senere
+  - generic [ref=f26e162]:
+    - region "Notifications alt+T"
+    - generic [ref=f26e164]:
+      - generic [ref=f26e165]:
+        - generic [ref=f26e166]: Kontakt
+        - heading "Lad os tale om dit projekt" [level=2] [ref=f26e169]
+        - paragraph [ref=f26e170]:
+          - text: Skriv til os, så vender vi tilbage hurtigst muligt – eller ring på
+          - link "70 70 24 77" [ref=f26e171] [cursor=pointer]:
+            - /url: tel:70702477
+          - text: .
+        - generic [ref=f26e172]:
+          - generic [ref=f26e173]:
+            - generic [ref=f26e174]:
+              - generic [ref=f26e175]: Navn *
+              - textbox [ref=f26e176]
+            - generic [ref=f26e177]:
+              - generic [ref=f26e178]: Email *
+              - textbox [ref=f26e179]
+            - generic [ref=f26e180]:
+              - generic [ref=f26e181]: Virksomhed
+              - textbox [ref=f26e182]
+            - generic [ref=f26e183]:
+              - generic [ref=f26e184]: Telefon
+              - textbox [ref=f26e185]
+          - generic [ref=f26e186]:
+            - generic [ref=f26e187]: Besked *
+            - textbox [ref=f26e188]
+          - generic [ref=f26e189]:
+            - checkbox "Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf. privatlivspolitikken." [ref=f26e190]
+            - generic [ref=f26e191]:
+              - text: Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf.
+              - link "privatlivspolitikken" [ref=f26e192] [cursor=pointer]:
+                - /url: /privatlivspolitik
+              - text: .
+          - button "Send besked" [ref=f26e193]
+      - generic [ref=f26e197]:
+        - img "Kort over Danmark med Sjælland markeret" [ref=f26e198]
+        - generic [ref=f26e199]: Vi arbejder i hele Sjælland – fra Helsingør i nord til Vordingborg i syd.
+  - contentinfo [ref=f26e200]:
+    - generic [ref=f26e202]:
+      - generic [ref=f26e203]:
+        - generic [ref=f26e204]:
+          - img "MG Totalentreprise" [ref=f26e205]
+          - paragraph [ref=f26e206]: Håndværkere inden for tømrer, flisemurer og maler. Vi udfører fagentrepriser på byggeprojekter i hele hovedstadsområdet.
+          - link "MG Totalentreprise på LinkedIn" [ref=f26e207] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f26e212]:
+          - heading "Navigation" [level=4] [ref=f26e213]
+          - list [ref=f26e214]:
+            - listitem [ref=f26e215]:
+              - link "Om os" [ref=f26e216] [cursor=pointer]:
+                - /url: /om-os
+            - listitem [ref=f26e217]:
+              - link "Ydelser" [ref=f26e218] [cursor=pointer]:
+                - /url: /ydelser
+            - listitem [ref=f26e219]:
+              - link "Projekter" [ref=f26e220] [cursor=pointer]:
+                - /url: /projekter
+            - listitem [ref=f26e221]:
+              - link "Ejendomsudvikling" [ref=f26e222] [cursor=pointer]:
+                - /url: /ejendomsudvikling
+            - listitem [ref=f26e223]:
+              - link "Kontakt" [ref=f26e224] [cursor=pointer]:
+                - /url: /kontakt
+        - generic [ref=f26e225]:
+          - heading "Kontakt" [level=4] [ref=f26e226]
+          - list [ref=f26e227]:
+            - listitem [ref=f26e228]: MG Totalentreprise ApS
+            - listitem [ref=f26e229]: Emdrupvej 108, 2400 København NV
+            - listitem [ref=f26e230]:
+              - link "Tlf. 70 70 24 77" [ref=f26e231] [cursor=pointer]:
+                - /url: tel:70702477
+            - listitem [ref=f26e232]: "CVR: 33041365"
+            - listitem [ref=f26e233]:
+              - link "Kontakt os →" [ref=f26e234] [cursor=pointer]:
+                - /url: /kontakt
+      - generic [ref=f26e235]:
+        - generic [ref=f26e236]: © 2026 MG Totalentreprise ApS. Alle rettigheder forbeholdes.
+        - generic [ref=f26e237]:
+          - link "Privatlivspolitik" [ref=f26e238] [cursor=pointer]:
+            - /url: /privatlivspolitik
+          - link "Cookiepolitik" [ref=f26e239] [cursor=pointer]:
+            - /url: /cookiepolitik
+          - button "Cookieindstillinger" [ref=f26e240]

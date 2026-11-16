@@ -1,0 +1,306 @@
+- generic [active] [ref=f19e1]:
+  - generic [ref=f19e2]:
+    - banner [ref=f19e3]:
+      - generic [ref=f19e4]:
+        - link "Skanska" [ref=f19e6] [cursor=pointer]:
+          - /url: https://www.skanska.com/dk/da
+        - navigation "Primary navigation" [ref=f19e11]:
+          - list [ref=f19e12]:
+            - listitem [ref=f19e13]:
+              - link "Ejendomsudvikling" [ref=f19e14] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/ejendomsudvikling
+            - listitem [ref=f19e15]:
+              - link "Byudvikling" [ref=f19e16] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/byudvikling
+            - listitem [ref=f19e17]:
+              - link "Nyheder" [ref=f19e18] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/nyheder
+            - listitem [ref=f19e19]:
+              - link "Karriere" [ref=f19e20] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/karriere
+            - listitem [ref=f19e21]:
+              - link "Om os" [ref=f19e22] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/om-os
+        - generic [ref=f19e23]:
+          - link "Kontakt" [ref=f19e24] [cursor=pointer]:
+            - /url: https://www.skanska.com/dk/da/kontakt
+          - button "Søg" [ref=f19e26] [cursor=pointer]
+          - button "Skift sprog" [ref=f19e29] [cursor=pointer]:
+            - generic [ref=f19e32]: DA
+      - generic [ref=f19e33]:
+        - paragraph [ref=f19e34]: Ejendomsudvikling
+        - navigation "Secondary navigation" [ref=f19e35]:
+          - list [ref=f19e36]:
+            - listitem [ref=f19e37]:
+              - link "Bolig" [ref=f19e38] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/ejendomsudvikling/boliger
+            - listitem [ref=f19e39]:
+              - link "Kontor" [ref=f19e40] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/ejendomsudvikling/kontorer
+            - listitem [ref=f19e41]:
+              - link "Hotel" [ref=f19e42] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/ejendomsudvikling/hoteller
+            - listitem [ref=f19e43]:
+              - link "Tag en snak med os" [ref=f19e44] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/ejendomsudvikling/tag-en-snak-med-os
+    - main [ref=f19e45]:
+      - generic [ref=f19e49]:
+        - heading [level=1] [ref=f19e51]:
+          - generic "Vi udvikler boliger, kontorer og hoteller i Storkøbenhavn" [ref=f19e53]:
+            - generic [ref=f19e54]: Vi
+            - generic [ref=f19e55]: udvikler
+            - generic [ref=f19e56]: boliger,
+            - generic [ref=f19e57]: kontorer
+            - generic [ref=f19e58]: og
+            - generic [ref=f19e59]: hoteller
+            - generic [ref=f19e60]: i
+            - generic [ref=f19e61]: Storkøbenhavn
+        - paragraph [ref=f19e63]: Projekter fra Skanska bliver udviklet med hensyn til trivsel og livskvalitet.
+      - navigation "breadcrumb" [ref=f19e66]:
+        - list [ref=f19e67]:
+          - listitem [ref=f19e68]:
+            - link "Forside" [ref=f19e69] [cursor=pointer]:
+              - /url: https://www.skanska.com/dk/da
+          - listitem [ref=f19e72]: Ejendomsudvikling
+      - generic [ref=f19e74]:
+        - generic [ref=f19e76]:
+          - heading "Over 500.000 m² ejendomme udviklet i Storkøbenhavn." [level=2] [ref=f19e78]
+          - paragraph [ref=f19e80]: Vores målsætning er at skabe et bedre samfund med gode rammer for, hvordan mennesker bor, arbejder og lever.
+        - generic [ref=f19e83]:
+          - heading "Det udvikler vi" [level=2] [ref=f19e86]
+          - generic [ref=f19e88]:
+            - generic [ref=f19e89]: Showing card 1 of 3
+            - region "Teasers-slider" [ref=f19e90]:
+              - list [ref=f19e91]:
+                - listitem "Slide 1 af 3" [ref=f19e92]:
+                  - link [ref=f19e94] [cursor=pointer]:
+                    - /url: https://www.skanska.com/dk/da/ejendomsudvikling/boliger
+                    - img "Bygning i dagslys" [ref=f19e96]
+                    - generic [ref=f19e97]:
+                      - generic [ref=f19e98]:
+                        - heading "Boliger" [level=3] [ref=f19e99]
+                        - button [ref=f19e101]
+                      - paragraph [ref=f19e104]: Sammen med vores kunder og samarbejdspartnere udvikler vi ejendomme og boligområder, der er tilpasset fremtidens familier og livsstile.
+                - listitem "Slide 2 af 3" [ref=f19e105]:
+                  - link [ref=f19e107] [cursor=pointer]:
+                    - /url: https://www.skanska.com/dk/da/ejendomsudvikling/kontorer
+                    - img "Building at night" [ref=f19e109]
+                    - generic [ref=f19e110]:
+                      - generic [ref=f19e111]:
+                        - heading "Kontorer" [level=3] [ref=f19e112]
+                        - button [ref=f19e114]
+                      - paragraph [ref=f19e117]: Vi engagerer os aktivt i at udvikle kontorejendomme, der er skabt til en produktiv og sund arbejdsdag med godt indeklima og godt dagslys.
+                - listitem "Slide 3 af 3" [ref=f19e118]:
+                  - link [ref=f19e120] [cursor=pointer]:
+                    - /url: https://www.skanska.com/dk/da/ejendomsudvikling/hoteller
+                    - generic [ref=f19e122]:
+                      - generic [ref=f19e123]:
+                        - heading "Hoteller" [level=3] [ref=f19e124]
+                        - button [ref=f19e126]
+                      - paragraph [ref=f19e129]: I samarbejde med hoteloperatører, udvikler vi hoteller på populære lokationer nær metrostationer, S-tog og motorvejsnettet.
+        - generic [ref=f19e131]:
+          - heading "Godt at vide om vores ejendomsudvikling" [level=2] [ref=f19e133]
+          - generic [ref=f19e134]:
+            - paragraph [ref=f19e137]: Vi udvikler boliger, kontorer og hoteller af høj kvalitet på gode lokaliteter med kort afstand til offentlig transport.
+            - paragraph [ref=f19e140]: Vi er med i hele værdikæden fra grundkøb, design, projektering, opførelse, udlejning, drift - og salg til investorer fra ind- og udland.
+            - paragraph [ref=f19e143]: Skanska er en verdens største udviklings- og entreprenørvirksomheder med 26.000 medarbejdere i Norden, Europa og USA.
+            - paragraph [ref=f19e146]: Vores danske projekter certificeres minimum til DGNB Guld. Skanskakoncernen har som mål at blive CO2-neutral i 2045.
+        - generic [ref=f19e148]:
+          - heading "Klar til en forretning med os?" [level=2] [ref=f19e150]
+          - generic [ref=f19e151]:
+            - paragraph [ref=f19e153]: Måske kan vi hjælpe dig med at finde den rette ejendom at investere i, det helt rigtige kontor at flytte ind i, eller det bedste byområde at blive en del af. Det kan også være, at du har en grund eller en ejendom til salg, og vil høre, om vi er interesserede?
+            - link "Ring til os" [ref=f19e155] [cursor=pointer]:
+              - /url: https://www.skanska.com/dk/da/ejendomsudvikling/tag-en-snak-med-os
+        - generic [ref=f19e159]:
+          - generic [ref=f19e160]:
+            - heading "Boliger" [level=2] [ref=f19e162]
+            - generic [ref=f19e163]:
+              - paragraph [ref=f19e164]: Når Skanska udvikler boligområder og ejendomme ser vi på helheder og tænker fremad. Vi samarbejder med alle involverede i projekterne om temaer som fællesskab, deleøkonomi og rekreative gårdmiljøer.
+              - link "Læs mere om udvikling af boliger" [ref=f19e165] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/ejendomsudvikling/boliger
+                - button [ref=f19e167]
+          - generic [ref=f19e171]:
+            - generic [ref=f19e172]: Showing card 1 of 3
+            - region "Teasers-slider" [ref=f19e173]:
+              - list [ref=f19e174]:
+                - listitem "Slide 1 af 3" [ref=f19e175]:
+                  - group [ref=f19e177] [cursor=pointer]:
+                    - generic [ref=f19e179]:
+                      - generic [ref=f19e180]:
+                        - heading "Bella Studios" [level=3] [ref=f19e181]
+                        - button [ref=f19e182]
+                      - paragraph [ref=f19e184]: Ørestad, København
+                      - paragraph [ref=f19e185]: Bolig
+                      - paragraph [ref=f19e186]: 13.100 m²
+                - listitem "Slide 2 af 3" [ref=f19e187]:
+                  - group [ref=f19e189] [cursor=pointer]:
+                    - generic [ref=f19e191]:
+                      - generic [ref=f19e192]:
+                        - heading "C.F. Møllers Have" [level=3] [ref=f19e193]
+                        - button [ref=f19e194]
+                      - paragraph [ref=f19e196]: Ørestad, København
+                      - paragraph [ref=f19e197]: Bolig
+                      - paragraph [ref=f19e198]: 12.000 m²
+                - listitem "Slide 3 af 3" [ref=f19e199]:
+                  - group [ref=f19e201] [cursor=pointer]:
+                    - generic [ref=f19e203]:
+                      - generic [ref=f19e204]:
+                        - heading "Hørkær Have" [level=3] [ref=f19e205]
+                        - button [ref=f19e206]
+                      - paragraph [ref=f19e208]: Marielund, Herlev
+                      - paragraph [ref=f19e209]: Bolig
+                      - paragraph [ref=f19e210]: 22.700 m²
+        - generic [ref=f19e212]:
+          - generic [ref=f19e213]:
+            - heading "Kontorer" [level=2] [ref=f19e215]
+            - generic [ref=f19e216]:
+              - paragraph [ref=f19e217]: Vi ved, hvor meget beliggenhed betyder for at tiltrække og fastholde de bedste medarbejdere. Derfor bygger vi kontorejendomme i attraktive områder af Storkøbenhavn med gode trafikale adgangsforhold.
+              - link "Læs mere om udvikling af kontorer" [ref=f19e218] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/ejendomsudvikling/kontorer
+                - button [ref=f19e220]
+          - generic [ref=f19e224]:
+            - generic [ref=f19e225]: Showing card 1 of 3
+            - region "Teasers-slider" [ref=f19e226]:
+              - list [ref=f19e227]:
+                - listitem "Slide 1 af 3" [ref=f19e228]:
+                  - group [ref=f19e230] [cursor=pointer]:
+                    - generic [ref=f19e232]:
+                      - generic [ref=f19e233]:
+                        - heading "CPH Pulse" [level=3] [ref=f19e234]
+                        - button [ref=f19e235]
+                      - paragraph [ref=f19e237]: Havneholmen, København
+                      - paragraph [ref=f19e238]: Kontor
+                      - paragraph [ref=f19e239]: 15.800 m²
+                - listitem "Slide 2 af 3" [ref=f19e240]:
+                  - group [ref=f19e242] [cursor=pointer]:
+                    - generic [ref=f19e244]:
+                      - generic [ref=f19e245]:
+                        - heading "Nest 45" [level=3] [ref=f19e246]
+                        - button [ref=f19e247]
+                      - paragraph [ref=f19e249]: Ørestad, København
+                      - paragraph [ref=f19e250]: Kontor
+                      - paragraph [ref=f19e251]: 14.500 m²
+                - listitem "Slide 3 af 3" [ref=f19e252]:
+                  - group [ref=f19e254] [cursor=pointer]:
+                    - generic [ref=f19e256]:
+                      - generic [ref=f19e257]:
+                        - heading "CPH Highline" [level=3] [ref=f19e258]
+                        - button [ref=f19e259]
+                      - paragraph [ref=f19e261]: Havneholmen, København
+                      - paragraph [ref=f19e262]: Kontor
+                      - paragraph [ref=f19e263]: 16.900 m²
+        - generic [ref=f19e265]:
+          - generic [ref=f19e266]:
+            - heading "Hoteller" [level=2] [ref=f19e268]
+            - generic [ref=f19e269]:
+              - paragraph [ref=f19e270]: Vi udvikler hoteller i Storkøbenhavn, der ligger centralt og tæt på metro og tog, men også med let adgang til motorvejsnettet. Udviklingen foregår i tæt samarbejde med hoteloperatører, så vi sammen sikrer de bedste steder at overnatte.
+              - link "Læs mere om udvikling af hoteller" [ref=f19e271] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/ejendomsudvikling/hoteller
+                - button [ref=f19e273]
+          - generic [ref=f19e277]:
+            - generic [ref=f19e278]: Showing card 1 of 3
+            - region "Teasers-slider" [ref=f19e279]:
+              - list [ref=f19e280]:
+                - listitem "Slide 1 af 3" [ref=f19e281]:
+                  - group [ref=f19e283] [cursor=pointer]:
+                    - generic [ref=f19e285]:
+                      - generic [ref=f19e286]:
+                        - heading "Bob W Ørestad" [level=3] [ref=f19e287]
+                        - button [ref=f19e288]
+                      - paragraph [ref=f19e290]: Ørestad, København
+                      - paragraph [ref=f19e291]: Hotel
+                      - paragraph [ref=f19e292]: 13.100 m²
+                - listitem "Slide 2 af 3" [ref=f19e293]:
+                  - group [ref=f19e295] [cursor=pointer]:
+                    - generic [ref=f19e297]:
+                      - generic [ref=f19e298]:
+                        - heading "Ibis Styles Copenhagen Ørestad" [level=3] [ref=f19e299]
+                        - button [ref=f19e300]
+                      - paragraph [ref=f19e302]: Ørestad, København
+                      - paragraph [ref=f19e303]: Hotel
+                - listitem "Slide 3 af 3" [ref=f19e304]:
+                  - group [ref=f19e306] [cursor=pointer]:
+                    - generic [ref=f19e308]:
+                      - generic [ref=f19e309]:
+                        - heading "Scandic CPH Strandpark" [level=3] [ref=f19e310]
+                        - button [ref=f19e311]
+                      - paragraph [ref=f19e313]: Scanport, Tårnby
+                      - paragraph [ref=f19e314]: Hotel
+                      - paragraph [ref=f19e315]: 25.500 m²
+    - contentinfo [ref=f19e316]:
+      - generic [ref=f19e318]:
+        - heading "The knowledge and foresight to shape the way we live" [level=2] [ref=f19e320]
+        - button "Vælg land" [ref=f19e322] [cursor=pointer]
+      - generic [ref=f19e326]:
+        - generic [ref=f19e327]:
+          - heading "Kontakt os" [level=3] [ref=f19e328]
+          - generic [ref=f19e329]:
+            - generic [ref=f19e330]:
+              - paragraph [ref=f19e331]:
+                - strong [ref=f19e332]: Skanska A/S
+                - text: Havneholmen 6, 6. sal 2450 København SV
+              - paragraph [ref=f19e333]
+              - paragraph [ref=f19e334]:
+                - strong [ref=f19e335]: Hovednummer
+                - text: +45 44 68 05 65
+              - paragraph [ref=f19e336]
+              - paragraph [ref=f19e337]:
+                - strong [ref=f19e338]: Åbningstider
+                - text: "Mandag-torsdag: 8.00-16.00 Fredag: 8.00-15.30"
+              - paragraph [ref=f19e339]
+            - list [ref=f19e340]:
+              - listitem [ref=f19e341]:
+                - link "Kontakt medarbejdere" [ref=f19e342] [cursor=pointer]:
+                  - /url: https://www.skanska.com/dk/da/kontakt
+        - generic [ref=f19e343]:
+          - heading "Om Skanska" [level=3] [ref=f19e344]
+          - generic [ref=f19e345]:
+            - paragraph [ref=f19e347]: I Danmark er Skanska repræsenteret ved Skanska A/S, der udvikler kontorer, boliger og hoteller i Storkøbenhavn.
+            - list [ref=f19e348]:
+              - listitem [ref=f19e349]:
+                - link "Skanska i Danmark" [ref=f19e350] [cursor=pointer]:
+                  - /url: https://www.skanska.com/dk/da/om-os/om-skanska/commercial-development-nordic
+              - listitem [ref=f19e351]:
+                - link "Formål og værdier" [ref=f19e352] [cursor=pointer]:
+                  - /url: https://www.skanska.com/dk/da/om-os/om-skanska/formal-og-vardier
+              - listitem [ref=f19e353]:
+                - link "Finansiel information" [ref=f19e354] [cursor=pointer]:
+                  - /url: https://www.skanska.com/dk/da/om-os/om-skanska/finansiel-information
+        - generic [ref=f19e355]:
+          - heading "Om Koncernen" [level=3] [ref=f19e356]
+          - generic [ref=f19e357]:
+            - paragraph [ref=f19e359]: Skanska er en af verdens største projektudviklings- og entreprenørvirksomheder med 26.000 ansatte på verdensplan i Europa og USA.
+            - list [ref=f19e360]:
+              - listitem [ref=f19e361]:
+                - link "Skanska Group website" [ref=f19e362] [cursor=pointer]:
+                  - /url: https://www.skanska.com/group/en?epslanguage=en
+              - listitem [ref=f19e363]:
+                - link "About Skanska Group" [ref=f19e364] [cursor=pointer]:
+                  - /url: https://www.skanska.com/group/en/about-us
+              - listitem [ref=f19e365]:
+                - link "Investors" [ref=f19e366] [cursor=pointer]:
+                  - /url: https://www.skanska.com/group/en/investors
+        - generic [ref=f19e367]:
+          - heading "Genveje" [level=3] [ref=f19e368]
+          - list [ref=f19e370]:
+            - listitem [ref=f19e371]:
+              - link "Presse" [ref=f19e372] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/nyheder/pressemeddelelser
+            - listitem [ref=f19e373]:
+              - link "Sådan arbejder vi med sikkerhed" [ref=f19e374] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/om-os/sikkerhed
+            - listitem [ref=f19e375]:
+              - link "Code of Conduct" [ref=f19e376] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/om-os/om-skanska/code-of-conduct
+      - generic [ref=f19e378]:
+        - paragraph [ref=f19e380]:
+          - link "Brugerbetingelser" [ref=f19e381] [cursor=pointer]:
+            - /url: https://www.skanska.com/dk/da/brugerbetingelser
+          - text: "|"
+          - link "Behandling af personoplysninger" [ref=f19e382] [cursor=pointer]:
+            - /url: https://www.skanska.com/dk/da/behandling-af-personoplysninger
+          - text: "|"
+          - link "Cookieindstillinger" [ref=f19e383] [cursor=pointer]:
+            - /url: "#"
+        - paragraph [ref=f19e385]: © Skanska 2026
+  - alert [ref=f19e386]

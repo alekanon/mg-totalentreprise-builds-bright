@@ -1,0 +1,117 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "Skanska" [ref=e6] [cursor=pointer]:
+          - /url: https://www.skanska.com/dk/da
+        - navigation "Primary navigation" [ref=e11]:
+          - list [ref=e12]:
+            - listitem [ref=e13]:
+              - link "Ejendomsudvikling" [ref=e14] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/ejendomsudvikling
+            - listitem [ref=e15]:
+              - link "Byudvikling" [ref=e16] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/byudvikling
+            - listitem [ref=e17]:
+              - link "Nyheder" [ref=e18] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/nyheder
+            - listitem [ref=e19]:
+              - link "Karriere" [ref=e20] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/karriere
+            - listitem [ref=e21]:
+              - link "Om os" [ref=e22] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/om-os
+        - generic [ref=e23]:
+          - link "Kontakt" [ref=e24] [cursor=pointer]:
+            - /url: https://www.skanska.com/dk/da/kontakt
+          - button "Søg" [ref=e26] [cursor=pointer]
+          - button "Skift sprog" [ref=e29] [cursor=pointer]:
+            - generic [ref=e32]: DA
+    - generic [ref=e34]:
+      - navigation "breadcrumb" [ref=e36]:
+        - list [ref=e37]:
+          - listitem [ref=e38]:
+            - link "Forside" [ref=e39] [cursor=pointer]:
+              - /url: https://www.skanska.com/dk/da
+          - listitem [ref=e42]: "404"
+      - heading "Desværre kan vi ikke finde siden, du leder efter" [level=1] [ref=e43]
+      - paragraph [ref=e44]: Linket kan være brudt, eller siden kan være flyttet. Prøv at kontrollere linkets URL, eller gå tilbage til startsiden.
+      - link "Tilbage til startsiden" [ref=e46] [cursor=pointer]:
+        - /url: https://www.skanska.com/dk/da
+    - contentinfo [ref=e51]:
+      - generic [ref=e53]:
+        - heading "The knowledge and foresight to shape the way we live" [level=2] [ref=e55]
+        - button "Vælg land" [ref=e57] [cursor=pointer]
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - heading "Kontakt os" [level=3] [ref=e63]
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - paragraph [ref=e66]:
+                - strong [ref=e67]: Skanska A/S
+                - text: Havneholmen 6, 6. sal 2450 København SV
+              - paragraph [ref=e68]
+              - paragraph [ref=e69]:
+                - strong [ref=e70]: Hovednummer
+                - text: +45 44 68 05 65
+              - paragraph [ref=e71]
+              - paragraph [ref=e72]:
+                - strong [ref=e73]: Åbningstider
+                - text: "Mandag-torsdag: 8.00-16.00 Fredag: 8.00-15.30"
+              - paragraph [ref=e74]
+            - list [ref=e75]:
+              - listitem [ref=e76]:
+                - link "Kontakt medarbejdere" [ref=e77] [cursor=pointer]:
+                  - /url: https://www.skanska.com/dk/da/kontakt
+        - generic [ref=e78]:
+          - heading "Om Skanska" [level=3] [ref=e79]
+          - generic [ref=e80]:
+            - paragraph [ref=e82]: I Danmark er Skanska repræsenteret ved Skanska A/S, der udvikler kontorer, boliger og hoteller i Storkøbenhavn.
+            - list [ref=e83]:
+              - listitem [ref=e84]:
+                - link "Skanska i Danmark" [ref=e85] [cursor=pointer]:
+                  - /url: https://www.skanska.com/dk/da/om-os/om-skanska/commercial-development-nordic
+              - listitem [ref=e86]:
+                - link "Formål og værdier" [ref=e87] [cursor=pointer]:
+                  - /url: https://www.skanska.com/dk/da/om-os/om-skanska/formal-og-vardier
+              - listitem [ref=e88]:
+                - link "Finansiel information" [ref=e89] [cursor=pointer]:
+                  - /url: https://www.skanska.com/dk/da/om-os/om-skanska/finansiel-information
+        - generic [ref=e90]:
+          - heading "Om Koncernen" [level=3] [ref=e91]
+          - generic [ref=e92]:
+            - paragraph [ref=e94]: Skanska er en af verdens største projektudviklings- og entreprenørvirksomheder med 26.000 ansatte på verdensplan i Europa og USA.
+            - list [ref=e95]:
+              - listitem [ref=e96]:
+                - link "Skanska Group website" [ref=e97] [cursor=pointer]:
+                  - /url: https://www.skanska.com/group/en?epslanguage=en
+              - listitem [ref=e98]:
+                - link "About Skanska Group" [ref=e99] [cursor=pointer]:
+                  - /url: https://www.skanska.com/group/en/about-us
+              - listitem [ref=e100]:
+                - link "Investors" [ref=e101] [cursor=pointer]:
+                  - /url: https://www.skanska.com/group/en/investors
+        - generic [ref=e102]:
+          - heading "Genveje" [level=3] [ref=e103]
+          - list [ref=e105]:
+            - listitem [ref=e106]:
+              - link "Presse" [ref=e107] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/nyheder/pressemeddelelser
+            - listitem [ref=e108]:
+              - link "Sådan arbejder vi med sikkerhed" [ref=e109] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/om-os/sikkerhed
+            - listitem [ref=e110]:
+              - link "Code of Conduct" [ref=e111] [cursor=pointer]:
+                - /url: https://www.skanska.com/dk/da/om-os/om-skanska/code-of-conduct
+      - generic [ref=e113]:
+        - paragraph [ref=e115]:
+          - link "Brugerbetingelser" [ref=e116] [cursor=pointer]:
+            - /url: https://www.skanska.com/dk/da/brugerbetingelser
+          - text: "|"
+          - link "Behandling af personoplysninger" [ref=e117] [cursor=pointer]:
+            - /url: https://www.skanska.com/dk/da/behandling-af-personoplysninger
+          - text: "|"
+          - link "Cookieindstillinger" [ref=e118] [cursor=pointer]:
+            - /url: "#"
+        - paragraph [ref=e120]: © Skanska 2026
+  - alert [ref=e121]

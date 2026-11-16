@@ -1,0 +1,199 @@
+- generic [ref=f9e2]:
+  - banner [ref=f9e3]:
+    - generic [ref=f9e4]:
+      - link [ref=f9e5] [cursor=pointer]:
+        - /url: /
+        - img "MG Totalentreprise" [ref=f9e6]
+      - navigation [ref=f9e7]:
+        - link "Forside" [ref=f9e8] [cursor=pointer]:
+          - /url: /
+        - link "Om os" [ref=f9e9] [cursor=pointer]:
+          - /url: /om-os
+        - link "Ydelser" [ref=f9e10] [cursor=pointer]:
+          - /url: /ydelser
+        - link "Projekter" [ref=f9e11] [cursor=pointer]:
+          - /url: /projekter
+        - link "Ejendomsudvikling" [ref=f9e12] [cursor=pointer]:
+          - /url: /ejendomsudvikling
+      - generic [ref=f9e13]:
+        - link "70 70 24 77" [ref=f9e14] [cursor=pointer]:
+          - /url: tel:70702477
+        - link "MG Totalentreprise på LinkedIn" [ref=f9e17] [cursor=pointer]:
+          - /url: "#"
+        - link "Kontakt" [ref=f9e22] [cursor=pointer]:
+          - /url: /kontakt
+  - main [ref=f9e23]:
+    - generic [ref=f9e27]:
+      - generic [ref=f9e28]: Ydelser
+      - heading "Fagentrepriser i hele byggeprocessen" [level=1] [ref=f9e31]
+      - paragraph [ref=f9e32]: Fra facade til indvendig aptering – vi løser opgaver inden for tømrer, maler og facader. Klik på en ydelse for at læse mere.
+    - generic [ref=f9e35]:
+      - link "Tømrerarbejde 01 Tømrerarbejde Indvendig tømrer- og snedkerarbejde – fra gipsvægge til trægulve. Læs mere" [ref=f9e36] [cursor=pointer]:
+        - /url: /ydelser/tomrer
+        - img "Tømrerarbejde" [ref=f9e37]
+        - generic [ref=f9e39]: "01"
+        - generic [ref=f9e40]:
+          - heading "Tømrerarbejde" [level=3] [ref=f9e41]
+          - paragraph [ref=f9e42]: Indvendig tømrer- og snedkerarbejde – fra gipsvægge til trægulve.
+          - generic [ref=f9e43]: Læs mere
+      - link "Malerarbejde 02 Malerarbejde Komplet malerarbejde – alle opgaver inden for faget. Læs mere" [ref=f9e46] [cursor=pointer]:
+        - /url: /ydelser/maler
+        - img "Malerarbejde" [ref=f9e47]
+        - generic [ref=f9e49]: "02"
+        - generic [ref=f9e50]:
+          - heading "Malerarbejde" [level=3] [ref=f9e51]
+          - paragraph [ref=f9e52]: Komplet malerarbejde – alle opgaver inden for faget.
+          - generic [ref=f9e53]: Læs mere
+      - link "Facader – Eternit, Træ & Aluminium 03 Facader – Eternit, Træ & Aluminium Komplet facadebeklædning i eternit, træ eller aluminium. Læs mere" [ref=f9e56] [cursor=pointer]:
+        - /url: /ydelser/facader
+        - img "Facader – Eternit, Træ & Aluminium" [ref=f9e57]
+        - generic [ref=f9e59]: "03"
+        - generic [ref=f9e60]:
+          - heading "Facader – Eternit, Træ & Aluminium" [level=3] [ref=f9e61]
+          - paragraph [ref=f9e62]: Komplet facadebeklædning i eternit, træ eller aluminium.
+          - generic [ref=f9e63]: Læs mere
+      - link "Renovering 04 Renovering Renovering af boliger, plejecentre og erhverv – i drift eller tomt byggeri. Læs mere" [ref=f9e66] [cursor=pointer]:
+        - /url: /ydelser/renovering
+        - img "Renovering" [ref=f9e67]
+        - generic [ref=f9e69]: "04"
+        - generic [ref=f9e70]:
+          - heading "Renovering" [level=3] [ref=f9e71]
+          - paragraph [ref=f9e72]: Renovering af boliger, plejecentre og erhverv – i drift eller tomt byggeri.
+          - generic [ref=f9e73]: Læs mere
+      - link "Projektledelse 05 Projektledelse Daglig projektledelse, koordinering og opfølgning på byggesagen. Læs mere" [ref=f9e76] [cursor=pointer]:
+        - /url: /ydelser/projektledelse
+        - img "Projektledelse" [ref=f9e77]
+        - generic [ref=f9e79]: "05"
+        - generic [ref=f9e80]:
+          - heading "Projektledelse" [level=3] [ref=f9e81]
+          - paragraph [ref=f9e82]: Daglig projektledelse, koordinering og opfølgning på byggesagen.
+          - generic [ref=f9e83]: Læs mere
+      - link "Erhvervsbyggeri 06 Erhvervsbyggeri Kontorer, butikker, lejemål og industri – fra råhus til indflytningsklar. Læs mere" [ref=f9e86] [cursor=pointer]:
+        - /url: /ydelser/erhvervsbyggeri
+        - img "Erhvervsbyggeri" [ref=f9e87]
+        - generic [ref=f9e89]: "06"
+        - generic [ref=f9e90]:
+          - heading "Erhvervsbyggeri" [level=3] [ref=f9e91]
+          - paragraph [ref=f9e92]: Kontorer, butikker, lejemål og industri – fra råhus til indflytningsklar.
+          - generic [ref=f9e93]: Læs mere
+      - link "Totalentreprise 07 Totalentreprise Én aftale, én kontaktperson – vi står for hele opgaven. Læs mere" [ref=f9e96] [cursor=pointer]:
+        - /url: /ydelser/totalentreprise
+        - img "Totalentreprise" [ref=f9e97]
+        - generic [ref=f9e99]: "07"
+        - generic [ref=f9e100]:
+          - heading "Totalentreprise" [level=3] [ref=f9e101]
+          - paragraph [ref=f9e102]: Én aftale, én kontaktperson – vi står for hele opgaven.
+          - generic [ref=f9e103]: Læs mere
+  - generic [ref=f9e106]:
+    - region "Notifications alt+T"
+    - generic [ref=f9e108]:
+      - generic [ref=f9e109]:
+        - generic [ref=f9e110]: Kontakt
+        - heading "Lad os tale om dit projekt" [level=2] [ref=f9e113]
+        - paragraph [ref=f9e114]:
+          - text: Skriv til os, så vender vi tilbage hurtigst muligt – eller ring på
+          - link "70 70 24 77" [ref=f9e115] [cursor=pointer]:
+            - /url: tel:70702477
+          - text: .
+        - generic [ref=f9e116]:
+          - generic [ref=f9e117]:
+            - generic [ref=f9e118]:
+              - generic [ref=f9e119]: Navn *
+              - textbox [ref=f9e120]
+            - generic [ref=f9e121]:
+              - generic [ref=f9e122]: Email *
+              - textbox [ref=f9e123]
+            - generic [ref=f9e124]:
+              - generic [ref=f9e125]: Virksomhed
+              - textbox [ref=f9e126]
+            - generic [ref=f9e127]:
+              - generic [ref=f9e128]: Telefon
+              - textbox [ref=f9e129]
+          - generic [ref=f9e130]:
+            - generic [ref=f9e131]: Besked *
+            - textbox [ref=f9e132]
+          - generic [ref=f9e133]:
+            - checkbox "Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf. privatlivspolitikken." [ref=f9e134]
+            - generic [ref=f9e135]:
+              - text: Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf.
+              - link "privatlivspolitikken" [ref=f9e136] [cursor=pointer]:
+                - /url: /privatlivspolitik
+              - text: .
+          - button "Send besked" [ref=f9e137]
+      - generic [ref=f9e141]:
+        - generic [ref=f9e142]:
+          - img "Kort over Danmark med Sjælland markeret" [ref=f9e143]
+          - generic [ref=f9e144]:
+            - generic [ref=f9e145]:
+              - heading "Storkøbenhavn" [level=4] [ref=f9e146]
+              - list [ref=f9e147]:
+                - listitem [ref=f9e148]: København – Frederiksberg, Amager, Valby
+                - listitem [ref=f9e149]: Lyngby – Gentofte, Gladsaxe, Søborg
+                - listitem [ref=f9e150]: Ballerup – Herlev, Rødovre, Glostrup
+            - generic [ref=f9e151]:
+              - heading "Nordsjælland" [level=4] [ref=f9e152]
+              - list [ref=f9e153]:
+                - listitem [ref=f9e154]: Hillerød – Allerød, Farum, Fredensborg
+                - listitem [ref=f9e155]: Helsingør – Espergærde, Humlebæk
+                - listitem [ref=f9e156]: Hørsholm – Rungsted, Kokkedal
+            - generic [ref=f9e157]:
+              - heading "Midt- og Vestsjælland" [level=4] [ref=f9e158]
+              - list [ref=f9e159]:
+                - listitem [ref=f9e160]: Roskilde – Hedehusene, Viby Sj., Lejre
+                - listitem [ref=f9e161]: Holbæk – Tølløse, Jyderup
+                - listitem [ref=f9e162]: Slagelse – Korsør, Skælskør
+                - listitem [ref=f9e163]: Kalundborg – Høng, Gørlev
+                - listitem [ref=f9e164]: Ringsted – Sorø, Haslev
+            - generic [ref=f9e165]:
+              - heading "Sydsjælland" [level=4] [ref=f9e166]
+              - list [ref=f9e167]:
+                - listitem [ref=f9e168]: Køge – Greve, Solrød Strand
+                - listitem [ref=f9e169]: Næstved – Fensmark, Karrebæksminde
+                - listitem [ref=f9e170]: Vordingborg – Præstø, Stege
+        - generic [ref=f9e171]: Vi arbejder i hele Sjælland – fra Helsingør i nord til Vordingborg i syd.
+  - contentinfo [ref=f9e172]:
+    - generic [ref=f9e174]:
+      - generic [ref=f9e175]:
+        - generic [ref=f9e176]:
+          - img "MG Totalentreprise" [ref=f9e177]
+          - paragraph [ref=f9e178]: Håndværkere inden for tømrer, flisemurer og maler. Vi udfører fagentrepriser på byggeprojekter i hele hovedstadsområdet.
+          - link "MG Totalentreprise på LinkedIn" [ref=f9e179] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f9e184]:
+          - heading "Navigation" [level=4] [ref=f9e185]
+          - list [ref=f9e186]:
+            - listitem [ref=f9e187]:
+              - link "Om os" [ref=f9e188] [cursor=pointer]:
+                - /url: /om-os
+            - listitem [ref=f9e189]:
+              - link "Ydelser" [ref=f9e190] [cursor=pointer]:
+                - /url: /ydelser
+            - listitem [ref=f9e191]:
+              - link "Projekter" [ref=f9e192] [cursor=pointer]:
+                - /url: /projekter
+            - listitem [ref=f9e193]:
+              - link "Ejendomsudvikling" [ref=f9e194] [cursor=pointer]:
+                - /url: /ejendomsudvikling
+            - listitem [ref=f9e195]:
+              - link "Kontakt" [ref=f9e196] [cursor=pointer]:
+                - /url: /kontakt
+        - generic [ref=f9e197]:
+          - heading "Kontakt" [level=4] [ref=f9e198]
+          - list [ref=f9e199]:
+            - listitem [ref=f9e200]: MG Totalentreprise ApS
+            - listitem [ref=f9e201]: Emdrupvej 108, 2400 København NV
+            - listitem [ref=f9e202]:
+              - link "Tlf. 70 70 24 77" [ref=f9e203] [cursor=pointer]:
+                - /url: tel:70702477
+            - listitem [ref=f9e204]: "CVR: 33041365"
+            - listitem [ref=f9e205]:
+              - link "Kontakt os →" [ref=f9e206] [cursor=pointer]:
+                - /url: /kontakt
+      - generic [ref=f9e207]:
+        - generic [ref=f9e208]: © 2026 MG Totalentreprise ApS. Alle rettigheder forbeholdes.
+        - generic [ref=f9e209]:
+          - link "Privatlivspolitik" [ref=f9e210] [cursor=pointer]:
+            - /url: /privatlivspolitik
+          - link "Cookiepolitik" [ref=f9e211] [cursor=pointer]:
+            - /url: /cookiepolitik
+          - button "Cookieindstillinger" [ref=f9e212]

@@ -1,0 +1,476 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "MG Totalentreprise" [ref=e6]
+      - navigation [ref=e7]:
+        - link "Forside" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Om os" [ref=e9] [cursor=pointer]:
+          - /url: /om-os
+        - link "Ydelser" [ref=e10] [cursor=pointer]:
+          - /url: /ydelser
+        - link "Projekter" [ref=e11] [cursor=pointer]:
+          - /url: /projekter
+        - link "Ejendomsudvikling" [ref=e12] [cursor=pointer]:
+          - /url: /ejendomsudvikling
+      - generic [ref=e13]:
+        - link "70 70 24 77" [ref=e14] [cursor=pointer]:
+          - /url: tel:70702477
+        - link "MG Totalentreprise på LinkedIn" [ref=e17] [cursor=pointer]:
+          - /url: "#"
+        - link "Kontakt" [ref=e22] [cursor=pointer]:
+          - /url: /kontakt
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - img "Maler og Tømrerarbejdet på nyopførelse af fabrik i Køge" [ref=e28]
+          - generic [ref=e31]:
+            - generic [ref=e32]: Igangværende opgave
+            - heading "Maler og Tømrerarbejdet på nyopførelse af fabrik i Køge" [level=1] [ref=e35]
+            - paragraph [ref=e36]: Komplet maler- og tømrerentreprise på nyopførelse af fabriksbyggeri til et større dansk medicinalfirma, med høje krav til renhed og dokumentation.
+            - generic [ref=e37]:
+              - link "Se ydelser" [ref=e38] [cursor=pointer]:
+                - /url: /ydelser
+              - link "Kontakt os" [ref=e41] [cursor=pointer]:
+                - /url: /kontakt
+        - generic [ref=e42]:
+          - img "Malerentreprise på nyt Scandic hotel" [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Udført opgave
+            - heading "Malerentreprise på nyt Scandic hotel" [level=1] [ref=e50]
+            - paragraph [ref=e51]: Udførelse af malerarbejdet på dele af byggeriet på det nye Scandic Spectrum. Stram tidsplan og ekstra høje krav til overflader.
+            - generic [ref=e52]:
+              - link "Se ydelser" [ref=e53] [cursor=pointer]:
+                - /url: /ydelser
+              - link "Kontakt os" [ref=e56] [cursor=pointer]:
+                - /url: /kontakt
+        - generic [ref=e57]:
+          - img "Tømrer, snedker og malerentreprise" [ref=e58]
+          - generic [ref=e61]:
+            - generic [ref=e62]: Udført renoveringssag
+            - heading "Tømrer, snedker og malerentreprise" [level=1] [ref=e65]
+            - paragraph [ref=e66]: Fagentreprise på renovering af en større Københavnsk skole i fredet bygning.
+            - generic [ref=e67]:
+              - link "Se ydelser" [ref=e68] [cursor=pointer]:
+                - /url: /ydelser
+              - link "Kontakt os" [ref=e71] [cursor=pointer]:
+                - /url: /kontakt
+      - generic [ref=e72]:
+        - button "Slide 1" [ref=e73]
+        - button "Slide 2" [ref=e74]
+        - button "Slide 3" [ref=e75]
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]: Vores ydelser
+          - heading "Fagentrepriser til store byggesager og erhvervsprojekter" [level=2] [ref=e83]
+        - generic [ref=e84]:
+          - paragraph [ref=e85]: Vores primære fokus er fagentrepriser for professionelle bygherrer, entreprenører og erhvervsvirksomheder. Vi løser også mindre opgaver – altid med samme faste hold og høje kvalitet.
+          - link "Se alle ydelser" [ref=e86] [cursor=pointer]:
+            - /url: /ydelser
+      - generic [ref=e90]:
+        - link [ref=e91] [cursor=pointer]:
+          - /url: /ydelser/tomrer
+          - img "Tømrerarbejde" [ref=e93]
+          - generic [ref=e95]:
+            - heading "Tømrerarbejde" [level=3] [ref=e96]
+            - paragraph [ref=e97]: Indvendig tømrer- og snedkerarbejde – fra gipsvægge til trægulve.
+        - link [ref=e101] [cursor=pointer]:
+          - /url: /ydelser/maler
+          - img "Malerarbejde" [ref=e103]
+          - generic [ref=e105]:
+            - heading "Malerarbejde" [level=3] [ref=e106]
+            - paragraph [ref=e107]: Komplet malerarbejde – alle opgaver inden for faget.
+        - link [ref=e111] [cursor=pointer]:
+          - /url: /ydelser/erhvervsbyggeri
+          - img "Erhvervsbyggeri" [ref=e113]
+          - generic [ref=e115]:
+            - heading "Erhvervsbyggeri" [level=3] [ref=e116]
+            - paragraph [ref=e117]: Kontorer, butikker, lejemål og industri – fra råhus til indflytningsklar.
+        - link [ref=e121] [cursor=pointer]:
+          - /url: /ydelser/totalentreprise
+          - img "Totalentreprise" [ref=e123]
+          - generic [ref=e125]:
+            - heading "Totalentreprise" [level=3] [ref=e126]
+            - paragraph [ref=e127]: Én aftale, én kontaktperson – vi står for hele opgaven.
+    - generic [ref=e131]:
+      - img "MG Totalentreprise håndværkere på byggeplads" [ref=e132]
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - generic [ref=e137]: Hvem vi er
+            - heading "Faste hold, fra opstart til aflevering" [level=2] [ref=e140]
+            - link "Læs mere om os" [ref=e141] [cursor=pointer]:
+              - /url: /om-os
+          - paragraph [ref=e146]: MG Totalentreprise ApS er en dansk byggevirksomhed med egne håndværkere. Vi sætter en ære i kontinuitet, uanset projektets størrelse.
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]: "01"
+            - generic [ref=e150]:
+              - heading "Egne håndværkere" [level=3] [ref=e151]
+              - paragraph [ref=e152]: Fastansatte fagfolk – ikke skiftende underleverandører.
+          - generic [ref=e153]:
+            - generic [ref=e154]: "02"
+            - generic [ref=e155]:
+              - heading "Én fast kontaktperson" [level=3] [ref=e156]
+              - paragraph [ref=e157]: Samme ansvarlige fra opstart til aflevering.
+          - generic [ref=e158]:
+            - generic [ref=e159]: "03"
+            - generic [ref=e160]:
+              - heading "Dagligt tilsyn" [level=3] [ref=e161]
+              - paragraph [ref=e162]: Uklarheder bliver løst, før de bliver til forsinkelser.
+    - generic [ref=e163]:
+      - generic [ref=e165]:
+        - generic [ref=e166]:
+          - generic [ref=e167]: Samarbejdspartnere
+          - heading "Vi samarbejder med de stærkeste firmaer inden for byggeri" [level=2] [ref=e170]
+        - paragraph [ref=e171]: Et solidt netværk af leverandører og fagfolk er med til at sikre kvalitet i hvert projekt.
+      - generic [ref=e174]:
+        - generic [ref=e175]:
+          - img "LM Byg A/S"
+        - generic [ref=e176]:
+          - img "Pihl"
+        - generic [ref=e177]:
+          - img "CG Jensen"
+        - generic [ref=e178]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e179]:
+          - img "Cabinn"
+        - generic [ref=e180]:
+          - img "LM Byg A/S"
+        - generic [ref=e181]:
+          - img "Pihl"
+        - generic [ref=e182]:
+          - img "CG Jensen"
+        - generic [ref=e183]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e184]:
+          - img "Cabinn"
+        - generic [ref=e185]:
+          - img "LM Byg A/S"
+        - generic [ref=e186]:
+          - img "Pihl"
+        - generic [ref=e187]:
+          - img "CG Jensen"
+        - generic [ref=e188]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e189]:
+          - img "Cabinn"
+        - generic [ref=e190]:
+          - img "LM Byg A/S"
+        - generic [ref=e191]:
+          - img "Pihl"
+        - generic [ref=e192]:
+          - img "CG Jensen"
+        - generic [ref=e193]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e194]:
+          - img "Cabinn"
+        - generic [ref=e195]:
+          - img "LM Byg A/S"
+        - generic [ref=e196]:
+          - img "Pihl"
+        - generic [ref=e197]:
+          - img "CG Jensen"
+        - generic [ref=e198]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e199]:
+          - img "Cabinn"
+        - generic [ref=e200]:
+          - img "LM Byg A/S"
+        - generic [ref=e201]:
+          - img "Pihl"
+        - generic [ref=e202]:
+          - img "CG Jensen"
+        - generic [ref=e203]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e204]:
+          - img "Cabinn"
+        - generic [ref=e205]:
+          - img "LM Byg A/S"
+        - generic [ref=e206]:
+          - img "Pihl"
+        - generic [ref=e207]:
+          - img "CG Jensen"
+        - generic [ref=e208]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e209]:
+          - img "Cabinn"
+        - generic [ref=e210]:
+          - img "LM Byg A/S"
+        - generic [ref=e211]:
+          - img "Pihl"
+        - generic [ref=e212]:
+          - img "CG Jensen"
+        - generic [ref=e213]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e214]:
+          - img "Cabinn"
+        - generic [ref=e215]:
+          - img "LM Byg A/S"
+        - generic [ref=e216]:
+          - img "Pihl"
+        - generic [ref=e217]:
+          - img "CG Jensen"
+        - generic [ref=e218]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e219]:
+          - img "Cabinn"
+        - generic [ref=e220]:
+          - img "LM Byg A/S"
+        - generic [ref=e221]:
+          - img "Pihl"
+        - generic [ref=e222]:
+          - img "CG Jensen"
+        - generic [ref=e223]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e224]:
+          - img "Cabinn"
+        - generic [ref=e225]:
+          - img "LM Byg A/S"
+        - generic [ref=e226]:
+          - img "Pihl"
+        - generic [ref=e227]:
+          - img "CG Jensen"
+        - generic [ref=e228]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e229]:
+          - img "Cabinn"
+        - generic [ref=e230]:
+          - img "LM Byg A/S"
+        - generic [ref=e231]:
+          - img "Pihl"
+        - generic [ref=e232]:
+          - img "CG Jensen"
+        - generic [ref=e233]:
+          - img "Enemærke & Petersen"
+        - generic [ref=e234]:
+          - img "Cabinn"
+    - generic [ref=e236]:
+      - generic [ref=e237]:
+        - generic [ref=e238]:
+          - generic [ref=e239]: Projekter
+          - heading "Se hvilke projekter MG Totalentreprise har arbejdet på" [level=2] [ref=e242]
+        - paragraph [ref=e243]: Et udvalg af byggesager, hvor vores faste hold har leveret tømrer-, snedker- og malerarbejde.
+      - generic [ref=e244]:
+        - link "Spektrum Hotel 01 Maler Spektrum Hotel Malerarbejde på nyt hotelbyggeri." [ref=e245] [cursor=pointer]:
+          - /url: /projekter
+          - generic [ref=e246]:
+            - img "Spektrum Hotel" [ref=e247]
+            - generic [ref=e249]: "01"
+            - generic [ref=e250]: Maler
+          - generic [ref=e253]:
+            - heading "Spektrum Hotel" [level=3] [ref=e254]
+            - paragraph [ref=e255]: Malerarbejde på nyt hotelbyggeri.
+        - link "Skolen på Strandboulevarden 02 Tømrer Maler Skolen på Strandboulevarden Tømrer-, snedker- og malerarbejde på renoverings- og nybygningsdelen." [ref=e259] [cursor=pointer]:
+          - /url: /projekter
+          - generic [ref=e260]:
+            - img "Skolen på Strandboulevarden" [ref=e261]
+            - generic [ref=e263]: "02"
+            - generic [ref=e264]:
+              - generic [ref=e265]: Tømrer
+              - generic [ref=e266]: Maler
+          - generic [ref=e268]:
+            - heading "Skolen på Strandboulevarden" [level=3] [ref=e269]
+            - paragraph [ref=e270]: Tømrer-, snedker- og malerarbejde på renoverings- og nybygningsdelen.
+        - link "Himmelbyen 03 Tømrer Himmelbyen Indvendig tømrer- og snedkerarbejde i 135 lejligheder og ca. 12.000 m² erhverv." [ref=e274] [cursor=pointer]:
+          - /url: /projekter
+          - generic [ref=e275]:
+            - img "Himmelbyen" [ref=e276]
+            - generic [ref=e278]: "03"
+            - generic [ref=e279]: Tømrer
+          - generic [ref=e282]:
+            - heading "Himmelbyen" [level=3] [ref=e283]
+            - paragraph [ref=e284]: Indvendig tømrer- og snedkerarbejde i 135 lejligheder og ca. 12.000 m² erhverv.
+      - link "Se flere projekter" [ref=e289] [cursor=pointer]:
+        - /url: /projekter
+    - generic [ref=e294]:
+      - generic [ref=e295]:
+        - generic [ref=e296]: Sådan arbejder vi
+        - heading "Fra første samtale til færdig aflevering" [level=2] [ref=e299]
+      - generic [ref=e300]:
+        - generic [ref=e301]:
+          - generic [ref=e302]: "01"
+          - heading "Kontakt" [level=3] [ref=e303]
+          - paragraph [ref=e304]: Ring eller skriv – vi vender tilbage hurtigt og aftaler et besøg.
+        - generic [ref=e305]:
+          - generic [ref=e306]: "02"
+          - heading "Tilbud" [level=3] [ref=e307]
+          - paragraph [ref=e308]: Vi gennemgår projektet og leverer et klart, detaljeret tilbud.
+        - generic [ref=e309]:
+          - generic [ref=e310]: "03"
+          - heading "Opstart" [level=3] [ref=e311]
+          - paragraph [ref=e312]: Fast hold, fast kontaktperson og daglig projektledelse fra dag ét.
+        - generic [ref=e313]:
+          - generic [ref=e314]: "04"
+          - heading "Aflevering" [level=3] [ref=e315]
+          - paragraph [ref=e316]: Kvalitetssikring i Dalux, Ajour eller Byggeweb – mangelfri aflevering.
+    - generic [ref=e319]:
+      - generic [ref=e320]:
+        - generic [ref=e321]:
+          - generic [ref=e322]: Ejendomsudvikling
+          - heading "Vi udvikler ejendomme i eget regi" [level=2] [ref=e325]
+          - link "Se ejendomsudvikling" [ref=e326] [cursor=pointer]:
+            - /url: /ejendomsudvikling
+        - generic [ref=e330]:
+          - generic [ref=e331]:
+            - generic [ref=e332]: "6"
+            - generic [ref=e333]: igangværende boligprojekter
+          - generic [ref=e334]:
+            - generic [ref=e335]: "2"
+            - generic [ref=e336]: lande – Danmark og Polen
+      - generic [ref=e337]:
+        - img "Nałęczów I" [ref=e338]
+        - img "Nałęczów II" [ref=e339]
+        - img "Ringstedvej 204, Lellinge" [ref=e340]
+        - generic [ref=e343]:
+          - generic [ref=e344]: 01 / 03
+          - generic [ref=e345]: Nałęczów I
+          - generic [ref=e346]: Polen
+    - generic [ref=e353]:
+      - generic [ref=e354]:
+        - generic [ref=e355]: Bæredygtighed
+        - heading "Vi bygger med fokus på fremtiden" [level=2] [ref=e358]
+        - list [ref=e359]:
+          - listitem [ref=e360]:
+            - generic [ref=e361]: "01"
+            - generic [ref=e362]:
+              - heading "Bedre materialevalg" [level=3] [ref=e363]
+              - paragraph [ref=e364]: Vi reducerer CO₂-aftrykket gennem de materialer, vi vælger.
+          - listitem [ref=e365]:
+            - generic [ref=e366]: "02"
+            - generic [ref=e367]:
+              - heading "Mindre spild" [level=3] [ref=e368]
+              - paragraph [ref=e369]: Planlægning og tæt styring af forbrug på byggepladsen.
+          - listitem [ref=e370]:
+            - generic [ref=e371]: "03"
+            - generic [ref=e372]:
+              - heading "Energieffektive løsninger" [level=3] [ref=e373]
+              - paragraph [ref=e374]: Isolering og detaljer, der holder – energimæssigt og fugtteknisk.
+      - generic [ref=e375]:
+        - paragraph [ref=e376]: Vi arbejder løbende på at gøre vores byggeprocesser mere bæredygtige – fra materialevalg til energieffektive løsninger.
+        - img "Bæredygtigt byggeri"
+    - generic [ref=e378]:
+      - generic [ref=e379]: Reference
+      - blockquote [ref=e386]: Baseret på vores erfaring kan vi uden tøven anbefale MG-T til andre pharma-anlæg og lignende krævende projektmiljøer, hvor kvalitet, professionalisme, tilpasningsevne og samarbejde er afgørende.
+      - generic [ref=e387]:
+        - generic [ref=e388]: Peter Dé Armand
+        - generic [ref=e389]: Construction Technical Lead, større dansk medicinalfirma
+      - link "Download hele referencebrevet" [ref=e390] [cursor=pointer]:
+        - /url: /src/assets/projects/Referance%20letter.pdf
+  - generic [ref=e394]:
+    - region "Notifications alt+T"
+    - generic [ref=e396]:
+      - generic [ref=e397]:
+        - generic [ref=e398]: Kontakt
+        - heading "Lad os tale om dit projekt" [level=2] [ref=e401]
+        - paragraph [ref=e402]:
+          - text: Skriv til os, så vender vi tilbage hurtigst muligt – eller ring på
+          - link "70 70 24 77" [ref=e403] [cursor=pointer]:
+            - /url: tel:70702477
+          - text: .
+        - generic [ref=e404]:
+          - generic [ref=e405]:
+            - generic [ref=e406]:
+              - generic [ref=e407]: Navn *
+              - textbox [ref=e408]
+            - generic [ref=e409]:
+              - generic [ref=e410]: Email *
+              - textbox [ref=e411]
+            - generic [ref=e412]:
+              - generic [ref=e413]: Virksomhed
+              - textbox [ref=e414]
+            - generic [ref=e415]:
+              - generic [ref=e416]: Telefon
+              - textbox [ref=e417]
+          - generic [ref=e418]:
+            - generic [ref=e419]: Besked *
+            - textbox [ref=e420]
+          - generic [ref=e421]:
+            - checkbox "Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf. privatlivspolitikken." [ref=e422]
+            - generic [ref=e423]:
+              - text: Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf.
+              - link "privatlivspolitikken" [ref=e424] [cursor=pointer]:
+                - /url: /privatlivspolitik
+              - text: .
+          - button "Send besked" [ref=e425]
+      - generic [ref=e429]:
+        - generic [ref=e430]:
+          - img "Kort over Danmark med Sjælland markeret" [ref=e431]
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - heading "Storkøbenhavn" [level=4] [ref=e434]
+              - list [ref=e435]:
+                - listitem [ref=e436]: København – Frederiksberg, Amager, Valby
+                - listitem [ref=e437]: Lyngby – Gentofte, Gladsaxe, Søborg
+                - listitem [ref=e438]: Ballerup – Herlev, Rødovre, Glostrup
+            - generic [ref=e439]:
+              - heading "Nordsjælland" [level=4] [ref=e440]
+              - list [ref=e441]:
+                - listitem [ref=e442]: Hillerød – Allerød, Farum, Fredensborg
+                - listitem [ref=e443]: Helsingør – Espergærde, Humlebæk
+                - listitem [ref=e444]: Hørsholm – Rungsted, Kokkedal
+            - generic [ref=e445]:
+              - heading "Midt- og Vestsjælland" [level=4] [ref=e446]
+              - list [ref=e447]:
+                - listitem [ref=e448]: Roskilde – Hedehusene, Viby Sj., Lejre
+                - listitem [ref=e449]: Holbæk – Tølløse, Jyderup
+                - listitem [ref=e450]: Slagelse – Korsør, Skælskør
+                - listitem [ref=e451]: Kalundborg – Høng, Gørlev
+                - listitem [ref=e452]: Ringsted – Sorø, Haslev
+            - generic [ref=e453]:
+              - heading "Sydsjælland" [level=4] [ref=e454]
+              - list [ref=e455]:
+                - listitem [ref=e456]: Køge – Greve, Solrød Strand
+                - listitem [ref=e457]: Næstved – Fensmark, Karrebæksminde
+                - listitem [ref=e458]: Vordingborg – Præstø, Stege
+        - generic [ref=e459]: Vi arbejder i hele Sjælland – fra Helsingør i nord til Vordingborg i syd.
+  - contentinfo [ref=e460]:
+    - generic [ref=e462]:
+      - generic [ref=e463]:
+        - generic [ref=e464]:
+          - img "MG Totalentreprise" [ref=e465]
+          - paragraph [ref=e466]: Håndværkere inden for tømrer, flisemurer og maler. Vi udfører fagentrepriser på byggeprojekter i hele hovedstadsområdet.
+          - link "MG Totalentreprise på LinkedIn" [ref=e467] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e472]:
+          - heading "Navigation" [level=4] [ref=e473]
+          - list [ref=e474]:
+            - listitem [ref=e475]:
+              - link "Om os" [ref=e476] [cursor=pointer]:
+                - /url: /om-os
+            - listitem [ref=e477]:
+              - link "Ydelser" [ref=e478] [cursor=pointer]:
+                - /url: /ydelser
+            - listitem [ref=e479]:
+              - link "Projekter" [ref=e480] [cursor=pointer]:
+                - /url: /projekter
+            - listitem [ref=e481]:
+              - link "Ejendomsudvikling" [ref=e482] [cursor=pointer]:
+                - /url: /ejendomsudvikling
+            - listitem [ref=e483]:
+              - link "Kontakt" [ref=e484] [cursor=pointer]:
+                - /url: /kontakt
+        - generic [ref=e485]:
+          - heading "Kontakt" [level=4] [ref=e486]
+          - list [ref=e487]:
+            - listitem [ref=e488]: MG Totalentreprise ApS
+            - listitem [ref=e489]: Emdrupvej 108, 2400 København NV
+            - listitem [ref=e490]:
+              - link "Tlf. 70 70 24 77" [ref=e491] [cursor=pointer]:
+                - /url: tel:70702477
+            - listitem [ref=e492]: "CVR: 33041365"
+            - listitem [ref=e493]:
+              - link "Kontakt os →" [ref=e494] [cursor=pointer]:
+                - /url: /kontakt
+      - generic [ref=e495]:
+        - generic [ref=e496]: © 2026 MG Totalentreprise ApS. Alle rettigheder forbeholdes.
+        - generic [ref=e497]:
+          - link "Privatlivspolitik" [ref=e498] [cursor=pointer]:
+            - /url: /privatlivspolitik
+          - link "Cookiepolitik" [ref=e499] [cursor=pointer]:
+            - /url: /cookiepolitik
+          - button "Cookieindstillinger" [ref=e500]

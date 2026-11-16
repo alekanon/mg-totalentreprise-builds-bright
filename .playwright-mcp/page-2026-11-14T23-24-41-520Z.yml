@@ -1,0 +1,251 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "MG Totalentreprise" [ref=e6]
+      - navigation [ref=e7]:
+        - link "Forside" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Om os" [ref=e9] [cursor=pointer]:
+          - /url: /om-os
+        - link "Ydelser" [ref=e10] [cursor=pointer]:
+          - /url: /ydelser
+        - link "Projekter" [ref=e11] [cursor=pointer]:
+          - /url: /projekter
+        - link "Ejendomsudvikling" [ref=e12] [cursor=pointer]:
+          - /url: /ejendomsudvikling
+      - generic [ref=e13]:
+        - link "70 70 24 77" [ref=e14] [cursor=pointer]:
+          - /url: tel:70702477
+        - link "MG Totalentreprise på LinkedIn" [ref=e17] [cursor=pointer]:
+          - /url: "#"
+        - link "Kontakt" [ref=e22] [cursor=pointer]:
+          - /url: /kontakt
+  - main [ref=e23]:
+    - generic [ref=e27]:
+      - generic [ref=e28]: Ejendomsudvikling
+      - heading "Ejendomsudvikling i Danmark og Polen" [level=1] [ref=e31]
+      - paragraph [ref=e32]: Vi udvikler og opfører ejendomme i eget regi gennem MG Ejendomme i Danmark og Viridis Sp. z o.o. i Polen.
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: Danmark
+          - heading "MG Ejendomme" [level=2] [ref=e40]
+        - paragraph [ref=e41]: Gennem MG Ejendomme udvikler og opfører vi boligprojekter i eget regi i Danmark, fra projektudvikling til udførelse.
+      - generic [ref=e42]:
+        - generic [ref=e43]: Samlet værdi
+        - generic [ref=e44]: Oplyses senere
+      - generic [ref=e45]:
+        - article [ref=e46]:
+          - button "Se billeder af Solrød Byvej 58" [ref=e47]:
+            - img "Solrød Byvej 58" [ref=e49]
+          - generic [ref=e50]:
+            - heading "Solrød Byvej 58" [level=3] [ref=e51]
+            - paragraph [ref=e52]: Omdannelse af eksisterende gård, beliggende i den bevaringsværdige del af Solrød, til nyt komplet bygningskompleks bestående af en nyrenoveret hovedbygning og nybyggede 9 boligenheder i Hedebostil. Hele komplekset udvikles i tæt samarbejde med lokalområdet og Solrød Kommune.
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - term [ref=e55]: Sted
+                - definition [ref=e56]: Solrød
+              - generic [ref=e57]:
+                - term [ref=e58]: Status
+                - definition [ref=e59]: Lokalplan er under udarbejdelse
+              - generic [ref=e60]:
+                - term [ref=e61]: Projektværdi
+                - definition [ref=e62]: Oplyses senere
+            - button "Læs mere" [ref=e63]
+        - article [ref=e67]:
+          - button "Se billeder af Ringstedvej 204" [ref=e68]:
+            - img "Ringstedvej 204" [ref=e70]
+          - generic [ref=e71]:
+            - heading "Ringstedvej 204" [level=3] [ref=e72]
+            - paragraph [ref=e73]: Udvikling af 8 rækkehuse på en eksisterende ejendom i landsbyen Lellinge tæt ved Køge. De nye bygninger opføres i respekt med lokalmiljøet og ud fra retningslinjerne i Køge Kompasset, der stiller strenge krav til integreringen af vild natur, bæredygtighed og samspillet mellem de kommende beboere.
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - term [ref=e76]: Sted
+                - definition [ref=e77]: Lellinge
+              - generic [ref=e78]:
+                - term [ref=e79]: Status
+                - definition [ref=e80]: Ny lokalplan er vedtaget
+              - generic [ref=e81]:
+                - term [ref=e82]: Projektværdi
+                - definition [ref=e83]: Oplyses senere
+            - button "Læs mere" [ref=e84]
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic [ref=e92]: Polen
+          - heading "Viridis Sp. z o.o." [level=2] [ref=e95]
+        - paragraph [ref=e96]: Viridis er vores polske selskab, der udfører byggeopgaver som totalentreprenør og udvikler egne ejendomsprojekter.
+      - generic [ref=e97]:
+        - generic [ref=e98]: Samlet værdi
+        - generic [ref=e99]: 122.940.000 PLN
+      - generic [ref=e100]:
+        - article [ref=e101]:
+          - button "Se billeder af Nałęczów I" [ref=e102]:
+            - img "Nałęczów I" [ref=e104]
+          - generic [ref=e105]:
+            - heading "Nałęczów I" [level=3] [ref=e106]
+            - paragraph [ref=e107]: Udført som totalentreprenør. Beskrivelse tilføjes.
+            - generic [ref=e108]:
+              - generic [ref=e109]:
+                - term [ref=e110]: Sted
+                - definition [ref=e111]: Nałęczów, Polen
+              - generic [ref=e112]:
+                - term [ref=e113]: Status
+                - definition [ref=e114]: Oplyses senere
+              - generic [ref=e115]:
+                - term [ref=e116]: Projektværdi
+                - definition [ref=e117]: 26.260.000 PLN
+            - button "Læs mere" [ref=e118]
+        - article [ref=e122]:
+          - button "Se billeder af Nałęczów II" [ref=e123]:
+            - img "Nałęczów II" [ref=e125]
+          - generic [ref=e126]:
+            - heading "Nałęczów II" [level=3] [ref=e127]
+            - paragraph [ref=e128]: Endnu et projekt udført som totalentreprenør i Nałęczów. Beskrivelse tilføjes.
+            - generic [ref=e129]:
+              - generic [ref=e130]:
+                - term [ref=e131]: Sted
+                - definition [ref=e132]: Nałęczów, Polen
+              - generic [ref=e133]:
+                - term [ref=e134]: Status
+                - definition [ref=e135]: Oplyses senere
+              - generic [ref=e136]:
+                - term [ref=e137]: Projektværdi
+                - definition [ref=e138]: 42.800.000 PLN
+            - button "Læs mere" [ref=e139]
+        - article [ref=e143]:
+          - button "Se billeder af Nałęczów III" [ref=e144]:
+            - img "Nałęczów III" [ref=e146]
+          - generic [ref=e147]:
+            - heading "Nałęczów III" [level=3] [ref=e148]
+            - paragraph [ref=e149]: Beskrivelse tilføjes.
+            - generic [ref=e150]:
+              - generic [ref=e151]:
+                - term [ref=e152]: Sted
+                - definition [ref=e153]: Nałęczów, Polen
+              - generic [ref=e154]:
+                - term [ref=e155]: Status
+                - definition [ref=e156]: Oplyses senere
+              - generic [ref=e157]:
+                - term [ref=e158]: Projektværdi
+                - definition [ref=e159]: 25.380.000 PLN
+            - button "Læs mere" [ref=e160]
+        - article [ref=e164]:
+          - generic [ref=e165]: Billede tilføjes
+          - generic [ref=e168]:
+            - heading "Snopków" [level=3] [ref=e169]
+            - paragraph [ref=e170]: Udført som totalentreprenør. Beskrivelse tilføjes.
+            - generic [ref=e171]:
+              - generic [ref=e172]:
+                - term [ref=e173]: Sted
+                - definition [ref=e174]: Snopków, Lublin
+              - generic [ref=e175]:
+                - term [ref=e176]: Status
+                - definition [ref=e177]: Oplyses senere
+              - generic [ref=e178]:
+                - term [ref=e179]: Projektværdi
+                - definition [ref=e180]: 12.300.000 PLN
+        - article [ref=e181]:
+          - button "Se billeder af Marysin" [ref=e182]:
+            - img "Marysin" [ref=e184]
+          - generic [ref=e185]:
+            - heading "Marysin" [level=3] [ref=e186]
+            - paragraph [ref=e187]: Projektudviklingsprojekt. Beskrivelse tilføjes.
+            - generic [ref=e188]:
+              - generic [ref=e189]:
+                - term [ref=e190]: Sted
+                - definition [ref=e191]: Marysin, Lublin
+              - generic [ref=e192]:
+                - term [ref=e193]: Status
+                - definition [ref=e194]: Oplyses senere
+              - generic [ref=e195]:
+                - term [ref=e196]: Projektværdi
+                - definition [ref=e197]: 16.200.000 PLN
+            - button "Læs mere" [ref=e198]
+  - generic [ref=e202]:
+    - region "Notifications alt+T"
+    - generic [ref=e204]:
+      - generic [ref=e205]:
+        - generic [ref=e206]: Kontakt
+        - heading "Lad os tale om dit projekt" [level=2] [ref=e209]
+        - paragraph [ref=e210]:
+          - text: Skriv til os, så vender vi tilbage hurtigst muligt – eller ring på
+          - link "70 70 24 77" [ref=e211] [cursor=pointer]:
+            - /url: tel:70702477
+          - text: .
+        - generic [ref=e212]:
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - generic [ref=e215]: Navn *
+              - textbox [ref=e216]
+            - generic [ref=e217]:
+              - generic [ref=e218]: Email *
+              - textbox [ref=e219]
+            - generic [ref=e220]:
+              - generic [ref=e221]: Virksomhed
+              - textbox [ref=e222]
+            - generic [ref=e223]:
+              - generic [ref=e224]: Telefon
+              - textbox [ref=e225]
+          - generic [ref=e226]:
+            - generic [ref=e227]: Besked *
+            - textbox [ref=e228]
+          - generic [ref=e229]:
+            - checkbox "Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf. privatlivspolitikken." [ref=e230]
+            - generic [ref=e231]:
+              - text: Jeg accepterer, at MG Totalentreprise behandler mine oplysninger for at besvare min henvendelse, jf.
+              - link "privatlivspolitikken" [ref=e232] [cursor=pointer]:
+                - /url: /privatlivspolitik
+              - text: .
+          - button "Send besked" [ref=e233]
+      - generic [ref=e237]:
+        - img "Kort over Danmark med Sjælland markeret" [ref=e238]
+        - generic [ref=e239]: Vi arbejder i hele Sjælland – fra Helsingør i nord til Vordingborg i syd.
+  - contentinfo [ref=e240]:
+    - generic [ref=e242]:
+      - generic [ref=e243]:
+        - generic [ref=e244]:
+          - img "MG Totalentreprise" [ref=e245]
+          - paragraph [ref=e246]: Håndværkere inden for tømrer, flisemurer og maler. Vi udfører fagentrepriser på byggeprojekter i hele hovedstadsområdet.
+          - link "MG Totalentreprise på LinkedIn" [ref=e247] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e252]:
+          - heading "Navigation" [level=4] [ref=e253]
+          - list [ref=e254]:
+            - listitem [ref=e255]:
+              - link "Om os" [ref=e256] [cursor=pointer]:
+                - /url: /om-os
+            - listitem [ref=e257]:
+              - link "Ydelser" [ref=e258] [cursor=pointer]:
+                - /url: /ydelser
+            - listitem [ref=e259]:
+              - link "Projekter" [ref=e260] [cursor=pointer]:
+                - /url: /projekter
+            - listitem [ref=e261]:
+              - link "Ejendomsudvikling" [ref=e262] [cursor=pointer]:
+                - /url: /ejendomsudvikling
+            - listitem [ref=e263]:
+              - link "Kontakt" [ref=e264] [cursor=pointer]:
+                - /url: /kontakt
+        - generic [ref=e265]:
+          - heading "Kontakt" [level=4] [ref=e266]
+          - list [ref=e267]:
+            - listitem [ref=e268]: MG Totalentreprise ApS
+            - listitem [ref=e269]: Emdrupvej 108, 2400 København NV
+            - listitem [ref=e270]:
+              - link "Tlf. 70 70 24 77" [ref=e271] [cursor=pointer]:
+                - /url: tel:70702477
+            - listitem [ref=e272]: "CVR: 33041365"
+            - listitem [ref=e273]:
+              - link "Kontakt os →" [ref=e274] [cursor=pointer]:
+                - /url: /kontakt
+      - generic [ref=e275]:
+        - generic [ref=e276]: © 2026 MG Totalentreprise ApS. Alle rettigheder forbeholdes.
+        - generic [ref=e277]:
+          - link "Privatlivspolitik" [ref=e278] [cursor=pointer]:
+            - /url: /privatlivspolitik
+          - link "Cookiepolitik" [ref=e279] [cursor=pointer]:
+            - /url: /cookiepolitik
+          - button "Cookieindstillinger" [ref=e280]
