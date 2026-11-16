@@ -1,5 +1,5 @@
 import spektrumHotel from "@/assets/projects/Spectrum hotel.jpeg";
-import himmelbyen from "@/assets/projects/Himmelbyen.jpg";
+import himmelbyen from "@/assets/projects/himmelbyen.jpg";
 import skolenStrand from "@/assets/projects/skolen-paa-strandboulevarden-sommer-2018-13.jpg";
 import oeresyd from "@/assets/projects/øresyd.jpg";
 import bigHerlev from "@/assets/projects/big herlev.jpeg";
