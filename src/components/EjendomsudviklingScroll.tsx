@@ -26,13 +26,17 @@ export function EjendomsudviklingScroll() {
     let raf = 0;
     const update = () => {
       const rect = el.getBoundingClientRect();
-      const scrollable = rect.height - window.innerHeight;
+      const stickyH = (el.firstElementChild as HTMLElement | null)?.offsetHeight ?? window.innerHeight;
+      const scrollable = rect.height - stickyH;
       const progress = scrollable > 0 ? Math.min(Math.max(-rect.top / scrollable, 0), 0.999) : 0;
       setActive(Math.floor(progress * projects.length));
     };
     const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(update);
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        update();
+      });
     };
     update();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -45,8 +49,8 @@ export function EjendomsudviklingScroll() {
   }, []);
 
   return (
-    <section ref={ref} className="relative h-[280dvh] bg-background">
-      <div className="sticky top-0 flex h-dvh flex-col pb-10 pt-24">
+    <section ref={ref} className="relative h-[280svh] bg-background">
+      <div className="sticky top-0 flex h-svh flex-col pb-10 pt-24">
         <div className="mx-auto flex min-h-0 w-full max-w-[1600px] flex-1 flex-col px-4 sm:px-6 lg:px-12">
           <div className="mb-8 grid gap-6 lg:grid-cols-[1.7fr_1fr] lg:items-end lg:gap-16">
             <div>
@@ -87,9 +91,9 @@ export function EjendomsudviklingScroll() {
                 key={p.title}
                 src={p.image}
                 alt={p.title}
-                loading="lazy"
-                className={`absolute inset-0 h-full w-full object-cover transition-all duration-1000 ease-out ${
-                  active === i ? "scale-100 opacity-100" : "scale-105 opacity-0"
+                loading="eager" decoding="async"
+                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out will-change-[opacity] ${
+                  active === i ? "opacity-100" : "opacity-0"
                 }`}
               />
             ))}
