@@ -3,31 +3,30 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import heroNovo from "@/assets/hero-novo-nordisk.jpg";
+import heroNovo from "@/assets/projects/novokøge-UPSCALED.png";
 import heroSpektrum from "@/assets/hero-spektrum.jpg";
 import heroStrand from "@/assets/hero-strandboulevarden.jpg";
 
 const slides = [
   {
     image: heroNovo,
-    eyebrow: "Novo Nordisk Fabrik – Køge",
-    title: "Maler- og tømrerarbejde\npå fabriksbyggeri",
+    eyebrow: "Igangværende opgave",
+    title: "Maler og Tømrerarbejdet på nyopførelse af fabrik i Køge",
     description:
-      "Komplet maler- og tømrerentreprise på et af Novo Nordisks fabriksbyggerier under høje krav til renhed og dokumentation.",
+      "Komplet maler- og tømrerentreprise på nyopførelse af fabriksbyggeri til et større dansk medicinalfirma, med høje krav til renhed og dokumentation.",
   },
   {
     image: heroSpektrum,
-    eyebrow: "Spektrum Hotel",
-    title: "Malerentreprise\npå nyt hotelbyggeri",
+    eyebrow: "Udført opgave",
+    title: "Malerentreprise på nyt Scandic hotel",
     description:
-      "Komplet malerentreprise på Spektrum Hotel — værelser, korridorer og fællesarealer, leveret med fast hold.",
+      "Udførelse af malerarbejdet på dele af byggeriet på det nye Scandic Spectrum. Stram tidsplan og ekstra høje krav til overflader.",
   },
   {
     image: heroStrand,
-    eyebrow: "Skolen på Strandboulevarden",
-    title: "Tømrer-, snedker-\nog malerarbejde",
-    description:
-      "Tømrer- og snedkerarbejde samt komplet malerentreprise på både renoverings- og nybygningsdelen i København.",
+    eyebrow: "Udført renoveringssag",
+    title: "Tømrer, snedker og malerentreprise",
+    description: "Fagentreprise på renovering af en større Københavnsk skole i fredet bygning.",
   },
 ];
 
@@ -67,30 +66,30 @@ export function HeroCarousel() {
                 height={1080}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/35" />
-              <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-end px-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
+              <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-end px-5 pb-24 pt-28 sm:px-6 sm:pb-24 lg:px-8 lg:pb-28">
                 <div className="max-w-3xl">
-                  <div className="mb-4 flex items-center gap-3">
+                  <div className="mb-3 flex items-center gap-3 sm:mb-4">
                     <span className="h-px w-12 bg-accent" />
                     <span className="text-xs font-semibold uppercase text-accent">
                       {slide.eyebrow}
                     </span>
                   </div>
-                  <h1 className="whitespace-pre-line text-5xl leading-[1.05] text-background sm:text-6xl lg:text-7xl">
+                  <h1 className="whitespace-pre-line text-balance text-[1.75rem] leading-[1.12] text-background sm:text-5xl sm:leading-[1.05] lg:text-6xl xl:text-7xl">
                     {slide.title}
                   </h1>
-                  <p className="mt-6 max-w-xl text-base text-background/85 lg:text-lg">
+                  <p className="mt-4 max-w-xl text-sm leading-relaxed text-background/85 sm:mt-6 sm:text-base lg:text-lg">
                     {slide.description}
                   </p>
-                  <div className="mt-8 flex flex-wrap gap-4">
+                  <div className="mt-6 flex flex-wrap gap-3 sm:mt-8 sm:gap-4">
                     <Link
                       to="/ydelser"
-                      className="inline-flex items-center gap-2 bg-accent px-6 py-3 text-sm font-semibold uppercase text-accent-foreground transition-colors hover:bg-accent/90"
+                      className="inline-flex items-center gap-2 bg-accent px-5 py-3 text-xs font-semibold uppercase sm:px-6 sm:text-sm text-accent-foreground transition-colors hover:bg-accent/90"
                     >
                       Se ydelser <ArrowRight className="h-4 w-4" />
                     </Link>
                     <Link
                       to="/kontakt"
-                      className="inline-flex items-center gap-2 border border-background/40 bg-background/5 px-6 py-3 text-sm font-semibold uppercase text-background backdrop-blur transition-colors hover:bg-background/15"
+                      className="inline-flex items-center gap-2 border border-background/40 bg-background/5 px-5 py-3 text-xs font-semibold uppercase sm:px-6 sm:text-sm text-background backdrop-blur transition-colors hover:bg-background/15"
                     >
                       Kontakt os
                     </Link>

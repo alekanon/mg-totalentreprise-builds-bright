@@ -51,6 +51,7 @@ function YdelseDetail() {
         title={ydelse.title}
         description={ydelse.short}
         image={ydelse.image}
+        imageClassName={ydelse.imageClassName}
         size="lg"
         parallax
       />

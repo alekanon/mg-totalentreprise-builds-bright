@@ -1,8 +1,20 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
-import { CoverageMap } from "@/components/CoverageMap";
 import { ydelser } from "@/data/ydelser";
+import fasteHoldImg from "@/assets/faste hold.jpeg";
+import carpentersImg from "@/assets/carpenters.jpg";
+import malerImg from "@/assets/maler.jpeg";
+import bigHerlevImg from "@/assets/projects/big herlev.jpeg";
+import strandboulevardenImg from "@/assets/projects/skolen-paa-strandboulevarden-sommer-2018-13.jpg";
+
+// Same images as the service cards on the main page.
+const cardImages: Record<string, string> = {
+  tomrer: carpentersImg,
+  maler: malerImg,
+  erhvervsbyggeri: bigHerlevImg,
+  totalentreprise: strandboulevardenImg,
+};
 
 export const Route = createFileRoute("/ydelser/")({
   head: () => ({
@@ -30,6 +42,7 @@ function Ydelser() {
         eyebrow="Ydelser"
         title="Fagentrepriser i hele byggeprocessen"
         description="Fra facade til indvendig aptering – vi løser opgaver inden for tømrer, maler og facader. Klik på en ydelse for at læse mere."
+        image={fasteHoldImg}
         size="lg"
         parallax
       />
@@ -45,7 +58,7 @@ function Ydelser() {
                 className="group relative flex aspect-[3/4] flex-col justify-end overflow-hidden rounded-sm"
               >
                 <img
-                  src={y.image}
+                  src={cardImages[y.slug] ?? y.image}
                   alt={y.title}
                   loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -66,8 +79,6 @@ function Ydelser() {
           </div>
         </div>
       </section>
-
-      <CoverageMap />
     </>
   );
 }

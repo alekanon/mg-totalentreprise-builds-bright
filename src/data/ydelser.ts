@@ -1,4 +1,5 @@
-import tomrerImg from "@/assets/ydelser/tomrer.jpg";
+import tomrerImg from "@/assets/ydelser/tomrergips.jpeg";
+import carpenter2 from "@/assets/ydelser/carpenter2.jpeg";
 import tomrer2 from "@/assets/ydelser/tomrer-2.jpg";
 import tomrer3 from "@/assets/ydelser/tomrer-3.jpg";
 import malerImg from "@/assets/ydelser/maler.jpg";
@@ -7,11 +8,10 @@ import maler3 from "@/assets/ydelser/maler-3.jpg";
 import facaderImg from "@/assets/ydelser/facader.jpg";
 import facader2 from "@/assets/ydelser/facader-2.jpg";
 import facader3 from "@/assets/ydelser/facader-3.jpg";
-import renoveringImg from "@/assets/ydelser/renovering.jpg";
+import renoveringImg from "@/assets/projects/skolen-paa-strandboulevarden-sommer-2018-13.jpg";
 import projektledelseImg from "@/assets/ydelser/projektledelse.jpg";
 import erhvervsbyggeriImg from "@/assets/ydelser/erhvervsbyggeri.jpg";
 import totalentrepriseImg from "@/assets/ydelser/totalentreprise.jpg";
-import isoleringImg from "@/assets/ydelser/isolering.jpg";
 
 export type Ydelse = {
   slug: string;
@@ -20,6 +20,7 @@ export type Ydelse = {
   description: string[];
   highlights: string[];
   image: string;
+  imageClassName?: string;
   gallery: string[];
   faq: { q: string; a: string }[];
 };
@@ -41,7 +42,8 @@ export const ydelser: Ydelse[] = [
       "Trægulve",
     ],
     image: tomrerImg,
-    gallery: [tomrer2, tomrer3],
+    imageClassName: "object-[22%_center] sm:object-center",
+    gallery: [tomrerImg, carpenter2],
     faq: [
       {
         q: "Tager I store fag­entrepriser på flere hundrede lejligheder?",
@@ -60,9 +62,9 @@ export const ydelser: Ydelse[] = [
   {
     slug: "maler",
     title: "Malerarbejde",
-    short: "Komplet malerarbejde – alle opgaver inden for faget.",
+    short: "Vi tager os af alt malerarbejde på byggesagen – fra spartling og grunding til færdig overflade.",
     description: [
-      "Vi løser alle typer malerarbejde – fra nybyggeri og store boligprojekter til renovering og specialopgaver.",
+      "Vi udfører alt inden for malerfaget – fra første spartel og grunding til afleveringsklar overflade. Uanset om det er nybyggeri, store boligbyggerier, renovering eller specialopgaver, står vi for hele malerentreprisen fra start til slut.",
       "Vores malere arbejder struktureret og effektivt, og vi leverer en ensartet finish, uanset projektets omfang. Vi har stor erfaring med fag­entrepriser i underentreprise for både total- og hovedentreprenører.",
     ],
     highlights: ["Nybyggeri", "Renovering", "Lejligheder & plejecentre", "Erhverv & institutioner"],
@@ -138,7 +140,7 @@ export const ydelser: Ydelse[] = [
       },
       {
         q: "Tager I både store og små renoveringssager?",
-        a: "Ja – fra enkelte lejligheder til projekter med flere hundrede boliger som Den Grønne Fatning med 200 lejligheder.",
+        a: "Ja – fra enkelte lejligheder til større sager som renoveringen af Skolen på Strandboulevarden i København.",
       },
       {
         q: "Håndterer I flere fag i samme renovering?",
@@ -206,7 +208,7 @@ export const ydelser: Ydelse[] = [
       },
       {
         q: "Løser I også pharma- og produktionsbyggeri?",
-        a: "Ja. Vi har udført arbejde på Novo Nordisks anlæg, hvor krav til renhed og dokumentation er høje.",
+        a: "Ja. Vi har udført arbejde for et større dansk medicinalfirma, hvor krav til renhed og dokumentation er høje.",
       },
     ],
   },
@@ -239,38 +241,6 @@ export const ydelser: Ydelse[] = [
       {
         q: "Får jeg en fast pris?",
         a: "Ja. Vi gennemgår projektet og leverer et klart, detaljeret tilbud, inden vi går i gang.",
-      },
-    ],
-  },
-  {
-    slug: "isolering",
-    title: "Isolering",
-    short: "Isolering af vægge, lofter, kældre og teknik – korrekt udført og tæt.",
-    description: [
-      "Vi udfører isoleringsarbejde i nybyggeri og renovering: vægge, lofter, etageadskillelser, kældre samt isolering af rør og tekniske installationer.",
-      "Korrekt isolering handler om mere end at fylde hulrum ud. Vi sikrer tæthed, dampspærre og detaljer omkring gennemføringer, så konstruktionen holder – både energimæssigt og fugtteknisk.",
-    ],
-    highlights: [
-      "Vægge, lofter & etagedæk",
-      "Kælder- & krybekælderisolering",
-      "Rør- & teknikisolering",
-      "Dampspærre & tætning",
-      "Detaljer ved gennemføringer",
-    ],
-    image: isoleringImg,
-    gallery: [isoleringImg, tomrer3],
-    faq: [
-      {
-        q: "Isolerer I også rør og installationer?",
-        a: "Ja. Vi har bl.a. isoleret hele kælderen og monteret rør på Novo Nordisk HQ27 for LM Byg.",
-      },
-      {
-        q: "Håndterer I dampspærre og tæthed?",
-        a: "Ja – dampspærre, tætning og detaljering omkring gennemføringer er en fast del af vores isoleringsarbejde.",
-      },
-      {
-        q: "Kan I kombinere isolering med tømrerarbejde?",
-        a: "Ja. Vores tømrere udfører både isolering og efterfølgende lukning med gips eller beklædning i samme entreprise.",
       },
     ],
   },

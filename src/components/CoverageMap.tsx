@@ -1,47 +1,10 @@
 import denmarkMap from "@/assets/denmark-map.png";
-
-const cityGroups = [
-  {
-    region: "Storkøbenhavn",
-    cities: [
-      "København",
-      "Frederiksberg",
-      "Gentofte",
-      "Gladsaxe",
-      "Lyngby",
-      "Ballerup",
-      "Herlev",
-      "Rødovre",
-      "Hvidovre",
-      "Tårnby",
-    ],
-  },
-  {
-    region: "Nordsjælland",
-    cities: [
-      "Hillerød",
-      "Helsingør",
-      "Fredensborg",
-      "Hørsholm",
-      "Allerød",
-      "Frederikssund",
-      "Farum",
-    ],
-  },
-  {
-    region: "Vestsjælland",
-    cities: ["Roskilde", "Holbæk", "Slagelse", "Kalundborg", "Sorø", "Ringsted"],
-  },
-  {
-    region: "Sydsjælland",
-    cities: ["Næstved", "Køge", "Præstø", "Vordingborg", "Faxe", "Stevns"],
-  },
-];
+import { LocationList } from "@/components/LocationList";
 
 export function CoverageMap() {
   return (
     <section className="bg-surface py-20 lg:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-12">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Map */}
           <div className="relative flex justify-center">
@@ -57,7 +20,7 @@ export function CoverageMap() {
             </div>
           </div>
 
-          {/* Text & city list */}
+          {/* Text */}
           <div>
             <div className="mb-4 flex items-center gap-3">
               <span className="h-px w-10 bg-accent" />
@@ -70,21 +33,10 @@ export function CoverageMap() {
               Med base i hovedstadsområdet løser vi fag­entrepriser over hele Sjælland – fra
               Helsingør i nord til Vordingborg i syd.
             </p>
-
-            <div className="mt-10 space-y-4 border-t border-border pt-6">
-              {cityGroups.map((group) => (
-                <div key={group.region} className="flex flex-col gap-1 sm:flex-row sm:gap-4">
-                  <h3 className="w-36 flex-none text-xs font-bold uppercase text-accent">
-                    {group.region}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-foreground/70">
-                    {group.cities.join(" · ")}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <LocationList className="mt-8 border-t border-border pt-6 sm:columns-2 sm:gap-8 [&>div]:break-inside-avoid" />
           </div>
         </div>
+
       </div>
     </section>
   );

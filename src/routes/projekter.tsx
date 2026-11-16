@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
-import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { Download } from "lucide-react";
+import { GalleryLightbox } from "@/components/GalleryLightbox";
 import { referencer, type Reference } from "@/data/referencer";
 import heroSpektrum from "@/assets/hero-spektrum.jpg";
 
@@ -13,7 +13,7 @@ export const Route = createFileRoute("/projekter")({
       {
         name: "description",
         content:
-          "Se et udvalg af vores byggesager: Novo Nordisk, Himmelbyen, Hildis Have, Skolen på Strandboulevarden, Spektrum Hotel m.fl.",
+          "Se et udvalg af vores byggesager: et større dansk medicinalfirma, Himmelbyen, Hildis Have, Skolen på Strandboulevarden, Spektrum Hotel m.fl.",
       },
       { property: "og:title", content: "Projekter – MG Totalentreprise" },
       {
@@ -34,15 +34,6 @@ function Projekter() {
     setSlide(0);
   };
 
-  const next = () => {
-    if (!active) return;
-    setSlide((s) => (s + 1) % active.gallery.length);
-  };
-  const prev = () => {
-    if (!active) return;
-    setSlide((s) => (s - 1 + active.gallery.length) % active.gallery.length);
-  };
-
   return (
     <>
       <PageHero
@@ -54,32 +45,52 @@ function Projekter() {
         parallax
       />
 
-      <section className="bg-background py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <section className="bg-background py-12 sm:py-20 lg:py-28">
+        <div className="mx-auto max-w-[1800px] px-4 sm:px-6 lg:px-12">
+          <div className="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
             {referencer.map((r, i) => (
               <button
                 key={`${r.title}-${i}`}
                 onClick={() => openProject(r)}
-                className="group relative flex aspect-[3/4] flex-col justify-end overflow-hidden rounded-sm text-left"
+                className="group relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-sm text-left sm:aspect-[4/3] md:aspect-[4/5] lg:aspect-[4/3] md:last:odd:col-span-2 md:last:odd:aspect-[16/7]"
               >
                 <img
                   src={r.cover}
                   alt={r.title}
                   loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/15 to-transparent" />
-                <div className="relative p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/30" />
+
+                <div className="relative flex items-start justify-between p-4 sm:p-6 lg:p-10">
+                  <span className="text-sm font-semibold tabular-nums text-background/90">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div className="flex flex-wrap justify-end gap-1.5">
+                    {r.trades.map((t) => (
+                      <span
+                        key={t}
+                        className="bg-background/90 px-2.5 py-1 text-[10px] font-bold uppercase text-foreground"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="relative p-4 sm:p-6 lg:p-10">
                   <div className="text-xs font-semibold uppercase text-accent">{r.client}</div>
-                  <h3 className="mt-2 text-lg font-bold leading-tight text-background">
+                  <h3 className="mt-2 text-xl font-bold leading-tight text-background sm:text-2xl lg:text-4xl">
                     {r.title}
                   </h3>
-                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-background/80">
+                  <p className="mt-3 line-clamp-2 max-w-xl text-sm leading-relaxed text-background/80 lg:text-base">
                     {r.scope}
                   </p>
-                  <div className="mt-4 text-xs font-semibold uppercase text-background/80 group-hover:text-background">
-                    Læs mere →
+                  <div className="mt-4 flex items-center gap-3 border-t border-background/30 pt-4 text-xs font-semibold uppercase text-background/80 group-hover:text-background">
+                    Læs mere
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      →
+                    </span>
                   </div>
                 </div>
               </button>
@@ -88,77 +99,46 @@ function Projekter() {
         </div>
       </section>
 
-      <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
-        <DialogContent className="max-w-2xl gap-0 overflow-hidden p-0 sm:rounded-sm">
-          {active && (
+      <GalleryLightbox
+        open={!!active}
+        title={active?.title ?? ""}
+        subtitle={active?.client}
+        images={active?.gallery ?? []}
+        index={slide}
+        onIndexChange={setSlide}
+        onClose={() => setActive(null)}
+        details={
+          active && (
             <>
-              <div className="relative aspect-[16/9] w-full bg-muted">
-                <img
-                  src={active.gallery[slide]}
-                  alt={`${active.title} – billede ${slide + 1}`}
-                  className="h-full w-full object-cover"
-                />
-                {active.gallery.length > 1 && (
-                  <>
-                    <button
-                      onClick={prev}
-                      aria-label="Forrige billede"
-                      className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/90 p-2 text-foreground shadow-md transition-colors hover:bg-accent hover:text-accent-foreground"
-                    >
-                      <ChevronLeft className="h-5 w-5" />
-                    </button>
-                    <button
-                      onClick={next}
-                      aria-label="Næste billede"
-                      className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/90 p-2 text-foreground shadow-md transition-colors hover:bg-accent hover:text-accent-foreground"
-                    >
-                      <ChevronRight className="h-5 w-5" />
-                    </button>
-                    <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-1.5">
-                      {active.gallery.map((_, i) => (
-                        <button
-                          key={i}
-                          onClick={() => setSlide(i)}
-                          aria-label={`Gå til billede ${i + 1}`}
-                          className={`h-1.5 transition-all ${
-                            i === slide ? "w-6 bg-accent" : "w-1.5 bg-background/70"
-                          }`}
-                        />
-                      ))}
-                    </div>
-                  </>
-                )}
+              <div className="flex flex-wrap gap-1.5">
+                {active.trades.map((t) => (
+                  <span
+                    key={t}
+                    className="border border-white/30 px-2.5 py-1 text-[10px] font-bold uppercase text-white"
+                  >
+                    {t}
+                  </span>
+                ))}
               </div>
-
-              <div className="p-5 sm:p-6">
-                <div className="flex flex-wrap gap-1.5">
-                  {active.trades.map((t) => (
-                    <span
-                      key={t}
-                      className="rounded-sm border border-accent/30 bg-accent/10 px-2 py-1 text-[10px] font-bold uppercase text-accent"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-                <DialogTitle className="mt-3 text-2xl font-bold text-foreground sm:text-3xl">
-                  {active.title}
-                </DialogTitle>
-                <div className="mt-1 text-sm font-semibold uppercase text-accent">
-                  {active.client}
-                </div>
-                <DialogDescription className="mt-4 text-base leading-relaxed text-muted-foreground">
-                  {active.description}
-                </DialogDescription>
-                <div className="mt-6 border-t border-border pt-4 text-sm text-muted-foreground">
-                  <span className="font-semibold text-foreground">Omfang: </span>
-                  {active.scope}
-                </div>
-              </div>
+              <p className="mt-5 text-base leading-relaxed text-white/80">{active.description}</p>
+              <dl className="mt-6 border-t border-white/20 pt-4">
+                <dt className="text-[10px] font-semibold uppercase text-white/60">Omfang</dt>
+                <dd className="mt-1 text-sm leading-relaxed text-white">{active.scope}</dd>
+              </dl>
+              {active.document && (
+                <a
+                  href={active.document.url}
+                  download={active.document.filename}
+                  className="group mt-6 inline-flex items-center gap-1.5 text-sm font-semibold uppercase text-accent"
+                >
+                  {active.document.label}
+                  <Download className="h-4 w-4" />
+                </a>
+              )}
             </>
-          )}
-        </DialogContent>
-      </Dialog>
+          )
+        }
+      />
     </>
   );
 }

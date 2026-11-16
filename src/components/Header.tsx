@@ -15,6 +15,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const [onDark, setOnDark] = useState(true);
   const [atTop, setAtTop] = useState(true);
+  const [hidden, setHidden] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
@@ -44,16 +45,27 @@ export function Header() {
 
     const checkScroll = () => setAtTop(window.scrollY < 10);
 
+    // Hide the header while scrolling down, bring it back on any scroll up.
+    let lastY = window.scrollY;
+    const checkDirection = () => {
+      const y = window.scrollY;
+      if (y < 10 || y < lastY - 4) setHidden(false);
+      else if (y > lastY + 4 && y > 120) setHidden(true);
+      lastY = y;
+    };
+
     checkTheme();
     checkScroll();
     window.addEventListener("scroll", checkTheme, { passive: true });
     window.addEventListener("scroll", checkScroll, { passive: true });
+    window.addEventListener("scroll", checkDirection, { passive: true });
     window.addEventListener("resize", checkTheme);
     // Re-check once layout has settled after a route change.
     const t = setTimeout(checkTheme, 80);
     return () => {
       window.removeEventListener("scroll", checkTheme);
       window.removeEventListener("scroll", checkScroll);
+      window.removeEventListener("scroll", checkDirection);
       window.removeEventListener("resize", checkTheme);
       clearTimeout(t);
     };
@@ -85,8 +97,8 @@ export function Header() {
     <header
       ref={headerRef}
       className={`fixed top-0 left-0 right-0 z-50 ${
-        justToggled ? "" : "transition-[background-color,box-shadow] duration-300"
-      } ${showBg ? "bg-background shadow-[0_1px_12px_rgba(0,0,0,0.08)]" : "bg-transparent"}`}
+        justToggled ? "" : "transition-[background-color,box-shadow,transform] duration-300"
+      } ${hidden && !open ? "-translate-y-full" : "translate-y-0"} ${showBg ? "bg-background shadow-[0_1px_12px_rgba(0,0,0,0.08)]" : "bg-transparent"}`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>

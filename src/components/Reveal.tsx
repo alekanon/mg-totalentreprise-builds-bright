@@ -17,10 +17,9 @@ export function Reveal({
     }
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => setVisible(entry.isIntersecting),
-      { threshold: 0.2 },
-    );
+    const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), {
+      threshold: 0.2,
+    });
     observer.observe(el);
     return () => observer.disconnect();
   }, []);

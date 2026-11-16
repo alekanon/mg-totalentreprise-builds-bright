@@ -20,7 +20,7 @@ const steps = [
 export function ProcessSteps() {
   return (
     <section className="bg-background py-20 lg:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-12">
         <div className="mb-12 max-w-2xl">
           <div className="mb-4 flex items-center gap-3">
             <span className="h-px w-10 bg-accent" />
@@ -31,12 +31,12 @@ export function ProcessSteps() {
           </h2>
         </div>
 
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
           {steps.map((s, i) => (
-            <div key={s.title} className="border-t-2 border-accent pt-5">
+            <div key={s.title} className="border-t border-border pt-6">
               <div className="text-sm font-bold text-accent">0{i + 1}</div>
-              <h3 className="mt-3 text-lg font-bold text-foreground">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
+              <h3 className="mt-3 text-xl font-bold text-foreground">{s.title}</h3>
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">{s.text}</p>
             </div>
           ))}
         </div>

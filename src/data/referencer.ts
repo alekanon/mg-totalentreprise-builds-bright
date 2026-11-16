@@ -1,17 +1,16 @@
-import novoNordisk from "@/assets/projects/novo-nordisk.jpg";
-import spektrumHotel from "@/assets/projects/spektrum-hotel.jpg";
-import himmelbyen from "@/assets/projects/himmelbyen.jpg";
-import skolenStrand from "@/assets/projects/skolen-strandboulevarden.jpg";
-import oeresyd from "@/assets/projects/oeresyd.jpg";
-import bigHerlev from "@/assets/projects/big-herlev.jpg";
-import majatta from "@/assets/projects/majatta.jpg";
-import multicenter from "@/assets/projects/multicenter-praestoe.jpg";
-import hildisHave from "@/assets/projects/hildis-have.jpg";
-import oerbygaard from "@/assets/projects/oerbygaard.jpg";
-import groenneFatning from "@/assets/projects/groenne-fatning.jpg";
-import arenakvarteret from "@/assets/projects/arenakvarteret.jpg";
-import interiorDetail from "@/assets/projects/interior-detail.jpg";
-import hq27 from "@/assets/projects/novo-nordisk-hq27.jpg";
+import spektrumHotel from "@/assets/projects/Spectrum hotel.jpeg";
+import himmelbyen from "@/assets/projects/Himmelbyen.jpg";
+import skolenStrand from "@/assets/projects/skolen-paa-strandboulevarden-sommer-2018-13.jpg";
+import oeresyd from "@/assets/projects/øresyd.jpg";
+import bigHerlev from "@/assets/projects/big herlev.jpeg";
+import majatta from "@/assets/projects/Majatta næstved.jpg";
+import multicenter from "@/assets/projects/praestoe-multicenter-foto-soeren-aargaard-3.jpg";
+import hildisHave from "@/assets/projects/Hildis have.jpeg";
+import oerbygaard from "@/assets/projects/Ørbygaard Pleje center.jpg";
+import groenneFatning from "@/assets/projects/Den_gronne_fatning_850.jpg";
+import referenceLetter from "@/assets/projects/Referance letter.pdf?url";
+import novoKoege from "@/assets/projects/novokøge-UPSCALED.png";
+import hq27 from "@/assets/projects/Novo fonden hovedkontor.jpeg";
 
 export type Trade = "Tømrer" | "Maler";
 
@@ -25,30 +24,37 @@ export type Reference = {
   category: Trade;
   cover: string;
   gallery: string[];
+  /** Optional downloadable document shown in the project popup. */
+  document?: { label: string; url: string; filename: string };
 };
 
 export const referencer: Reference[] = [
   {
-    title: "Køge North Silica Facility",
+    title: "Maler og Tømrerarbejdet på nyopførelse af fabrik i Køge",
     client: "Phil & Søn",
     scope: "Maler- og tømrerarbejde på fabriksbyggeri.",
     description:
-      "Komplet maler- og tømrerentreprise på Novo Nordisks anlæg i Køge Nord. Opgaven omfatter både indvendige overflader, montage og finish-arbejder under høje krav til renhed og dokumentation.",
+      "Komplet maler- og tømrerentreprise på nyopførelse af fabriksbyggeri til et større dansk medicinalfirma, med høje krav til renhed og dokumentation.",
     trades: ["Maler", "Tømrer"],
     category: "Maler",
-    cover: novoNordisk,
-    gallery: [novoNordisk, interiorDetail],
+    cover: novoKoege,
+    gallery: [novoKoege],
+    document: {
+      label: "Download referencebrev",
+      url: referenceLetter,
+      filename: "Referencebrev-MG-T.pdf",
+    },
   },
   {
-    title: "Novo Nordisk HQ27",
+    title: "Hovedkontor for større dansk medicinalfirma",
     client: "LM Byg",
     scope: "Isolering af hele kælderen, montering af rør og beton finish.",
     description:
-      "Isolering af hele kælderen, montering af rør og beton finish på Novo Nordisk HQ27. Udført med fast hold under høje krav til dokumentation og koordinering med øvrige fag.",
+      "Isolering af hele kælderen, montering af rør og beton finish på hovedkontoret for et større dansk medicinalfirma. Udført med fast hold under høje krav til dokumentation og koordinering med øvrige fag.",
     trades: ["Tømrer"],
     category: "Tømrer",
     cover: hq27,
-    gallery: [hq27, interiorDetail],
+    gallery: [hq27],
   },
   {
     title: "Spektrum Hotel",
@@ -59,7 +65,7 @@ export const referencer: Reference[] = [
     trades: ["Maler"],
     category: "Maler",
     cover: spektrumHotel,
-    gallery: [spektrumHotel, interiorDetail],
+    gallery: [spektrumHotel],
   },
   {
     title: "Himmelbyen",
@@ -70,7 +76,7 @@ export const referencer: Reference[] = [
     trades: ["Tømrer"],
     category: "Tømrer",
     cover: himmelbyen,
-    gallery: [himmelbyen, interiorDetail],
+    gallery: [himmelbyen],
   },
   {
     title: "Skolen på Strandboulevarden",
@@ -81,7 +87,7 @@ export const referencer: Reference[] = [
     trades: ["Tømrer", "Maler"],
     category: "Tømrer",
     cover: skolenStrand,
-    gallery: [skolenStrand, interiorDetail],
+    gallery: [skolenStrand],
   },
   {
     title: "Øresyd",
@@ -93,7 +99,7 @@ export const referencer: Reference[] = [
     trades: ["Tømrer", "Maler"],
     category: "Tømrer",
     cover: oeresyd,
-    gallery: [oeresyd, interiorDetail],
+    gallery: [oeresyd],
   },
   {
     title: "BIG Shoppingcenter Herlev",
@@ -104,7 +110,7 @@ export const referencer: Reference[] = [
     trades: ["Tømrer", "Maler"],
     category: "Tømrer",
     cover: bigHerlev,
-    gallery: [bigHerlev, interiorDetail],
+    gallery: [bigHerlev],
   },
   {
     title: "Majatta Næstved",
@@ -116,7 +122,7 @@ export const referencer: Reference[] = [
     trades: ["Tømrer"],
     category: "Tømrer",
     cover: majatta,
-    gallery: [majatta, interiorDetail],
+    gallery: [majatta],
   },
   {
     title: "Multicenter Præstø",
@@ -128,7 +134,7 @@ export const referencer: Reference[] = [
     trades: ["Tømrer", "Maler"],
     category: "Tømrer",
     cover: multicenter,
-    gallery: [multicenter, interiorDetail],
+    gallery: [multicenter],
   },
   {
     title: "Hildis Have, Hillerød",
@@ -139,7 +145,7 @@ export const referencer: Reference[] = [
     trades: ["Maler"],
     category: "Maler",
     cover: hildisHave,
-    gallery: [hildisHave, interiorDetail],
+    gallery: [hildisHave],
   },
   {
     title: "Ørbygård Plejecenter",
@@ -150,7 +156,7 @@ export const referencer: Reference[] = [
     trades: ["Maler"],
     category: "Maler",
     cover: oerbygaard,
-    gallery: [oerbygaard, interiorDetail],
+    gallery: [oerbygaard],
   },
   {
     title: "Den Grønne Fatning",
@@ -161,17 +167,6 @@ export const referencer: Reference[] = [
     trades: ["Maler"],
     category: "Maler",
     cover: groenneFatning,
-    gallery: [groenneFatning, interiorDetail],
-  },
-  {
-    title: "Arenakvarteret Sind & Multi",
-    client: "B. Nygaard Sørensen A/S",
-    scope: "Malerarbejde i 2 plejecentre med hhv. 45 og 53 boliger.",
-    description:
-      "Malerentreprise på to plejecentre i Arenakvarteret med hhv. 45 og 53 boliger samt fællesarealer.",
-    trades: ["Maler"],
-    category: "Maler",
-    cover: arenakvarteret,
-    gallery: [arenakvarteret, interiorDetail],
+    gallery: [groenneFatning],
   },
 ];

@@ -2,6 +2,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 
 import appCss from "../styles.css?url";
 import { Header } from "@/components/Header";
+import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { CookieConsent } from "@/components/CookieConsent";
 import ogImage from "@/assets/hero-novo-nordisk.jpg";
@@ -65,7 +66,7 @@ export const Route = createRootRoute({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap",
       },
     ],
     scripts: [
@@ -122,6 +123,7 @@ function RootComponent() {
       <main className="flex-1">
         <Outlet />
       </main>
+      <ContactSection />
       <Footer />
       <CookieConsent />
     </div>

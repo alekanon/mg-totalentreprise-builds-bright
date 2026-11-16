@@ -9,6 +9,7 @@ interface PageHeroProps {
   size?: "default" | "lg";
   parallax?: boolean;
   dim?: boolean;
+  imageClassName?: string;
 }
 
 export function PageHero({
@@ -19,6 +20,7 @@ export function PageHero({
   size = "default",
   parallax = false,
   dim = true,
+  imageClassName = "",
 }: PageHeroProps) {
   const imgRef = useRef<HTMLImageElement>(null);
 
@@ -55,7 +57,7 @@ export function PageHero({
         ref={imgRef}
         src={image}
         alt=""
-        className={`absolute inset-x-0 -top-[10%] h-[120%] w-full object-cover ${
+        className={`absolute inset-x-0 -top-[10%] h-[120%] w-full object-cover ${imageClassName} ${
           dim ? "opacity-50" : ""
         } ${parallax ? "will-change-transform" : ""}`}
       />

@@ -11,10 +11,10 @@ export function PartnerLogos() {
   const duration = half.length * 3.2;
 
   return (
-    <section className="bg-surface py-28 lg:py-40">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-14 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
-          <div className="max-w-lg">
+    <section className="bg-surface py-20 lg:py-28">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-12">
+        <div className="mb-14 grid gap-8 lg:grid-cols-2 lg:items-start lg:gap-20">
+          <div>
             <div className="mb-4 flex items-center gap-3">
               <span className="h-px w-10 bg-accent" />
               <span className="text-xs font-semibold uppercase text-accent">
@@ -25,17 +25,17 @@ export function PartnerLogos() {
               Vi samarbejder med de stærkeste firmaer inden for byggeri
             </h2>
           </div>
-          <p className="max-w-sm text-sm leading-relaxed text-muted-foreground lg:pt-2 lg:text-right lg:text-base">
+          <p className="text-base leading-relaxed text-muted-foreground lg:pt-12 lg:text-lg">
             Et solidt netværk af leverandører og fagfolk er med til at sikre kvalitet i hvert
             projekt.
           </p>
         </div>
       </div>
 
-      <div className="mx-auto max-w-4xl px-4 sm:px-6">
-        <div className="relative mt-12 overflow-hidden lg:mt-16">
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-surface to-transparent sm:w-20" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-surface to-transparent sm:w-20" />
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <div className="relative overflow-hidden border-y border-border py-6">
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-surface to-transparent sm:w-24" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-surface to-transparent sm:w-24" />
 
           <div
             className="flex w-max animate-marquee items-center"
@@ -51,6 +51,7 @@ export function PartnerLogos() {
                   alt={partner.name}
                   loading="lazy"
                   className="max-h-12 w-full object-contain"
+                  style={partner.scale ? { transform: `scale(${partner.scale})` } : undefined}
                 />
               </div>
             ))}
